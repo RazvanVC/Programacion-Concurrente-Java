@@ -15,7 +15,17 @@ public class Restaurante {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Clientes cliente = new Clientes();
+        Thread c1= new Thread(cliente); 
+        cliente.start();
+        
+        Empleados empleado = new Empleados();
+        Thread c2= new Thread(cliente);
+        empleado.start();
+    
+        Cocineros cocinero = new Cocineros();
+        Thread c3= new Thread(cliente);
+        cocinero.start();
     }
     
 }
