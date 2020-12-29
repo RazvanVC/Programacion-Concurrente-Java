@@ -5,6 +5,8 @@
  */
 package RestauranteJyC;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -30,26 +32,36 @@ public class Clientes extends Thread{
     public void run(){
         //tarda entre 500 y 1000
         //dejan 2 pedidos
+        
         int tiempo;
+        int i;
+        for(i=0;i<2;i++){
         tiempo=(int)(500+500*Math.random());
         int capacidad=mostrador.getCapacidad();
         boolean sigue=esperar_pedido();
+        
         if (sigue){
-            mostrador.setCapacidad(capacidad+1);
-            mostrador.insert(new Pedidos("cliente"+id+1));
+            try {
+                Thread.sleep(tiempo);
+                mostrador.setCapacidad(capacidad+1);
+                mostrador.insert(new Pedidos("cliente"+id+1));
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
+            }
             
         }
         else{
-            //Wait;
+            Thread.holdsLock(sigue);
             }
         
         }
+    }
     
     public boolean esperar_pedido(){
         
         return false;}
 
     
-    
+       
 }
  
