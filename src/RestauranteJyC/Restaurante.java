@@ -11,9 +11,7 @@ package RestauranteJyC;
  */
 public class Restaurante {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         Clientes cliente = new Clientes();
         Thread c1= new Thread(cliente); 
