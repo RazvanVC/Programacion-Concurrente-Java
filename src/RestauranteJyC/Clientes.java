@@ -13,19 +13,19 @@ import java.util.logging.Logger;
  * @author josep
  */
 public class Clientes extends Thread{
-    private long id;
+    private String id;
     private Mostrador_pedidos mostrador;
     
-    public Clientes(long id, Mostrador_pedidos mostrador){
+    public Clientes(String id, Mostrador_pedidos mostrador){
     this.id=id;
     this.mostrador=mostrador;}
     
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
     

@@ -24,6 +24,12 @@ public class Restaurante {
         Cocineros cocinero = new Cocineros();
         Thread c3= new Thread(cliente);
         cocinero.start();
+        
+        //capacidad Mostrador es de 10
+        //capacidad Mesa_platos es de 20
+        //2 empleados
+        //3 cocineros
+        
     }
     
 }
