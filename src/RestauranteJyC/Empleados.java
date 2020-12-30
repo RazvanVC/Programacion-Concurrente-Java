@@ -5,6 +5,9 @@
  */
 package RestauranteJyC;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author josep
@@ -47,9 +50,11 @@ public class Empleados extends Thread{
         return trabajar;
     }
     
-    public void moverPedido(int a, int b){
+    public void moverPedido(int a, int b) throws InterruptedException{
         int capacidad_mos=mostrador.getCapacidad();
         int capacidad_mesa=mesa.getCapacidad();
+        int tiempo=(int)(300+400*Math.random());
+        Thread.sleep(tiempo);//esto hace que se tarde el tiempo de cada empleado
         Pedidos[] comanda= mesa.getContador_p();
         comanda[b]= seleccion(a);
         vaciar(a);
@@ -88,7 +93,7 @@ public class Empleados extends Thread{
         
     }
     
-    public boolean esperarPedidoMostrador(){
+    public boolean esperarPedidoMostrador(){//comprueba que el mostrador esté vacío
         int i;
         int c=0; //contador para saber los null
         Pedidos[] comanda=mostrador.getContador_p();
@@ -98,26 +103,48 @@ public class Empleados extends Thread{
             }
         }    
         if(c==mostrador.getLengthContador_p()){
-            return true;//hay que esperar a que se vacíe la mesa
+            return true;//hay que esperar a que haya algo en la mesa
         }
         else {return false;}
     }
     
     public void run(){
     //Tardan entre 300 y 700
-    int tiempo;
-    tiempo=(int)(300+400*Math.random());
     int i;
     int j;
+    
     for (i=0,j=0; i<mostrador.getLengthContador_p();i++,j++){ 
-        if (i==mostrador.getLengthContador_p()){
-            i=0;
+        try {
+            if (i==mostrador.getLengthContador_p()){
+                i=0;
+            }
+            if (j==mesa.getLengthContador_p()){
+                j=0;
+            }
+            
+            boolean continuar;
+            continuar=false;
+            while (!continuar){
+            
+            while(esperarPedidoMostrador()){
+                continuar=false;
+                Thread.holdsLock(continuar);
+            }
+            
+            continuar=true;
+            
+            while(esperarPedidoMesa()){
+                continuar=false;
+                Thread.holdsLock(continuar);
+            }
+            
+            continuar=true;}
+            
+            moverPedido(i,j);
+            
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
         }
-        if (j==mesa.getLengthContador_p()){
-            j=0;
-        }
-        tiempo=(int)(300+400*Math.random());
-        moverPedido(i,j);
         
         
         
