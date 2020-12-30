@@ -30,13 +30,44 @@ public class Empleados extends Thread{
        public void setId(String id) {
         this.id = id;
     }
+    public boolean compruebaMesas(){
+        if (mesa.isLleno()){
+            return false;}
+        else{ return true;}
+    }
+    public boolean compruebaMostrador(){ 
+    /*metodo que comprueba si el mostrador de pedidos
+      está vacío, de ser así, trabajar será false, y 
+      los empleados finalizarán su ejecución*/
+        boolean trabajar;
+        if (mostrador.getContador_p()==null){
+            trabajar=false;
+        }
+        else{trabajar=true;}
+        return trabajar;
+    }
+    
+    public void moverPedido(int a, int b){
+        int capacidad_mos=mostrador.getCapacidad();
+        int capacidad_mesa=mesa.getCapacidad();
+        mesa.setContador_p(b)= mostrador.getContador_p(a);
+    }
     
     
     public void run(){
     //Tardan entre 300 y 700
     int tiempo;
     int i;
-    for (i=0; i<mostrador.getLengthContador_p();i++){
+    for (i=0; i<mostrador.getLengthContador_p();i++){ 
+        if (i==10){
+            i=0;}
+        tiempo=(int)(300+400*Math.random());
+        
+        
+        
+        }
+        
+        
         
         }
     }

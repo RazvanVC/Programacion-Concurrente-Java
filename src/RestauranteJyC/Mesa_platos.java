@@ -24,5 +24,14 @@ public class Mesa_platos {
     public void setLleno(boolean lleno) {
         this.lleno = lleno;
     }
+
+    public Pedidos[] getContador_p() {
+        return contador_p;
+    }
+
+    public void setContador_p(Pedidos[] contador_p) {
+        this.contador_p = contador_p;
+    }
+    
     
 }
