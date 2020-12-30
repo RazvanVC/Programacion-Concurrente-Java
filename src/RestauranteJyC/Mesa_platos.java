@@ -32,6 +32,10 @@ public class Mesa_platos {
     public void setContador_p(Pedidos[] contador_p) {
         this.contador_p = contador_p;
     }
+
+    int getLengthContador_p() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
