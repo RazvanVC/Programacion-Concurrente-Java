@@ -5,10 +5,10 @@ package RestauranteJyC;
  * @author josep
  */
 public class Mesa_platos {
-    int capacidad;
-    Pedidos contador_p[];
-    boolean lleno;
-    boolean vacio;
+    private int capacidad;
+    private Pedidos contador_p[];
+    private boolean lleno;
+    private boolean vacio;
 
     public int getCapacidad() {
         capacidad=contador_p.length;
@@ -60,13 +60,23 @@ public class Mesa_platos {
         return contador_p;
     }
 
-    public void setContador_p(Pedidos[] contador_p) {
-        this.contador_p = contador_p;
+    public void setContador_p(int posicion,Pedidos almendra) {
+        if (contador_p[posicion]==null){
+        this.contador_p[posicion] = almendra;
+        }
     }
 
     int getLengthContador_p() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    public Pedidos getPedidoMesa(int posicion) {
+        Pedidos alpaca= contador_p[posicion];
+        contador_p[posicion]=null;
+        return alpaca;
+    }
+    
+    
     
     
 }
