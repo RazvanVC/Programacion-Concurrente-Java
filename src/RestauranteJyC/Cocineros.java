@@ -13,7 +13,7 @@ public class Cocineros extends Thread {
     private String id;
     //acceso al mostrador de pedidos
     
-    private Mesa_platos mesa;
+    private final Mesa_platos mesa;
     
     public Cocineros(String id, Mesa_platos mesa){
     this.id=id;
@@ -22,6 +22,8 @@ public class Cocineros extends Thread {
     public String getId() {
         return id;
     }
+
+    
 
     public void setId(String id) {
         this.id = id;

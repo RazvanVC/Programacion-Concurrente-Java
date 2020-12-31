@@ -124,7 +124,7 @@ public class Empleados extends Thread{
             
             boolean continuar;
             continuar=false;
-            while (!continuar){
+            if (!continuar){
             
                 while(esperarPedidoMostrador()){
                     continuar=false;
