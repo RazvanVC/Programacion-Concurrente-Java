@@ -7,7 +7,7 @@ package RestauranteJyC;
 
 /**
  *
- * @author razva
+ * @author josep
  */
 public class Restaurante {
 

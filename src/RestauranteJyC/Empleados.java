@@ -126,19 +126,20 @@ public class Empleados extends Thread{
             continuar=false;
             while (!continuar){
             
-            while(esperarPedidoMostrador()){
-                continuar=false;
-                Thread.holdsLock(continuar);
+                while(esperarPedidoMostrador()){
+                    continuar=false;
+                    Thread.holdsLock(continuar);
+                }
+            
+                continuar=true;
+            
+                while(esperarPedidoMesa()){
+                    continuar=false;
+                    Thread.holdsLock(continuar);
+                }
+            
+                continuar=true;
             }
-            
-            continuar=true;
-            
-            while(esperarPedidoMesa()){
-                continuar=false;
-                Thread.holdsLock(continuar);
-            }
-            
-            continuar=true;}
             
             moverPedido(i,j);
             
