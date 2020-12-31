@@ -35,5 +35,9 @@ public class Mostrador_pedidos {
     public void setContador_p(Pedidos[] contador_p) {
         this.contador_p = contador_p;
     }
+
+    void insert(Pedidos pedidos) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
  }   
 

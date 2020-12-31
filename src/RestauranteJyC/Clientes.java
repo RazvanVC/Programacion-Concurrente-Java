@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  */
 public class Clientes extends Thread{
     private String id;
-    private Mostrador_pedidos mostrador;
+    private final Mostrador_pedidos mostrador;
     
     public Clientes(String id, Mostrador_pedidos mostrador){
     this.id=id;
