@@ -13,25 +13,26 @@ import java.util.logging.Logger;
  * @author josep
  */
 public class Empleados extends Thread{
-    private String id;
+    private String id_Empleado;
     
     private Mostrador_pedidos mostrador;
     private Mesa_platos mesa;
     
     public Empleados(String id, Mostrador_pedidos mostrador){
-    this.id=id;
+    this.id_Empleado=id;
     this.mostrador=mostrador;}
     
     public Empleados(String id, Mesa_platos mesa){
-    this.id = id;
+    this.id_Empleado = id;
     this.mesa = mesa;}
 
-    public String getId() {
-        return id;
+    
+    public String getId_Empleado() {
+        return id_Empleado;
     }
 
        public void setId(String id) {
-        this.id = id;
+        this.id_Empleado = id;
     }
     public boolean compruebaMesas(){
         if (mesa.isLleno()){

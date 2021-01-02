@@ -13,15 +13,17 @@ public class Restaurante {
 
     
     public static void main(String[] args) {
-        Clientes cliente = new Clientes();
+        Mostrador_pedidos mp = new Mostrador_pedidos();
+        Mesa_platos mep = new Mesa_platos();
+        Clientes cliente = new Clientes("1", mp);
         Thread c1= new Thread(cliente); 
         cliente.start();
         
-        Empleados empleado = new Empleados();
+        Empleados empleado = new Empleados("1", mp);
         Thread c2= new Thread(cliente);
         empleado.start();
     
-        Cocineros cocinero = new Cocineros();
+        Cocineros cocinero = new Cocineros("1", mep);
         Thread c3= new Thread(cliente);
         cocinero.start();
         

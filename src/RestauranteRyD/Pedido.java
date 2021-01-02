@@ -9,7 +9,7 @@ package RestauranteRyD;
  *
  * @author Razvan Virgil y Daniel González
  */
-public class Pedido extends Thread{
+public class Pedido {
     
     //Atributos
     private long id_pedido;
@@ -24,24 +24,13 @@ public class Pedido extends Thread{
         return id_pedido;
     }
 
-    public static int getMIN_PRIORITY() {
-        return MIN_PRIORITY;
-    }
-
-    public static int getNORM_PRIORITY() {
-        return NORM_PRIORITY;
-    }
-
-    public static int getMAX_PRIORITY() {
-        return MAX_PRIORITY;
-    }
-
     //Setters
     public void setId_pedido(long id) {
         this.id_pedido = id;
     }
     
     //Métodos
+    @Override
     public String toString() {
         return "Pedido"+ this.id_pedido;
     }

@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/razva/OneDrive/Documentos/GitHub/RestauranteParadigmas/src/restauranteparadigmas/Restaurante.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/RestauranteParadigmas/src/RestauranteRyD/Cliente.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/RestauranteParadigmas/src/RestauranteRyD/Mesa.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/RestauranteParadigmas/src/RestauranteRyD/Empleado.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/RestauranteParadigmas/src/RestauranteRyD/Pedido.java</file>
+            <file>file:/Users/razvanvc/Documents/GitHub/RestauranteParadigmas/src/RestauranteRyD/Restaurante.java</file>
         </group>
     </open-files>
 </project-private>

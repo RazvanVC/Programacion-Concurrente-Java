@@ -13,20 +13,20 @@ import java.util.logging.Logger;
  * @author josep
  */
 public class Clientes extends Thread{
-    private String id;
+    private String id_Cliente;
     private final Mostrador_pedidos mostrador;
     
     public Clientes(String id, Mostrador_pedidos mostrador){
-    this.id=id;
+    this.id_Cliente=id;
     this.mostrador=mostrador;}
     
 
-    public String getId() {
-        return id;
+    public String getIdCliente() {
+        return id_Cliente;
     }
 
     public void setId(String id) {
-        this.id = id;
+        this.id_Cliente = id;
     }
     
     public void run(){
@@ -44,7 +44,7 @@ public class Clientes extends Thread{
             try {
                 Thread.sleep(tiempo);
                 mostrador.setCapacidad(capacidad+1);
-                mostrador.insert(new Pedidos("cliente"+id+1));
+                mostrador.insert(new Pedidos("cliente"+id_Cliente+1));
             } catch (InterruptedException ex) {
                 Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
             }

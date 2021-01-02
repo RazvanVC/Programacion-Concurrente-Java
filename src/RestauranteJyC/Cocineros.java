@@ -10,23 +10,23 @@ import java.util.logging.Logger;
 
 
 public class Cocineros extends Thread {
-    private String id;
+    private String id_Cocinero;
     //acceso al mostrador de pedidos
     
     private final Mesa_platos mesa;
     
     public Cocineros(String id, Mesa_platos mesa){
-    this.id=id;
+    this.id_Cocinero=id;
     this.mesa=mesa;}
 
-    public String getId() {
-        return id;
+    public String getIdCocinero() {
+        return id_Cocinero;
     }
 
     
 
     public void setId(String id) {
-        this.id = id;
+        this.id_Cocinero = id;
     }
     
     public void vaciar(int a){
