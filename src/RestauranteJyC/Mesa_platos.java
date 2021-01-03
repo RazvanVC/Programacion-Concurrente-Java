@@ -11,7 +11,6 @@ public class Mesa_platos {
     private boolean vacio;
 
     public int getCapacidad() {
-        capacidad=contador_p.length;
         return capacidad;
     }
 

@@ -18,13 +18,11 @@ public class Empleados extends Thread{
     private Mostrador_pedidos mostrador;
     private Mesa_platos mesa;
     
-    public Empleados(String id, Mostrador_pedidos mostrador){
+    public Empleados(String id, Mostrador_pedidos mostrador, Mesa_platos mesa){
     this.id_Empleado=id;
-    this.mostrador=mostrador;}
-    
-    public Empleados(String id, Mesa_platos mesa){
-    this.id_Empleado = id;
-    this.mesa = mesa;}
+    this.mostrador=mostrador;
+    this.mesa=mesa;}
+
 
     
     public String getId_Empleado() {
@@ -59,8 +57,6 @@ public class Empleados extends Thread{
         Pedidos[] comanda= mesa.getContador_p();
         comanda[b]= seleccion(a);
         vaciar(a);
-        mostrador.setCapacidad(capacidad_mos-1);
-        mesa.setCapacidad(capacidad_mesa+1);
     }
     
     //para obtener un valor de mostrador
@@ -125,22 +121,22 @@ public class Empleados extends Thread{
             
             boolean continuar;
             continuar=false;
-            if (!continuar){
             
+            //aqui vienen las esperas
                 while(esperarPedidoMostrador()){
-                    continuar=false;
+                    continuar=esperarPedidoMostrador();
                     Thread.holdsLock(continuar);
                 }
             
-                continuar=true;
+                continuar=false;
             
                 while(esperarPedidoMesa()){
-                    continuar=false;
+                    continuar=esperarPedidoMesa();
                     Thread.holdsLock(continuar);
                 }
             
-                continuar=true;
-            }
+                
+            
             
             moverPedido(i,j);
             

@@ -15,9 +15,18 @@ public class Restaurante {
     public static void main(String[] args) {
         Mostrador_pedidos mp = new Mostrador_pedidos();
         Mesa_platos mep = new Mesa_platos();
-        Clientes cliente = new Clientes("1", mp);
-        Thread c1= new Thread(cliente); 
-        cliente.start();
+        Clientes serie[]=new Clientes[200];
+        
+        for (int i=0;i<200;i++){
+            String id=String.valueOf(i);
+            Clientes cliente=new Clientes(id,mp);
+            serie[i]=cliente;
+            Thread c1= new Thread(serie[i]); 
+            c1.start();
+            
+            
+        }
+                    
         
         Empleados empleado = new Empleados("1", mp);
         Thread c2= new Thread(cliente);
