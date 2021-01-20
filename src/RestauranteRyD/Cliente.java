@@ -12,32 +12,35 @@ package RestauranteRyD;
 public class Cliente extends Thread{
     
     //Atributos
-    private long id_cliente;
+    private String id_cliente;
+    private Mostrador mostrador;
     
     //Constructor
-    public Cliente(long id){
+    public Cliente(String id, Mostrador mostrador){
+        super(String.valueOf(id));
         this.id_cliente=id;
+        this.mostrador = mostrador;
+    }
+    
+    @Override
+    public void run(){
+        
+        mostrador.depositarPedido(this, this.id_cliente+"-P1");
+        
+        try {
+            sleep(500+((int) (500*Math.random())));
+        } catch (InterruptedException e){}
+        
+        mostrador.depositarPedido(this, this.id_cliente+"-P2");
     }
     
     //Getters
-    public long getId_cliente() {
+    public String getId_cliente() {
         return id_cliente;
     }
 
-    public static int getMIN_PRIORITY() {
-        return MIN_PRIORITY;
-    }
-
-    public static int getNORM_PRIORITY() {
-        return NORM_PRIORITY;
-    }
-
-    public static int getMAX_PRIORITY() {
-        return MAX_PRIORITY;
-    }
-
     //Setters
-    public void setId_cliente(long id) {
+    public void setId_cliente(String id) {
         this.id_cliente = id;
     }
     
