@@ -14,8 +14,44 @@ public class InterfazRestaurante extends javax.swing.JFrame {
     /**
      * Creates new form InterfazRestaurante
      */
+    @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
     public InterfazRestaurante() {
+        
         initComponents();
+        
+        //Y a partir de aquí, lo que se ejecuta
+        Mostrador_pedidos mp = new Mostrador_pedidos();
+        Mesa_platos mep = new Mesa_platos();
+        Clientes serie[]=new Clientes[200];
+        
+        for (int i=0;i<200;i++){
+            String id=String.valueOf(i);
+            Clientes cliente=new Clientes(id,mp);
+            serie[i]=cliente;
+            Thread c1= new Thread(serie[i]); 
+            c1.start();
+        }
+        //capacidad mostrador es de 10
+        mp.setCapacidad(10);
+        //capacidad mesa platos es de 20
+        mep.setCapacidad(20);
+        //declaracion empleado
+        Empleados empleado1 = new Empleados("empleado_1",mp,mep);
+        Empleados empleado2 = new Empleados("empleado_2",mp,mep);
+        //declaración cocineros
+        Cocineros cocinero1= new Cocineros("cocinero_1",mep);
+        Cocineros cocinero2= new Cocineros("cocinero_2",mep);
+        Cocineros cocinero3= new Cocineros("cocinero_3",mep);
+        //      Iniciadores
+        //empleados
+        empleado1.start();
+        empleado2.start();
+        //cocineros
+        cocinero1.start();
+        cocinero2.start();
+        cocinero3.start();
+        
+        
     }
 
     /**

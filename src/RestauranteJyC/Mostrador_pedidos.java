@@ -28,8 +28,6 @@ public class Mostrador_pedidos {
     public Pedidos[] getContador_p() {
         return contador_p;
     }
-    public int getLengthContador_p(){
-        return contador_p.length;}
 
 
     public void setContador_p(Pedidos[] contador_p) {
