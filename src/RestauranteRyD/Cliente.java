@@ -14,29 +14,43 @@ public class Cliente extends Thread{
     //Atributos
     private String id_cliente;
     private Mostrador mostrador;
+    private int numPedidos;
     
     //Constructor
-    public Cliente(String id, Mostrador mostrador){
+    public Cliente(String id, Mostrador mostrador, int numPedidos){
         super(String.valueOf(id));
         this.id_cliente=id;
         this.mostrador = mostrador;
+        this.numPedidos = numPedidos;
     }
     
     @Override
+    @SuppressWarnings("SleepWhileInLoop")
     public void run(){
+        int i = 0;
+        while (i<numPedidos){
+            try {
+                mostrador.depositarPedido(this, this.id_cliente+"-P"+i);
+                sleep(500+((int) (500*Math.random())));                
+                //Insertar clase log
+            } catch (InterruptedException e){}
+            i++;
+        }
         
-        mostrador.depositarPedido(this, this.id_cliente+"-P1");
-        
-        try {
-            sleep(500+((int) (500*Math.random())));
-        } catch (InterruptedException e){}
-        
-        mostrador.depositarPedido(this, this.id_cliente+"-P2");
+        //Insertar mensajes en log
     }
     
     //Getters
     public String getId_cliente() {
         return id_cliente;
+    }
+    
+    public Mostrador getMostrador() {
+        return mostrador;
+    }    
+
+    public int getNumPedidos() {
+        return numPedidos;
     }
 
     //Setters
@@ -44,9 +58,11 @@ public class Cliente extends Thread{
         this.id_cliente = id;
     }
     
-    //Métodos
-    @Override
-    public String toString() {
-        return "Cliente"+ this.id_cliente;
+    public void setMostrador(Mostrador mostrador) {
+        this.mostrador = mostrador;
+    }
+    
+    public void setNumPedidos(int numPedidos) {
+        this.numPedidos = numPedidos;
     }
 }
