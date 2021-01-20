@@ -5,17 +5,33 @@
  */
 package RestauranteRyD;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author razvanvc
  */
 public class Restaurante_P1 extends javax.swing.JFrame {
 
+    //Variables para modificar las sistemas
+    private final int numeroPedidos = 2;
+    private final int tamannoMostrador = 20;
+    
     /**
      * Creates new form Restaurante_P1
      */
+    @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
     public Restaurante_P1() {
         initComponents();
+        
+        Mostrador mp = new Mostrador(tamannoMostrador, false, tf_ContenidoMostrador);
+        
+        //Creamos e iniciamos los 200 clientes
+        //SUGERENCIA: Exportar todo esto a un metodo mas abajo
+        for (int i = 1; i<202; i++){
+            Cliente cv = new Cliente("Cliente"+i, mp, numeroPedidos);
+            cv.start();
+        }
         
     }
 

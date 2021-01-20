@@ -20,6 +20,7 @@ public class Mostrador {
     ListaHilos contador_pedidos;
     Semaphore semaforo;
     boolean lleno;
+    JTextField escritura;
     
     //Constructor
     public Mostrador(int capacidad, boolean lleno, JTextField mostrador) {
@@ -27,6 +28,7 @@ public class Mostrador {
         this.contador_pedidos = new ListaHilos(mostrador);
         semaforo=new Semaphore(capacidad,true);
         this.lleno = lleno;
+        this.escritura = mostrador;
     }
     
     //Getters
@@ -61,7 +63,9 @@ public class Mostrador {
         return "Mesa ("+ this.capacidad + "," + this.contador_pedidos + "," + this.lleno + ")";
     }
 
-    void depositarPedido(Cliente aThis, String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    void depositarPedido(String string) {
+        
+        String texto = this.escritura.getText();
+        this.escritura.setText(texto+string+";");
     }
 }
