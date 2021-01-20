@@ -5,6 +5,8 @@
  */
 package RestauranteRyD;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author Razvan Virgil y Daniel González
@@ -12,38 +14,46 @@ package RestauranteRyD;
 public class Cocinero extends Thread{
     
     //Atributos
-    private long id_cocinero;
+    private String idCocinero;
+    private Mesa mesaPlatos;
+    private JTextField mesaCocina;
     
     //Constructor
-    public Cocinero(long id_cocinero){
-        this.id_cocinero=id_cocinero;
+    public Cocinero(String id_cocinero, Mesa mesaPlatos, JTextField mesaCocina){
+        this.idCocinero=id_cocinero;
+        this.mesaCocina = mesaCocina;
+        this.mesaPlatos = mesaPlatos;
     }
     
     //Getters
-    public long getId_cocinero() {
-        return id_cocinero;
-    }
-
-    public static int getMIN_PRIORITY() {
-        return MIN_PRIORITY;
-    }
-
-    public static int getNORM_PRIORITY() {
-        return NORM_PRIORITY;
-    }
-
-    public static int getMAX_PRIORITY() {
-        return MAX_PRIORITY;
+    public String getId_cocinero() {
+        return idCocinero;
     }
 
     //Setters
-    public void setId_cocinero(long id_cocinero) {
-        this.id_cocinero = id_cocinero;
+    public void setId_cocinero(String id_cocinero) {
+        this.idCocinero = id_cocinero;
     }
     
     //Métodos
     @Override
     public String toString() {
-        return "Cocinero"+ this.id_cocinero;
+        return "Cocinero"+ this.idCocinero;
+    }
+    
+    @Override
+    @SuppressWarnings("SleepWhileInLoop")
+    public void run(){
+        while (true){
+            try {
+            String plato = mesaPlatos.getPedido();
+            mesaCocina.setText(idCocinero + "esta cocinando" + plato);
+            sleep(1500+(int) (500*Math.random()));
+            } catch (InterruptedException e) {
+        
+            }
+        }
+        
+        
     }
 }

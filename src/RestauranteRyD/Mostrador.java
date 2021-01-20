@@ -60,4 +60,8 @@ public class Mostrador {
     public String toString() {
         return "Mesa ("+ this.capacidad + "," + this.contador_pedidos + "," + this.lleno + ")";
     }
+
+    void depositarPedido(Cliente aThis, String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

@@ -16,6 +16,7 @@ public class Restaurante_P1 extends javax.swing.JFrame {
      */
     public Restaurante_P1() {
         initComponents();
+        
     }
 
     /**
