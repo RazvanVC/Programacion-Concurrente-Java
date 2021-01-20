@@ -38,12 +38,12 @@ public class Cocineros extends Thread {
         int i;
         int c=0; //contador para saber los null
         Pedidos[] comanda=mesa.getContador_p();
-        for (i=0; i<mesa.getLengthContador_p();i++){
+        for (i=0; i<mesa.getCapacidad();i++){
             if (comanda[i]==null){
                 c=c+1;    
             }
         }    
-        if(c==mesa.getLengthContador_p()){
+        if(c==mesa.getCapacidad()){
             return true;//hay que esperar a que haya algo en la mesa
         }
         else {return false;}
@@ -63,9 +63,9 @@ public class Cocineros extends Thread {
     public void run(){
         boolean continuar;
         int i;
-        for(i=0;i<mesa.getLengthContador_p();i++){
+        for(i=0;i<mesa.getCapacidad();i++){
             try {
-                if (i==mesa.getLengthContador_p()){
+                if (i==mesa.getCapacidad()){
                     i=0;
                 }
                 continuar=false;

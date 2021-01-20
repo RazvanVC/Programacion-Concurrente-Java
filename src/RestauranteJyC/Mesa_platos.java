@@ -65,9 +65,7 @@ public class Mesa_platos {
         }
     }
 
-    int getLengthContador_p() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
     public Pedidos getPedidoMesa(int posicion) {
         Pedidos alpaca= contador_p[posicion];

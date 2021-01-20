@@ -27,17 +27,19 @@ public class Restaurante {
             
         }
                     
+        //Clientes cliente =new Clientes("1",mp); 
+        //Empleados empleado = new Empleados("1", mp, mep);
+        //Thread c2= new Thread(empleado);
         
-        Empleados empleado = new Empleados("1", mp);
-        Thread c2= new Thread(cliente);
-        empleado.start();
+        //empleado.start();
+        //cliente.start();
     
-        Cocineros cocinero = new Cocineros("1", mep);
-        Thread c3= new Thread(cliente);
-        cocinero.start();
+        //Cocineros cocinero = new Cocineros("1", mep);
+        //Thread c3= new Thread(cliente);
+        //cocinero.start();
         
-        //capacidad Mostrador es de 10
-        //capacidad Mesa_platos es de 20
+        //capacidad Mostrador es de 10-
+        //capacidad Mesa_platos es de 20-
         //2 empleados
         //3 cocineros
         
