@@ -12,20 +12,20 @@ package RestauranteRyD;
 public class Pedido {
     
     //Atributos
-    private long id_pedido;
+    private String id_pedido;
     
     //Constructor
-    public Pedido(long id){
+    public Pedido(String id){
         this.id_pedido=id;
     }
     
     //Getters
-    public long getId_pedido() {
+    public String getId_pedido() {
         return id_pedido;
     }
 
     //Setters
-    public void setId_pedido(long id) {
+    public void setId_pedido(String id) {
         this.id_pedido = id;
     }
     

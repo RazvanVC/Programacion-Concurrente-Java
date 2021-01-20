@@ -5,6 +5,10 @@
  */
 package RestauranteRyD;
 
+import java.util.ArrayList;
+import java.util.concurrent.Semaphore;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Razvan Virgil y Daniel González
@@ -13,13 +17,15 @@ public class Mostrador {
     
     //Atributos
     int capacidad;
-    Pedido[] contador_pedidos;
+    ListaHilos contador_pedidos;
+    Semaphore semaforo;
     boolean lleno;
     
     //Constructor
-    public Mostrador(int capacidad, Pedido[] contador_platos, boolean lleno) {
+    public Mostrador(int capacidad, boolean lleno, JTextField mostrador) {
         this.capacidad = capacidad;
-        this.contador_pedidos = contador_platos;
+        this.contador_pedidos = new ListaHilos(mostrador);
+        semaforo=new Semaphore(capacidad,true);
         this.lleno = lleno;
     }
     
@@ -28,7 +34,7 @@ public class Mostrador {
         return capacidad;
     }
 
-    public Pedido[] getContador_pedidos() {
+    public ListaHilos getContador_pedidos() {
         return contador_pedidos;
     }
 
@@ -41,7 +47,7 @@ public class Mostrador {
         this.capacidad = capacidad;
     }
 
-    public void setContador_pedidos(Pedido[] contador_pedidos) {
+    public void setContador_pedidos(ListaHilos contador_pedidos) {
         this.contador_pedidos = contador_pedidos;
     }
 
