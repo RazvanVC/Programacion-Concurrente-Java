@@ -54,7 +54,7 @@ public class Mesa {
         return "Mesa ("+ this.capacidad + "," + this.contador_platos + "," + this.lleno + ")";
     }
 
-    String getPedido() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    void dejarPedido(Pedido pedidoLlevado) {
+        
     }
 }

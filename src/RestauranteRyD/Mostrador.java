@@ -66,14 +66,11 @@ public class Mostrador {
     }
     
     public Pedido recogerPedido(){
+        Pedido p = null;
         try {
+            p = pedidosMostrador.eliminarPedido();
             semaforo.release();
-            pedidosMostrador.eliminarPedido();
-        } catch (Exception e){
-            
-        }
-        
-        
-        return null;
+        } catch (Exception e){ }
+        return p;
     }
 }

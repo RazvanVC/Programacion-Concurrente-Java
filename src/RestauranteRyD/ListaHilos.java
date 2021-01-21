@@ -27,9 +27,12 @@ public class ListaHilos {
         imprimir();
     }
     
-    public synchronized void eliminarPedido(){
+    public synchronized Pedido eliminarPedido(){
+        Pedido p;
+        p = lista.get(0);
         lista.remove(0);
         imprimir();
+        return p;
     }
     
     private void imprimir(){

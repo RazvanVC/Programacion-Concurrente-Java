@@ -46,8 +46,8 @@ public class Cocinero extends Thread{
     public void run(){
         while (true){
             try {
-            String plato = mesaPlatos.getPedido();
-            mesaCocina.setText(idCocinero + "esta cocinando" + plato);
+            //String plato = mesaPlatos.getPedido();
+            //mesaCocina.setText(idCocinero + "esta cocinando" + plato);
             sleep(1500+(int) (500*Math.random()));
             } catch (InterruptedException e) {
         
