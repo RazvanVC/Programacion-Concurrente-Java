@@ -59,6 +59,7 @@ public class Empleado extends Thread {
                     pedidoLlevado = mostrador.recogerPedido();
                     if (pedidoLlevado == null) {
                         estado.setText("");
+                        continue;
                     }
                     estado.setText(id_empleado + " llevando " + pedidoLlevado.getId_pedido() + " a la mesa de platos");
                     sleep((int) (300 + 400 * Math.random()));

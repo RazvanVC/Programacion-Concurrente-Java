@@ -16,7 +16,9 @@ public class Restaurante_P1 extends javax.swing.JFrame {
     //Variables para modificar las sistemas
     private final int numeroPedidos = 2;
     private final int tamannoMostrador = 10;
-    private Empleado e1, e2;
+    private final int MAX_TAMANNO_MESA = 20;
+    private final Empleado e1;
+    private final Empleado e2;
     /**
      * Creates new form Restaurante_P1
      */
@@ -24,8 +26,8 @@ public class Restaurante_P1 extends javax.swing.JFrame {
     public Restaurante_P1() {
         initComponents();
         
-        Mostrador mp = new Mostrador(tamannoMostrador, false, ta_MostradorPedidos);
-        Mesa mesaPlatos = new Mesa(10);
+        Mostrador mp = new Mostrador(tamannoMostrador, ta_MostradorPedidos);
+        Mesa mesaPlatos = new Mesa(MAX_TAMANNO_MESA, ta_MesaPlatos);
         //Creamos e iniciamos los 200 clientes
         //SUGERENCIA: Exportar todo esto a un metodo mas abajo
         for (int i = 1; i<202; i++){
@@ -38,6 +40,13 @@ public class Restaurante_P1 extends javax.swing.JFrame {
         e2 = new Empleado("Empleado 2", mesaPlatos, mp, tf_Empleado2);
         e2.start();
         
+        Cocinero c1 = new Cocinero("Cocinero 1", mesaPlatos, tf_Cocinero1);
+        Cocinero c2 = new Cocinero("Cocinero 2", mesaPlatos, tf_Cocinero2);
+        Cocinero c3 = new Cocinero("Cocinero 3", mesaPlatos, tf_Cocinero3);
+        
+        c1.start();
+        c2.start();
+        c3.start();
     }
 
     /**
@@ -58,9 +67,9 @@ public class Restaurante_P1 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        tf_Cocinero1 = new javax.swing.JTextField();
+        tf_Cocinero3 = new javax.swing.JTextField();
+        tf_Cocinero2 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         ta_MostradorPedidos = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -130,10 +139,10 @@ public class Restaurante_P1 extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 330, Short.MAX_VALUE)
-                    .addComponent(jTextField3)
-                    .addComponent(jTextField4)
+                    .addComponent(tf_Cocinero1)
+                    .addComponent(tf_Cocinero3)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(tf_Cocinero2, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(tf_Empleado1)
                     .addComponent(tf_Empleado2)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -164,15 +173,15 @@ public class Restaurante_P1 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tf_Cocinero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(tf_Cocinero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(tf_Cocinero3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(31, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,15 +267,15 @@ public class Restaurante_P1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JLabel lbl_Contenido;
     private javax.swing.JTextArea ta_MesaPlatos;
     private javax.swing.JTextArea ta_MostradorPedidos;
     private javax.swing.JToggleButton tb_EstadoEmpleado1;
     private javax.swing.JToggleButton tb_EstadoEmpleado2;
     private javax.swing.JToggleButton tb_EstadoSistema;
+    private javax.swing.JTextField tf_Cocinero1;
+    private javax.swing.JTextField tf_Cocinero2;
+    private javax.swing.JTextField tf_Cocinero3;
     private javax.swing.JTextField tf_Empleado1;
     private javax.swing.JTextField tf_Empleado2;
     // End of variables declaration//GEN-END:variables
