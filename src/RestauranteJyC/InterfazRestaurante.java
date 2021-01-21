@@ -33,7 +33,7 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         Mostrador_pedidos mp = new Mostrador_pedidos(10, false, TextoPedidos);
         Mesa_platos mep = new Mesa_platos(20, false, TextoPlatos);
 
-        for (int i = 0; i < 200; i++) {
+        for (int i = 0; i < 20; i++) {
             String id = String.valueOf(i);
             Clientes cliente = new Clientes(id, mp);
             serie[i] = cliente;
