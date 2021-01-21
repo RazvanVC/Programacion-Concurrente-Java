@@ -260,8 +260,21 @@ public class InterfazRestaurante extends javax.swing.JFrame {
 
     private void BotonPausaTodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaTodoActionPerformed
         // TODO add your handling code here:
-        BotonPausaTodo.setText("Reanudar Todo");
-        BotonPausaTodo.setText("Pausar Todo");
+        if (cocinero1.getContinuar() == true){
+            empleado1.setContinuar(false);
+            empleado2.setContinuar(false);
+            cocinero1.setContinuar(false);
+            cocinero2.setContinuar(false);
+            cocinero3.setContinuar(false);
+            BotonPausaTodo.setText("Reanudar Todo");
+        } else if (empleado1.getContinuar() == false){
+            empleado1.setContinuar(true);
+            empleado2.setContinuar(true);
+            cocinero1.setContinuar(true);
+            cocinero2.setContinuar(true);
+            cocinero3.setContinuar(true);
+            BotonPausaTodo.setText("Pausar Todo");
+    }
     }//GEN-LAST:event_BotonPausaTodoActionPerformed
 
     private void BotonPausaEmpleado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado1ActionPerformed
@@ -277,9 +290,13 @@ public class InterfazRestaurante extends javax.swing.JFrame {
     private void BotonPausaEmpleado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado2ActionPerformed
         // TODO add your handling code here:
 
-        BotonPausaEmpleado2.setText("Reanudar Empleado 2");
-
-        BotonPausaEmpleado2.setText("Pausar Empleado 2");
+    if (empleado2.getContinuar() == true) {
+            BotonPausaEmpleado2.setText("Reanudar Empleado 2");
+            empleado2.setContinuar(false);
+        } else if (empleado2.getContinuar() == false) {
+            BotonPausaEmpleado2.setText("Pausar Empleado 2");
+            empleado2.setContinuar(true);
+        }
     }//GEN-LAST:event_BotonPausaEmpleado2ActionPerformed
 
     /**

@@ -53,26 +53,26 @@ public class Empleados extends Thread {
         while (true) {
             //Tardan entre 300 y 700
             Pedidos p;
-            if (continuar == true){
-            try {
-                int tiempo = (int) (300 + 400 * Math.random());
-                Thread.sleep(tiempo);
+            if (continuar == true) {
+                try {
+                    int tiempo = (int) (300 + 400 * Math.random());
+                    Thread.sleep(tiempo);
 
-                p = mostrador.coger();
-                texto.setText(id_Empleado + " llevando " + p.getId());
+                    p = mostrador.coger();
+                    texto.setText(id_Empleado + " llevando " + p.getId());
 
-                mesa.dejar(p);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        } else {
-                try{
-                Thread.sleep(100);
+                    mesa.dejar(p);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
                 }
+            } else {
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
                 }
+            }
 
+        }
     }
-}
 }
