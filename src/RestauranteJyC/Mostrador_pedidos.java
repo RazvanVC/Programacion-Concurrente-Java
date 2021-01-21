@@ -1,6 +1,9 @@
 package RestauranteJyC;
 
 import java.util.ArrayList;
+import java.util.concurrent.Semaphore;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JTextField;
 
 /**
@@ -11,18 +14,21 @@ public class Mostrador_pedidos {
     private int capacidad;
     private boolean lleno;
     private ArrayList<Pedidos> contador_p;
-
-    Mostrador_pedidos(JTextField TextoPedidos) {
+    private Semaphore poli;
+    private JTextField Texto;
+    
+    public Mostrador_pedidos(int capacidad, boolean lleno,JTextField Text){
+        this.capacidad=capacidad;
+        this.lleno=lleno;
+        poli = new Semaphore (capacidad, true);
+        this.contador_p=contador_p;
+        this.Texto=Text;
+        contador_p=new ArrayList<> (capacidad);
         
-        for (int i=0;i<capacidad;i++){
-            TextoPedidos.setText((String) (contador_p.get(i)).getId());
-            
-            
-            if (i==capacidad){
-        i=0;}
         
-        }
     }
+
+    
 
     public int getCapacidad() {
         return capacidad;
@@ -36,21 +42,36 @@ public class Mostrador_pedidos {
         return lleno;
     }
 
-    public void setLleno(boolean lleno) {
-        this.lleno = lleno;
-    }
+    
 
     public ArrayList<Pedidos> getContador_p() {
         return contador_p;
     }
 
 
-    public void setContador_p(Pedidos contador_p, int a) {
-        this.contador_p.set(a, contador_p);
+    public void setContador_p(Pedidos contador_p, int posicion) {
+        this.contador_p.set(posicion, contador_p);
     }
 
     void insert(Pedidos pedidos) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            poli.acquire();
+            contador_p.add(pedidos);
+            String  text="4";
+            for (int i=0; i<contador_p.size();i++){
+                
+                text = text+(i+1)+"| "+contador_p.get(i).getId();
+                
+            }
+            Texto.setText(text);
+            
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Mostrador_pedidos.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+                
+            
+        
     }
     
     public Pedidos getPedidoMostrador(int posicion) {

@@ -20,13 +20,9 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         initComponents();
         
         //Y a partir de aquí, lo que se ejecuta
-        Mostrador_pedidos mp = new Mostrador_pedidos(TextoPedidos);
+        Mostrador_pedidos mp = new Mostrador_pedidos(10,false,TextoPedidos);
         Mesa_platos mep = new Mesa_platos(TextoPlatos);
-        for(int i=0;i<mp.getCapacidad();i++){
-            mp.setContador_p((new Pedidos ("vacio")),i);}
-        
-        for(int i=0;i<mep.getCapacidad();i++){
-            mep.setContador_p((new Pedidos ("vacio")),i);}
+            
         
         
         Clientes serie[]=new Clientes[200];
@@ -35,28 +31,26 @@ public class InterfazRestaurante extends javax.swing.JFrame {
             String id=String.valueOf(i);
             Clientes cliente=new Clientes(id,mp);
             serie[i]=cliente;
-            Thread c1= new Thread(serie[i]); 
-            c1.start();
+            Thread ci= new Thread(serie[i]); 
+            ci.start();
+            //System.out.println("se crean clientessss yujuuu");
         }
-        //capacidad mostrador es de 10
-        mp.setCapacidad(10);
-        //capacidad mesa platos es de 20
-        mep.setCapacidad(20);
+        
         //declaracion empleado
         Empleados empleado1 = new Empleados("empleado_1",mp,mep,TextoEmpleado1);
         Empleados empleado2 = new Empleados("empleado_2",mp,mep,TextoEmpleado2);
         //declaración cocineros
-        Cocineros cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
-        Cocineros cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
-        Cocineros cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
+        //Cocineros cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
+        //Cocineros cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
+        //Cocineros cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
         //      Iniciadores
         //empleados
         empleado1.start();
         empleado2.start();
         //cocineros
-        cocinero1.start();
-        cocinero2.start();
-        cocinero3.start();
+        //cocinero1.start();
+        //cocinero2.start();
+        //cocinero3.start();
         
         
         
