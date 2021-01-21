@@ -14,12 +14,12 @@ public class Mostrador_pedidos {
 
     Mostrador_pedidos(JTextField TextoPedidos) {
         
-        for (int i=1;i<capacidad;i++){
+        for (int i=0;i<capacidad;i++){
             TextoPedidos.setText((String) (contador_p.get(i)).getId());
             
             
             if (i==capacidad){
-        i=1;}
+        i=0;}
         
         }
     }
@@ -45,8 +45,8 @@ public class Mostrador_pedidos {
     }
 
 
-    public void setContador_p(ArrayList<Pedidos> contador_p) {
-        this.contador_p = contador_p;
+    public void setContador_p(Pedidos contador_p, int a) {
+        this.contador_p.set(a, contador_p);
     }
 
     void insert(Pedidos pedidos) {

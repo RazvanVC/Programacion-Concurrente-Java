@@ -21,7 +21,14 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         
         //Y a partir de aquí, lo que se ejecuta
         Mostrador_pedidos mp = new Mostrador_pedidos(TextoPedidos);
-        Mesa_platos mep = new Mesa_platos();
+        Mesa_platos mep = new Mesa_platos(TextoPlatos);
+        for(int i=0;i<mp.getCapacidad();i++){
+            mp.setContador_p((new Pedidos ("vacio")),i);}
+        
+        for(int i=0;i<mep.getCapacidad();i++){
+            mep.setContador_p((new Pedidos ("vacio")),i);}
+        
+        
         Clientes serie[]=new Clientes[200];
         
         for (int i=0;i<200;i++){

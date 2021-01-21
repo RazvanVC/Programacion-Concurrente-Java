@@ -1,6 +1,7 @@
 package RestauranteJyC;
 
 import java.util.ArrayList;
+import javax.swing.JTextField;
 
 /**
  *
@@ -11,6 +12,17 @@ public class Mesa_platos {
     private ArrayList<Pedidos> contador_p;
     private boolean lleno;
     private boolean vacio;
+
+    Mesa_platos(JTextField TextoPlatos) {
+        for (int i=0;i<capacidad;i++){
+            TextoPlatos.setText((String) (contador_p.get(i)).getId());
+            
+            
+            if (i==capacidad){
+        i=0;}
+        
+        }
+    }
 
     public int getCapacidad() {
         return capacidad;
@@ -62,9 +74,9 @@ public class Mesa_platos {
     }
 
     public void setContador_p(int posicion,Pedidos almendra) {
-        if (contador_p.get(posicion)==(new Pedidos ("vacio"))){
+        
         this.contador_p.set(posicion, almendra);
-        }
+        
     }
 
     
