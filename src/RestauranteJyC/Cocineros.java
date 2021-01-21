@@ -55,19 +55,20 @@ public class Cocineros extends Thread {
 
     public void run() {
         
-        int tiempo = (int) (1500 + 500 * Math.random());
+        
         while (true) {
+            int tiempo = (int) (1500 + 500 * Math.random());
             Pedidos p;
             try {
-
+                Thread.sleep(tiempo);
                 p = mesa.coger();
                 if (p == null) {
                     texto.setText("vacio");
-                    System.out.print("el null lo comprueba bien");
+                    
                     continue;
                 }
                 texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || ");
-                Thread.sleep(tiempo);
+                
             } catch (InterruptedException ex) {
                 Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
             }

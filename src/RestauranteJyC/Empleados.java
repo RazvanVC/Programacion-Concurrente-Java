@@ -44,10 +44,12 @@ public class Empleados extends Thread {
             Pedidos p;
 
             try {
-                p = mostrador.coger();
-                texto.setText(id_Empleado + " llevando " + p.getId());
                 int tiempo = (int) (300 + 400 * Math.random());
                 Thread.sleep(tiempo);
+                
+                p = mostrador.coger();
+                texto.setText(id_Empleado + " llevando " + p.getId());
+                
                 mesa.dejar(p);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);

@@ -1,5 +1,6 @@
 package RestauranteJyC;
 
+import static java.lang.Thread.sleep;
 import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
@@ -107,10 +108,18 @@ public class Mesa_platos {
         return alpaca;
     }
 
-    public synchronized Pedidos coger() {
+    public  Pedidos coger() {
+        System.out.println(contador_p.size()+"Mesa");
+        /*try {
+            sleep(1000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Mesa_platos.class.getName()).log(Level.SEVERE, null, ex);
+        }*/
         Pedidos p;
         p = this.contador_p.get(0);
+        
         poli.release();
+        
         contador_p.remove(p);
         return p;
     }

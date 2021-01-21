@@ -37,6 +37,7 @@ public class Mostrador_pedidos {
     }
 
     public synchronized Pedidos coger() {
+        System.out.println(contador_p.size()+"Mostrador");
         Pedidos pedido;
         pedido = contador_p.get(0);
         poli.release();
