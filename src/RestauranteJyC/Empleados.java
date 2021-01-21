@@ -21,12 +21,14 @@ public class Empleados extends Thread {
     private Mostrador_pedidos mostrador;
     private Mesa_platos mesa;
     private JTextField texto;
+    public boolean continuar;
 
     public Empleados(String id, Mostrador_pedidos mostrador, Mesa_platos mesa, JTextField texto) {
         this.id_Empleado = id;
         this.mostrador = mostrador;
         this.mesa = mesa;
         this.texto = texto;
+        this.continuar = true;
     }
 
     public String getId_Empleado() {
@@ -39,7 +41,7 @@ public class Empleados extends Thread {
 
     @Override
     public void run() {
-        while (true) {
+        while (continuar == true) {
             //Tardan entre 300 y 700
             Pedidos p;
 

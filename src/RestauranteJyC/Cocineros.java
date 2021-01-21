@@ -17,12 +17,14 @@ public class Cocineros extends Thread {
 
     private final Mesa_platos mesa;
     private final JTextField texto;
+    public boolean continuar;
 
     public Cocineros(String id, Mesa_platos mesa, JTextField texto) {
         this.id_Cocinero = id;
         this.mesa = mesa;
         this.texto = texto;
-    }
+        this.continuar = true;
+    }   
 
     public String getIdCocinero() {
         return id_Cocinero;
@@ -56,7 +58,7 @@ public class Cocineros extends Thread {
     public void run() {
         
         
-        while (true) {
+        while (continuar == true) {
             int tiempo = (int) (1500 + 500 * Math.random());
             Pedidos p;
             try {
