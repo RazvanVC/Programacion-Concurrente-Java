@@ -26,6 +26,10 @@ public class Cocineros extends Thread {
         this.continuar = true;
     }
 
+    public boolean getContinuar() {
+        return this.continuar;
+    }
+
     public void setContinuar(boolean a) {
         this.continuar = a;
 

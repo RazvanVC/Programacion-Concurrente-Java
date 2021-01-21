@@ -44,6 +44,10 @@ public class Empleados extends Thread {
 
     }
 
+    public boolean getContinuar() {
+        return this.continuar;
+    }
+
     @Override
     public void run() {
         while (continuar == true) {
@@ -53,10 +57,10 @@ public class Empleados extends Thread {
             try {
                 int tiempo = (int) (300 + 400 * Math.random());
                 Thread.sleep(tiempo);
-                
+
                 p = mostrador.coger();
                 texto.setText(id_Empleado + " llevando " + p.getId());
-                
+
                 mesa.dejar(p);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);

@@ -268,7 +268,9 @@ public class InterfazRestaurante extends javax.swing.JFrame {
 
     private void BotonPausaEmpleado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado2ActionPerformed
         // TODO add your handling code here:
+        
         BotonPausaEmpleado2.setText("Reanudar Empleado 2");
+        
         BotonPausaEmpleado2.setText("Pausar Empleado 2");
     }//GEN-LAST:event_BotonPausaEmpleado2ActionPerformed
 
