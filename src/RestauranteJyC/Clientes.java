@@ -35,7 +35,8 @@ public class Clientes extends Thread {
             tiempo = (int) (500 + 500 * Math.random());
             try {
                 Thread.sleep(tiempo);
-                mostrador.insert(new Pedidos("cliente" + id_Cliente + 1));
+                
+                mostrador.insert(new Pedidos("cliente" + id_Cliente+"-P" + i+". "));
 
             } catch (InterruptedException ex) {
                 Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);

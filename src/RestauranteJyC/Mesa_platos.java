@@ -42,7 +42,7 @@ public class Mesa_platos {
             String text = "";
 
             for (int i = 0; i < contador_p.size(); i++) {
-                text = text + (i + 1) + " | " + contador_p.get(i).getId();
+                text = text +" | " + contador_p.get(i).getId();
             }
 
             Texto.setText(text);
@@ -59,7 +59,7 @@ public class Mesa_platos {
         uno.acquire();
         critico.acquire();
 
-        //System.out.println("Mesa--" + contador_p.size());
+        System.out.println("Mesa--" + contador_p.size());
         Pedidos p;
         p = this.contador_p.get(0);
         contador_p.remove(p);

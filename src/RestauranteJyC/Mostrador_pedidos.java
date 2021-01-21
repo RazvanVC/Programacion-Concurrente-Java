@@ -32,27 +32,7 @@ public class Mostrador_pedidos {
         contador_p = new ArrayList<>(capacidad);
 
     }
-
-    public int getCapacidad() {
-        return capacidad;
-    }
-
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
-    }
-
-    public boolean isLleno() {
-        return lleno;
-    }
-
-    public ArrayList<Pedidos> getContador_p() {
-        return contador_p;
-    }
-
-    public void setContador_p(Pedidos contador_p, int posicion) {
-        this.contador_p.set(posicion, contador_p);
-    }
-
+    
     public synchronized Pedidos coger() throws InterruptedException {
         uno.acquire();
 
@@ -75,7 +55,7 @@ public class Mostrador_pedidos {
             String text = "4";
             for (int i = 0; i < contador_p.size(); i++) {
 
-                text = text + (i + 1) + "| " + contador_p.get(i).getId();
+                text = text +"| " + contador_p.get(i).getId();
 
             }
             Texto.setText(text);
@@ -86,4 +66,26 @@ public class Mostrador_pedidos {
         }
 
     }
+
+    public int getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
+    }
+
+    public boolean isLleno() {
+        return lleno;
+    }
+
+    public ArrayList<Pedidos> getContador_p() {
+        return contador_p;
+    }
+
+    public void setContador_p(Pedidos contador_p, int posicion) {
+        this.contador_p.set(posicion, contador_p);
+    }
+
+    
 }
