@@ -36,27 +36,24 @@ public class Empleados extends Thread {
     public void setId(String id) {
         this.id_Empleado = id;
     }
-@Override
+
+    @Override
     public void run() {
         while (true) {
             //Tardan entre 300 y 700
             Pedidos p;
-            
-            
+
             try {
-                p=mostrador.coger();
-            texto.setText(id_Empleado+"Llevando"+p.getId());
-            int tiempo = (int) (300 + 400 * Math.random());
+                p = mostrador.coger();
+                texto.setText(id_Empleado + " llevando " + p.getId());
+                int tiempo = (int) (300 + 400 * Math.random());
                 Thread.sleep(tiempo);
                 mesa.dejar(p);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
             }
 
-            
-
         }
 
     }
 }
-

@@ -21,7 +21,7 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         
         //Y a partir de aquí, lo que se ejecuta
         Mostrador_pedidos mp = new Mostrador_pedidos(10,false,TextoPedidos);
-        Mesa_platos mep = new Mesa_platos(TextoPlatos);
+        Mesa_platos mep = new Mesa_platos(20,false,TextoPlatos);
             
         
         
@@ -40,17 +40,17 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         Empleados empleado1 = new Empleados("empleado_1",mp,mep,TextoEmpleado1);
         Empleados empleado2 = new Empleados("empleado_2",mp,mep,TextoEmpleado2);
         //declaración cocineros
-        //Cocineros cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
-        //Cocineros cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
-        //Cocineros cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
+        Cocineros cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
+        Cocineros cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
+        Cocineros cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
         //      Iniciadores
         //empleados
         empleado1.start();
         empleado2.start();
         //cocineros
-        //cocinero1.start();
-        //cocinero2.start();
-        //cocinero3.start();
+        cocinero1.start();
+        cocinero2.start();
+        cocinero3.start();
         
         
         

@@ -10,79 +10,68 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
 
-
 public class Cocineros extends Thread {
+
     private String id_Cocinero;
     //acceso al mostrador de pedidos
-    
+
     private final Mesa_platos mesa;
     private final JTextField texto;
-    
-    public Cocineros(String id, Mesa_platos mesa, JTextField text){
-    this.id_Cocinero=id;
-    this.mesa=mesa;
-    this.texto=text;}
+
+    public Cocineros(String id, Mesa_platos mesa, JTextField texto) {
+        this.id_Cocinero = id;
+        this.mesa = mesa;
+        this.texto = texto;
+    }
 
     public String getIdCocinero() {
         return id_Cocinero;
     }
 
-    
-
     public void setId(String id) {
         this.id_Cocinero = id;
     }
-    
-    public void vaciar(int a){
-        ArrayList<Pedidos> pedido= mesa.getContador_p();
-        pedido.set(a, (new Pedidos ("vacio")));
+
+    public void vaciar(int a) {
+        ArrayList<Pedidos> pedido = mesa.getContador_p();
+        pedido.set(a, (new Pedidos("vacio")));
     }
-    
-    public boolean esperarPedidoMesa(){//comprueba que la mesa esté vacía
+
+    public boolean esperarPedidoMesa() {//comprueba que la mesa esté vacía
         int i;
-        int c=0; //contador para saber los null
-        
-        for (i=0; i<mesa.getCapacidad();i++){
-            if (mesa.getPedidoMesa(i)== (new Pedidos ("vacio")) ){ //null
-                c=c+1;    
+        int c = 0; //contador para saber los null
+
+        for (i = 0; i < mesa.getCapacidad(); i++) {
+            if (mesa.getPedidoMesa(i) == (new Pedidos("vacio"))) { //null
+                c = c + 1;
             }
-        }    
-        if(c==mesa.getCapacidad()){
-            return true;//hay que esperar a que haya algo en la mesa
         }
-        else {return false;}
+        if (c == mesa.getCapacidad()) {
+            return true;//hay que esperar a que haya algo en la mesa
+        } else {
+            return false;
+        }
     }
+
     
-    public void cocinar(int a) throws InterruptedException{
-        int capacidad=mesa.getCapacidad();
-        //en preparar un pedido cada cocinero tarda entre 1500 y 2000 ms
-        int tiempo=(int)(1500+500*Math.random());
-        ArrayList<Pedidos> comanda=mesa.getContador_p();
-        
-        Thread.sleep(tiempo);
-        texto.setText(comanda.get(a).getId());
-        comanda.set(a, (new Pedidos ("vacio")));
-        mesa.setCapacidad(capacidad-1);  
-    }
-    
-    public void run(){
-        boolean continuar;
-        int i;
-        for(i=0;i<mesa.getCapacidad();i++){
+
+    public void run() {
+        boolean continuar = true;
+        int tiempo = (int) (1500 + 500 * Math.random());
+        while (continuar) {
             try {
-                if (i==mesa.getCapacidad()){
-                    i=0;
+                Pedidos p;
+                
+                p=mesa.coger();
+                if (p==null){
+                    texto.setText("vacio");
+                    continue;
                 }
-                continuar=false;
-                while(esperarPedidoMesa()){
-                    Thread.holdsLock(esperarPedidoMesa());
-                }
-                cocinar(i);
+                texto.setText(this.id_Cocinero+" en la plancha "+p.getId()+" || ");
+                Thread.sleep(tiempo);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
-            
         }
     }
 }
