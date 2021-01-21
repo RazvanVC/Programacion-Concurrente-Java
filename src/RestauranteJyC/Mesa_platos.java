@@ -1,12 +1,14 @@
 package RestauranteJyC;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author josep
  */
 public class Mesa_platos {
     private int capacidad;
-    private Pedidos contador_p[];
+    private ArrayList<Pedidos> contador_p;
     private boolean lleno;
     private boolean vacio;
 
@@ -20,8 +22,8 @@ public class Mesa_platos {
 
     public boolean isLleno() {
         int i;
-        for(i=0;contador_p.length>i;i++){
-            if (contador_p[i]==null){
+        for(i=0;capacidad>i;i++){
+            if (contador_p.get(i)== (new Pedidos ("vacio")) ){
                 lleno=false;
                 break;
             }
@@ -37,8 +39,8 @@ public class Mesa_platos {
 
     public boolean isVacio() {
         int i;
-        for(i=0;i<contador_p.length;i++){
-            if(contador_p[i]!=null){
+        for(i=0;i<capacidad;i++){
+            if(contador_p.get(i)!=(new Pedidos ("vacio"))){
                 vacio=false;
                 break;
             }
@@ -55,21 +57,21 @@ public class Mesa_platos {
     
     
 
-    public Pedidos[] getContador_p() {
+    public ArrayList<Pedidos> getContador_p() {
         return contador_p;
     }
 
     public void setContador_p(int posicion,Pedidos almendra) {
-        if (contador_p[posicion]==null){
-        this.contador_p[posicion] = almendra;
+        if (contador_p.get(posicion)==(new Pedidos ("vacio"))){
+        this.contador_p.set(posicion, almendra);
         }
     }
 
     
     
     public Pedidos getPedidoMesa(int posicion) {
-        Pedidos alpaca= contador_p[posicion];
-        contador_p[posicion]=null;
+        Pedidos alpaca= contador_p.get(posicion);
+        contador_p.set(posicion, (new Pedidos ("vacio")));
         return alpaca;
     }
     

@@ -1,5 +1,7 @@
 package RestauranteJyC;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author josep
@@ -7,7 +9,7 @@ package RestauranteJyC;
 public class Mostrador_pedidos {
     private int capacidad;
     private boolean lleno;
-    private Pedidos contador_p[];
+    private ArrayList<Pedidos> contador_p;
 
     public int getCapacidad() {
         return capacidad;
@@ -25,12 +27,12 @@ public class Mostrador_pedidos {
         this.lleno = lleno;
     }
 
-    public Pedidos[] getContador_p() {
+    public ArrayList<Pedidos> getContador_p() {
         return contador_p;
     }
 
 
-    public void setContador_p(Pedidos[] contador_p) {
+    public void setContador_p(ArrayList<Pedidos> contador_p) {
         this.contador_p = contador_p;
     }
 

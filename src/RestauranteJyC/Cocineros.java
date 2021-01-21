@@ -5,6 +5,7 @@
  */
 package RestauranteJyC;
 
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
@@ -33,16 +34,16 @@ public class Cocineros extends Thread {
     }
     
     public void vaciar(int a){
-        Pedidos[] pedido= mesa.getContador_p();
-        pedido[a]= null;
+        ArrayList<Pedidos> pedido= mesa.getContador_p();
+        pedido.set(a, (new Pedidos ("vacio")));
     }
     
     public boolean esperarPedidoMesa(){//comprueba que la mesa esté vacía
         int i;
         int c=0; //contador para saber los null
-        Pedidos[] comanda=mesa.getContador_p();
+        ArrayList<Pedidos> comanda=mesa.getContador_p();
         for (i=0; i<mesa.getCapacidad();i++){
-            if (comanda[i]==null){
+            if (comanda.get(i)== (new Pedidos ("vacio")) ){
                 c=c+1;    
             }
         }    
@@ -56,11 +57,11 @@ public class Cocineros extends Thread {
         int capacidad=mesa.getCapacidad();
         //en preparar un pedido cada cocinero tarda entre 1500 y 2000 ms
         int tiempo=(int)(1500+500*Math.random());
-        Pedidos[] comanda=mesa.getContador_p();
+        ArrayList<Pedidos> comanda=mesa.getContador_p();
         
         Thread.sleep(tiempo);
-        texto.setText(comanda[a].getId());
-        comanda[a]=null;
+        texto.setText(comanda.get(a).getId());
+        comanda.set(a, (new Pedidos ("vacio")));
         mesa.setCapacidad(capacidad-1);  
     }
     
