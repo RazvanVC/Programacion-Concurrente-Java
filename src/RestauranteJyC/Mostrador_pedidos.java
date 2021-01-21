@@ -53,6 +53,10 @@ public class Mostrador_pedidos {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
-    
+    public Pedidos getPedidoMostrador(int posicion) {
+        Pedidos alpaca= contador_p.get(posicion);
+        contador_p.get(posicion);
+        return alpaca;
+    }
  }   
 

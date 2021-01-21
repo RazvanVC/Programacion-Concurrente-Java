@@ -41,9 +41,9 @@ public class Cocineros extends Thread {
     public boolean esperarPedidoMesa(){//comprueba que la mesa esté vacía
         int i;
         int c=0; //contador para saber los null
-        ArrayList<Pedidos> comanda=mesa.getContador_p();
+        
         for (i=0; i<mesa.getCapacidad();i++){
-            if (comanda.get(i)== (new Pedidos ("vacio")) ){
+            if (mesa.getPedidoMesa(i)== (new Pedidos ("vacio")) ){
                 c=c+1;    
             }
         }    

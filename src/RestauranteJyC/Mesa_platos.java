@@ -83,7 +83,7 @@ public class Mesa_platos {
     
     public Pedidos getPedidoMesa(int posicion) {
         Pedidos alpaca= contador_p.get(posicion);
-        contador_p.set(posicion, (new Pedidos ("vacio")));
+        contador_p.get(posicion);
         return alpaca;
     }
     

@@ -88,7 +88,7 @@ public class Empleados extends Thread{
         int c=0; //contador para saber los null
         ArrayList<Pedidos> comanda=mesa.getContador_p();
         for (i=0; i<mesa.getCapacidad();i++){
-            if (comanda.get(i)!=(new Pedidos ("vacio"))){
+            if (mesa.getPedidoMesa(c)!=(new Pedidos ("vacio"))){
             } else {    
                 c=c+1;
             }
@@ -103,9 +103,9 @@ public class Empleados extends Thread{
     public boolean esperarPedidoMostrador(){//comprueba que el mostrador esté vacío
         int i;
         int c=0; //contador para saber los null
-        ArrayList<Pedidos> comanda=mostrador.getContador_p();
+        
         for (i=0; i<mostrador.getCapacidad();i++){
-            if (comanda.get(i)==(new Pedidos ("vacio"))){
+            if (mostrador.getPedidoMostrador(c)==(new Pedidos ("vacio"))){
                 c=c+1;    
             }
         }    
