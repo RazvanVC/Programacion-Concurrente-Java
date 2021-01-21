@@ -52,7 +52,7 @@ public class Mostrador_pedidos {
             poli.acquire();
             critico.acquire();
             contador_p.add(pedidos);
-            String text = "4";
+            String text = "";
             for (int i = 0; i < contador_p.size(); i++) {
 
                 text = text +"| " + contador_p.get(i).getId();
