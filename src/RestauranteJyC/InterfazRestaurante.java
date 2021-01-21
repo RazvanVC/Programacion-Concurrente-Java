@@ -20,7 +20,7 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         initComponents();
         
         //Y a partir de aquí, lo que se ejecuta
-        Mostrador_pedidos mp = new Mostrador_pedidos();
+        Mostrador_pedidos mp = new Mostrador_pedidos(TextoPedidos);
         Mesa_platos mep = new Mesa_platos();
         Clientes serie[]=new Clientes[200];
         
@@ -50,6 +50,7 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         cocinero1.start();
         cocinero2.start();
         cocinero3.start();
+        
         
         
     }
