@@ -17,14 +17,19 @@ public class Cocineros extends Thread {
 
     private final Mesa_platos mesa;
     private final JTextField texto;
-    public boolean continuar;
+    private boolean continuar;
 
     public Cocineros(String id, Mesa_platos mesa, JTextField texto) {
         this.id_Cocinero = id;
         this.mesa = mesa;
         this.texto = texto;
         this.continuar = true;
-    }   
+    }
+
+    public void setContinuar(boolean a) {
+        this.continuar = a;
+
+    }
 
     public String getIdCocinero() {
         return id_Cocinero;
@@ -34,30 +39,8 @@ public class Cocineros extends Thread {
         this.id_Cocinero = id;
     }
 
-  /*  public void vaciar(int a) {
-        ArrayList<Pedidos> pedido = mesa.getContador_p();
-        pedido.set(a, (new Pedidos("vacio")));
-    }*/
-
-    /*public boolean esperarPedidoMesa() {//comprueba que la mesa esté vacía
-        int i;
-        int c = 0; //contador para saber los null
-
-        for (i = 0; i < mesa.getCapacidad(); i++) {
-            if (mesa.getPedidoMesa(i) == (new Pedidos("vacio"))) { //null
-                c = c + 1;
-            }
-        }
-        if (c == mesa.getCapacidad()) {
-            return true;//hay que esperar a que haya algo en la mesa
-        } else {
-            return false;
-        }
-    }*/
-
     public void run() {
-        
-        
+
         while (continuar == true) {
             int tiempo = (int) (1500 + 500 * Math.random());
             Pedidos p;
@@ -66,11 +49,11 @@ public class Cocineros extends Thread {
                 p = mesa.coger();
                 if (p == null) {
                     texto.setText("vacio");
-                    
+
                     continue;
                 }
                 texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || ");
-                
+
             } catch (InterruptedException ex) {
                 Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
             }

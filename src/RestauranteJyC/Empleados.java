@@ -21,7 +21,7 @@ public class Empleados extends Thread {
     private Mostrador_pedidos mostrador;
     private Mesa_platos mesa;
     private JTextField texto;
-    public boolean continuar;
+    private boolean continuar;
 
     public Empleados(String id, Mostrador_pedidos mostrador, Mesa_platos mesa, JTextField texto) {
         this.id_Empleado = id;
@@ -37,6 +37,11 @@ public class Empleados extends Thread {
 
     public void setId(String id) {
         this.id_Empleado = id;
+    }
+
+    public void setContinuar(boolean a) {
+        this.continuar = a;
+
     }
 
     @Override
