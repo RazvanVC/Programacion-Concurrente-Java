@@ -5,6 +5,9 @@
  */
 package RestauranteRyD;
 
+import java.util.concurrent.Semaphore;
+import javax.swing.JTextArea;
+
 /**
  *
  * @author Razvan Virgil y Daniel González
@@ -12,49 +15,31 @@ package RestauranteRyD;
 public class Mesa {
     
     //Atributos
-    int capacidad;
-    Pedido contador_platos[];
-    boolean lleno;
+    private final ListaHilos pedidosMesa;
+    private final Semaphore semaforo;
     
     //Constructor
-    public Mesa(int capacidad) {
-        this.capacidad = capacidad;
-        this.lleno = false;
+    public Mesa(int capacidad, JTextArea mesaCocina) {
+        this.pedidosMesa = new ListaHilos(mesaCocina, capacidad);
+        semaforo = new Semaphore(capacidad, true);
     }
     
-    //Getters
-    public int getCapacidad() {
-        return capacidad;
-    }
 
-    public Pedido[] getContador_platos() {
-        return contador_platos;
-    }
-
-    public boolean isLleno() {
-        return lleno;
-    }
-    
-    //Setters
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
-    }
-
-    public void setContador_platos(Pedido[] contador_platos) {
-        this.contador_platos = contador_platos;
-    }
-
-    public void setLleno(boolean lleno) {
-        this.lleno = lleno;
-    }
     
     //Métodos
-    @Override
-    public String toString() {
-        return "Mesa ("+ this.capacidad + "," + this.contador_platos + "," + this.lleno + ")";
-    }
-
     void dejarPedido(Pedido pedidoLlevado) {
-        
+        try {
+            semaforo.acquire();
+            pedidosMesa.insertarPedido(pedidoLlevado);
+        } catch (InterruptedException e){ }
+    }
+    
+    public Pedido recogerPedido(){
+        Pedido p = null;
+        try {
+            p = pedidosMesa.eliminarPedido();
+            semaforo.release();
+        } catch (Exception e){ }
+        return p;
     }
 }

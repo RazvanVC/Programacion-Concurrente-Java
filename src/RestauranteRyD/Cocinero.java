@@ -11,20 +11,20 @@ import javax.swing.JTextField;
  *
  * @author Razvan Virgil y Daniel González
  */
-public class Cocinero extends Thread{
-    
+public class Cocinero extends Thread {
+
     //Atributos
     private String idCocinero;
     private Mesa mesaPlatos;
     private JTextField mesaCocina;
-    
+
     //Constructor
-    public Cocinero(String id_cocinero, Mesa mesaPlatos, JTextField mesaCocina){
-        this.idCocinero=id_cocinero;
+    public Cocinero(String id_cocinero, Mesa mesaPlatos, JTextField mesaCocina) {
+        this.idCocinero = id_cocinero;
         this.mesaCocina = mesaCocina;
         this.mesaPlatos = mesaPlatos;
     }
-    
+
     //Getters
     public String getId_cocinero() {
         return idCocinero;
@@ -34,26 +34,33 @@ public class Cocinero extends Thread{
     public void setId_cocinero(String id_cocinero) {
         this.idCocinero = id_cocinero;
     }
-    
+
     //Métodos
     @Override
     public String toString() {
-        return "Cocinero"+ this.idCocinero;
+        return "Cocinero" + this.idCocinero;
     }
-    
+
     @Override
     @SuppressWarnings("SleepWhileInLoop")
-    public void run(){
-        while (true){
+    public void run() {
+        while (true) {
+            Pedido pedidoRecibido;
             try {
-            //String plato = mesaPlatos.getPedido();
-            //mesaCocina.setText(idCocinero + "esta cocinando" + plato);
-            sleep(1500+(int) (500*Math.random()));
+                pedidoRecibido = mesaPlatos.recogerPedido();
+                if (pedidoRecibido == null) {
+                    mesaCocina.setText("");
+                    continue;
+                }
+                mesaCocina.setText(this.idCocinero + " cocinando " + pedidoRecibido.getId_pedido() + "...");
+                sleep(1500 + (int) (500 * Math.random()));
+                //String plato = mesaPlatos.getPedido();
+                //mesaCocina.setText(idCocinero + "esta cocinando" + plato);
+
             } catch (InterruptedException e) {
-        
+
             }
         }
-        
-        
+
     }
 }

@@ -15,53 +15,28 @@ import javax.swing.JTextArea;
 public class Mostrador {
     
     //Atributos
-    int capacidad;
-    ListaHilos pedidosMostrador;
-    Semaphore semaforo;
-    boolean lleno;
-    JTextArea escritura;
+    private final ListaHilos pedidosMostrador;
+    private final Semaphore semaforo;
     
-    //Constructor
-    public Mostrador(int capacidad, boolean lleno, JTextArea mostrador) {
-        this.capacidad = capacidad;
+    /**
+     * Contructor generico de mostrador
+     * @param capacidad indica la capacidad de la que dispone el mostrador para insertar los pedidos
+     * @param mostrador indica el sitio de la interfaz que se corresponde al mostrador
+     */
+    public Mostrador(int capacidad, JTextArea mostrador) {
         this.pedidosMostrador = new ListaHilos(mostrador, capacidad);
         semaforo=new Semaphore(capacidad, true);
-        this.lleno = lleno;
-        this.escritura = mostrador;
-    }
-    
-    //Getters
-    public int getCapacidad() {
-        return capacidad;
-    }
-
-    public ListaHilos getContador_pedidos() {
-        return pedidosMostrador;
-    }
-
-    public boolean isLleno() {
-        return lleno;
-    }
-    
-    //Setters
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
-    }
-
-    public void setContador_pedidos(ListaHilos contador_pedidos) {
-        this.pedidosMostrador = contador_pedidos;
-    }
-
-    public void setLleno(boolean lleno) {
-        this.lleno = lleno;
     }
     
     //Métodos
-
-    public void depositarPedido(Pedido p) {
+    /**
+     * Coge su sitio en el semaforo y inserta el pedido en el ArrayList de hilos
+     * @param pedidoRecibido 
+     */
+    public void depositarPedido(Pedido pedidoRecibido) {
         try {
             semaforo.acquire();
-            pedidosMostrador.insertarPedido(p);
+            pedidosMostrador.insertarPedido(pedidoRecibido);
         } catch (InterruptedException e){ }
     }
     
