@@ -26,23 +26,6 @@ public class Cocineros extends Thread {
         this.continuar = true;
     }
 
-    public boolean getContinuar() {
-        return this.continuar;
-    }
-
-    public void setContinuar(boolean a) {
-        this.continuar = a;
-
-    }
-
-    public String getIdCocinero() {
-        return id_Cocinero;
-    }
-
-    public void setId(String id) {
-        this.id_Cocinero = id;
-    }
-
     public void run() {
 
         while (true) {
@@ -71,4 +54,22 @@ public class Cocineros extends Thread {
             }
         }
     }
+
+    public boolean getContinuar() {
+        return this.continuar;
+    }
+
+    public void setContinuar(boolean a) {
+        this.continuar = a;
+
+    }
+
+    public String getIdCocinero() {
+        return id_Cocinero;
+    }
+
+    public void setId(String id) {
+        this.id_Cocinero = id;
+    }
+
 }

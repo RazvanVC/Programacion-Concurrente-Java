@@ -25,6 +25,26 @@ public class Clientes extends Thread {
         this.continuar = true;
     }
 
+    public void run() {
+        //tarda entre 500 y 1000
+        //dejan 2 pedidos
+
+        int tiempo;
+        int i;
+        for (i = 0; i < 2; i++) {
+            tiempo = (int) (500 + 500 * Math.random());
+            try {
+                Thread.sleep(tiempo);
+                mostrador.insert(new Pedidos("cliente" + id_Cliente + 1));
+
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
+
+    }
+    
     public String getIdCliente() {
         return id_Cliente;
     }
@@ -32,7 +52,8 @@ public class Clientes extends Thread {
     public void setId(String id) {
         this.id_Cliente = id;
     }
-     public boolean Continuar() {
+
+    public boolean Continuar() {
         return continuar;
     }
 
@@ -40,27 +61,5 @@ public class Clientes extends Thread {
         this.continuar = y;
     }
 
-    public void run() {
-        //tarda entre 500 y 1000
-        //dejan 2 pedidos
-
-        int tiempo;
-        int i;
-            for (i = 0; i < 2; i++) {
-                tiempo = (int) (500 + 500 * Math.random());
-                try {
-                    Thread.sleep(tiempo);
-                    mostrador.insert(new Pedidos("cliente" + id_Cliente + 1));
-                    
-
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
-                }
-
-            }
-
-        }
-    }
-
-
-
+    
+}

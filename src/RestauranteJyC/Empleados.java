@@ -31,35 +31,20 @@ public class Empleados extends Thread {
         this.continuar = true;
     }
 
-    public String getId_Empleado() {
-        return id_Empleado;
-    }
-
-    public void setId(String id) {
-        this.id_Empleado = id;
-    }
-
-    public void setContinuar(boolean a) {
-        this.continuar = a;
-
-    }
-
-    public boolean getContinuar() {
-        return this.continuar;
-    }
-
     @Override
     public void run() {
         while (true) {
             //Tardan entre 300 y 700
             Pedidos p;
+            
             if (continuar == true) {
                 try {
                     int tiempo = (int) (300 + 400 * Math.random());
                     Thread.sleep(tiempo);
 
-                    p = mostrador.coger();
-                    if (p==null){continue;}
+                    p = mostrador.coger(); //Cuando coge un null, se bloquea, y no inicia
+                    
+                    
                     texto.setText(id_Empleado + " llevando " + p.getId());
 
                     mesa.dejar(p);
@@ -77,4 +62,23 @@ public class Empleados extends Thread {
 
         }
     }
+    
+    public String getId_Empleado() {
+        return id_Empleado;
+    }
+
+    public void setId(String id) {
+        this.id_Empleado = id;
+    }
+
+    public void setContinuar(boolean a) {
+        this.continuar = a;
+
+    }
+
+    public boolean getContinuar() {
+        return this.continuar;
+    }
+
+    
 }

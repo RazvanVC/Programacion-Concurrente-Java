@@ -5,10 +5,11 @@ package RestauranteJyC;
  * @author josep
  */
 public class Pedidos {
+
     private String id;
 
     Pedidos(String string) {
-        this.id=string;
+        this.id = string;
     }
 
     public String getId() {
@@ -18,5 +19,5 @@ public class Pedidos {
     public void setId(String id) {
         this.id = id;
     }
-    
+
 }

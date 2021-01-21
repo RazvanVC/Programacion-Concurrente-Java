@@ -16,6 +16,8 @@ public class Mostrador_pedidos {
     private boolean lleno;
     private ArrayList<Pedidos> contador_p;
     private Semaphore poli;
+    private Semaphore uno;
+    private Semaphore critico;
     private JTextField Texto;
 
     public Mostrador_pedidos(int capacidad, boolean lleno, JTextField Text) {
@@ -23,6 +25,8 @@ public class Mostrador_pedidos {
         //System.out.println(this.capacidad+"--capacidad");
         this.lleno = lleno;
         poli = new Semaphore(capacidad, true);
+        critico = new Semaphore(1);
+        uno = new Semaphore(0);
         this.contador_p = contador_p;
         this.Texto = Text;
         contador_p = new ArrayList<>(capacidad);
@@ -37,25 +41,6 @@ public class Mostrador_pedidos {
         this.capacidad = capacidad;
     }
 
-    public synchronized Pedidos coger() {
-        System.out.println("Mostrador--" + contador_p.size());
-        Pedidos pedido;
-        Pedidos a=null;
-        /*while (a == null) {
-            try {
-                a=contador_p.get(0);
-                System.out.print(a);
-                wait(5);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Mostrador_pedidos.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }*/
-        pedido = contador_p.get(0);
-        poli.release();
-        contador_p.remove(pedido);
-        return pedido;
-    }
-
     public boolean isLleno() {
         return lleno;
     }
@@ -68,9 +53,24 @@ public class Mostrador_pedidos {
         this.contador_p.set(posicion, contador_p);
     }
 
+    public synchronized Pedidos coger() throws InterruptedException {
+        uno.acquire();
+
+        critico.acquire();
+        System.out.println("Mostrador--" + contador_p.size());
+        Pedidos pedido;
+
+        pedido = contador_p.get(0);
+        poli.release();
+        critico.release();
+        contador_p.remove(pedido);
+        return pedido;
+    }
+
     void insert(Pedidos pedidos) {
         try {
             poli.acquire();
+            critico.acquire();
             contador_p.add(pedidos);
             String text = "4";
             for (int i = 0; i < contador_p.size(); i++) {
@@ -79,15 +79,11 @@ public class Mostrador_pedidos {
 
             }
             Texto.setText(text);
+            critico.release();
+            uno.release();
         } catch (InterruptedException ex) {
             Logger.getLogger(Mostrador_pedidos.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-    }
-
-    public Pedidos getPedidoMostrador(int posicion) {
-        Pedidos alpaca = contador_p.get(posicion);
-        contador_p.get(posicion);
-        return alpaca;
     }
 }
