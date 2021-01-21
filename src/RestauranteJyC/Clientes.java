@@ -32,11 +32,11 @@ public class Clientes extends Thread {
     public void setId(String id) {
         this.id_Cliente = id;
     }
-     public boolean continuar() {
+     public boolean Continuar() {
         return continuar;
     }
 
-    public void continuar(boolean y) {
+    public void Continuar(boolean y) {
         this.continuar = y;
     }
 

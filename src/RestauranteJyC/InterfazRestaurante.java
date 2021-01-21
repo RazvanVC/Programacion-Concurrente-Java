@@ -4,15 +4,21 @@
  * and open the template in the editor.
  */
 package RestauranteJyC;
-
+import  RestauranteJyC.Empleados;
 /**
  *
  * @author necok
  */
 public class InterfazRestaurante extends javax.swing.JFrame {
-
+         Empleados empleado1;
+         Empleados empleado2;
+         Clientes serie[]=new Clientes[200];
+         Cocineros cocinero1;
+         Cocineros cocinero2;
+         Cocineros cocinero3;
     /**
      * Creates new form InterfazRestaurante
+     * 
      */
     @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
     public InterfazRestaurante() {
@@ -25,7 +31,7 @@ public class InterfazRestaurante extends javax.swing.JFrame {
             
         
         
-        Clientes serie[]=new Clientes[200];
+       
         
         for (int i=0;i<200;i++){
             String id=String.valueOf(i);
@@ -37,12 +43,12 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         }
         
         //declaracion empleado
-        Empleados empleado1 = new Empleados("empleado_1",mp,mep,TextoEmpleado1);
-        Empleados empleado2 = new Empleados("empleado_2",mp,mep,TextoEmpleado2);
+        empleado1 = new Empleados("empleado_1",mp,mep,TextoEmpleado1);
+        empleado2 = new Empleados("empleado_2",mp,mep,TextoEmpleado2);
         //declaración cocineros
-        Cocineros cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
-        Cocineros cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
-        Cocineros cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
+        cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
+        cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
+        cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
         //      Iniciadores
         //empleados
         empleado1.start();
@@ -262,10 +268,15 @@ public class InterfazRestaurante extends javax.swing.JFrame {
 
     private void BotonPausaEmpleado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado1ActionPerformed
         // TODO add your handling code here:
-        BotonPausaEmpleado1.setText("Reanudar Empleado 1");
+        if(empleado1.getContinuar() == true){
+            BotonPausaEmpleado1.setText("Reanudar Empleado 1");
+            empleado1.setContinuar(false);
+        }
+        else if (empleado1.getContinuar() == false){
         BotonPausaEmpleado1.setText("Pausar Empleado 1");
+        empleado1.setContinuar(true);
     }//GEN-LAST:event_BotonPausaEmpleado1ActionPerformed
-
+    }
     private void BotonPausaEmpleado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado2ActionPerformed
         // TODO add your handling code here:
         
