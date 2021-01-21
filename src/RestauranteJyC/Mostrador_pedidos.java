@@ -1,5 +1,8 @@
 package RestauranteJyC;
 
+import java.util.ArrayList;
+import javax.swing.JTextField;
+
 /**
  *
  * @author josep
@@ -7,7 +10,19 @@ package RestauranteJyC;
 public class Mostrador_pedidos {
     private int capacidad;
     private boolean lleno;
-    private Pedidos contador_p[];
+    private ArrayList<Pedidos> contador_p;
+
+    Mostrador_pedidos(JTextField TextoPedidos) {
+        
+        for (int i=0;i<capacidad;i++){
+            TextoPedidos.setText((String) (contador_p.get(i)).getId());
+            
+            
+            if (i==capacidad){
+        i=0;}
+        
+        }
+    }
 
     public int getCapacidad() {
         return capacidad;
@@ -25,17 +40,19 @@ public class Mostrador_pedidos {
         this.lleno = lleno;
     }
 
-    public Pedidos[] getContador_p() {
+    public ArrayList<Pedidos> getContador_p() {
         return contador_p;
     }
 
 
-    public void setContador_p(Pedidos[] contador_p) {
-        this.contador_p = contador_p;
+    public void setContador_p(Pedidos contador_p, int a) {
+        this.contador_p.set(a, contador_p);
     }
 
     void insert(Pedidos pedidos) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    
  }   
 
