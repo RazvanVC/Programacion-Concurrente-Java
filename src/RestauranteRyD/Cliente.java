@@ -30,12 +30,11 @@ public class Cliente extends Thread{
         int i = 0;
         while (i<numPedidos){
             try {
-                mostrador.depositarPedido(this.id_cliente+"-P"+(i+1));
-                sleep(500+((int) (500*Math.random())));                
+                mostrador.depositarPedido(new Pedido(this.id_cliente+"-P"+(i+1)));
+                sleep(500+((int) (500*Math.random())));
                 //Insertar clase log
             } catch (InterruptedException e){}
             i++;
-            System.out.println("Deposito el pedido"+i);
         }
         
         //Insertar mensajes en log

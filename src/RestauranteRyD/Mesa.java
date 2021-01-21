@@ -17,9 +17,8 @@ public class Mesa {
     boolean lleno;
     
     //Constructor
-    public Mesa(int capacidad, Pedido[] contador_platos) {
+    public Mesa(int capacidad) {
         this.capacidad = capacidad;
-        this.contador_platos = contador_platos;
         this.lleno = false;
     }
     

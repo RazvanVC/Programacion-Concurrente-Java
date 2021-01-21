@@ -12,38 +12,36 @@ package RestauranteRyD;
 public class Empleado extends Thread{
     
     //Atributos
-    private long id_empleado;
+    private String id_empleado;
+    private Mesa mesa;
+    private Mostrador mostrador;
     
     //Constructor
-    public Empleado(long id){
+    public Empleado(String id, Mesa mesa, Mostrador mostrador){
         this.id_empleado=id;
+        this.mesa = mesa;
+        this.mostrador = mostrador;
     }
     
     //Getters
-    public long getId_empleado() {
+    public String getId_empleado() {
         return id_empleado;
     }
 
-    public static int getMIN_PRIORITY() {
-        return MIN_PRIORITY;
-    }
-
-    public static int getNORM_PRIORITY() {
-        return NORM_PRIORITY;
-    }
-
-    public static int getMAX_PRIORITY() {
-        return MAX_PRIORITY;
-    }
-
     //Setters
-    public void setId_empleado(long id) {
+    public void setId_empleado(String id) {
         this.id_empleado = id;
     }
     
     //Métodos
     @Override
-    public String toString() {
-        return "Empleado"+ this.id_empleado;
+    @SuppressWarnings("SleepWhileInLoop")
+    public void run(){
+        while (true){
+            try {
+                mostrador.recogerPedido();
+                sleep((int) (300+400*Math.random()));
+            } catch (InterruptedException e) {}
+        }
     }
 }

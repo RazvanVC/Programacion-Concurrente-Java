@@ -5,9 +5,8 @@
  */
 package RestauranteRyD;
 
-import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
-import javax.swing.JTextField;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -17,16 +16,16 @@ public class Mostrador {
     
     //Atributos
     int capacidad;
-    ListaHilos contador_pedidos;
+    ListaHilos pedidosMostrador;
     Semaphore semaforo;
     boolean lleno;
-    JTextField escritura;
+    JTextArea escritura;
     
     //Constructor
-    public Mostrador(int capacidad, boolean lleno, JTextField mostrador) {
+    public Mostrador(int capacidad, boolean lleno, JTextArea mostrador) {
         this.capacidad = capacidad;
-        this.contador_pedidos = new ListaHilos(mostrador);
-        semaforo=new Semaphore(capacidad,true);
+        this.pedidosMostrador = new ListaHilos(mostrador, capacidad);
+        semaforo=new Semaphore(capacidad, true);
         this.lleno = lleno;
         this.escritura = mostrador;
     }
@@ -37,7 +36,7 @@ public class Mostrador {
     }
 
     public ListaHilos getContador_pedidos() {
-        return contador_pedidos;
+        return pedidosMostrador;
     }
 
     public boolean isLleno() {
@@ -50,7 +49,7 @@ public class Mostrador {
     }
 
     public void setContador_pedidos(ListaHilos contador_pedidos) {
-        this.contador_pedidos = contador_pedidos;
+        this.pedidosMostrador = contador_pedidos;
     }
 
     public void setLleno(boolean lleno) {
@@ -58,14 +57,23 @@ public class Mostrador {
     }
     
     //Métodos
-    @Override
-    public String toString() {
-        return "Mesa ("+ this.capacidad + "," + this.contador_pedidos + "," + this.lleno + ")";
-    }
 
-    void depositarPedido(String string) {
+    public void depositarPedido(Pedido p) {
+        try {
+            semaforo.acquire();
+            pedidosMostrador.insertarPedido(p);
+        } catch (InterruptedException e){ }
+    }
+    
+    public Pedido recogerPedido(){
+        try {
+            semaforo.release();
+            pedidosMostrador.eliminarPedido();
+        } catch (Exception e){
+            
+        }
         
-        String texto = this.escritura.getText();
-        this.escritura.setText(texto+string+";");
+        
+        return null;
     }
 }

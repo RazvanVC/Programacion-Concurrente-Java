@@ -6,7 +6,7 @@
 package RestauranteRyD;
 
 import java.util.ArrayList;
-import javax.swing.JTextField;
+import javax.swing.JTextArea;
 
 /**
  *
@@ -15,10 +15,10 @@ import javax.swing.JTextField;
 
 public class ListaHilos {
     private final ArrayList<Pedido> lista;
-    private final JTextField tf;
+    private final JTextArea tf;
     
-    public ListaHilos (JTextField tf){
-        lista = new ArrayList<>();
+    public ListaHilos (JTextArea tf, int capacidad){
+        lista = new ArrayList<>(capacidad);
         this.tf = tf;
     }
     
@@ -27,16 +27,20 @@ public class ListaHilos {
         imprimir();
     }
     
-    public synchronized void eliminarPedido(Pedido p){
-        lista.remove(p);
+    public synchronized void eliminarPedido(){
+        lista.remove(0);
         imprimir();
     }
     
     private void imprimir(){
         String text = "";
         for (int i = 0; i<lista.size(); i++){
-            text = text+lista.get(i).getId_pedido();
+            text = text+ (i+1) + ". " + lista.get(i).getId_pedido()+"\n";
         }
         this.tf.setText(text);
+    }
+
+    public ArrayList<Pedido> getLista() {
+        return lista;
     }
 }
