@@ -109,13 +109,17 @@ public class Mesa_platos {
     }
 
     public  Pedidos coger() {
-        System.out.println(contador_p.size()+"Mesa");
-        /*try {
-            sleep(1000);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Mesa_platos.class.getName()).log(Level.SEVERE, null, ex);
-        }*/
+        System.out.println("Mesa--"+contador_p.size());
+        
         Pedidos p;
+        /*while(contador_p.get(0) == null) {
+             
+            try {
+                wait(10);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Mostrador_pedidos.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }*/
         p = this.contador_p.get(0);
         
         poli.release();

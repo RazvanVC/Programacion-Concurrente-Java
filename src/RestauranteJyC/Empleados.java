@@ -59,11 +59,13 @@ public class Empleados extends Thread {
                     Thread.sleep(tiempo);
 
                     p = mostrador.coger();
+                    if (p==null){continue;}
                     texto.setText(id_Empleado + " llevando " + p.getId());
 
                     mesa.dejar(p);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
+                    
                 }
             } else {
                 try {

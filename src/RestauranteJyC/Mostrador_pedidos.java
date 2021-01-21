@@ -20,6 +20,7 @@ public class Mostrador_pedidos {
 
     public Mostrador_pedidos(int capacidad, boolean lleno, JTextField Text) {
         this.capacidad = capacidad;
+        //System.out.println(this.capacidad+"--capacidad");
         this.lleno = lleno;
         poli = new Semaphore(capacidad, true);
         this.contador_p = contador_p;
@@ -37,8 +38,18 @@ public class Mostrador_pedidos {
     }
 
     public synchronized Pedidos coger() {
-        System.out.println(contador_p.size()+"Mostrador");
+        System.out.println("Mostrador--" + contador_p.size());
         Pedidos pedido;
+        Pedidos a=null;
+        /*while (a == null) {
+            try {
+                a=contador_p.get(0);
+                System.out.print(a);
+                wait(5);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Mostrador_pedidos.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }*/
         pedido = contador_p.get(0);
         poli.release();
         contador_p.remove(pedido);
