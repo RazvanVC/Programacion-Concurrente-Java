@@ -17,10 +17,12 @@ public class Clientes extends Thread {
 
     private String id_Cliente;
     private final Mostrador_pedidos mostrador;
+    private boolean continuar;
 
     public Clientes(String id, Mostrador_pedidos mostrador) {
         this.id_Cliente = id;
         this.mostrador = mostrador;
+        this.continuar = true;
     }
 
     public String getIdCliente() {
@@ -30,6 +32,13 @@ public class Clientes extends Thread {
     public void setId(String id) {
         this.id_Cliente = id;
     }
+     public boolean continuar() {
+        return continuar;
+    }
+
+    public void continuar(boolean y) {
+        this.continuar = y;
+    }
 
     public void run() {
         //tarda entre 500 y 1000
@@ -37,19 +46,21 @@ public class Clientes extends Thread {
 
         int tiempo;
         int i;
-        for (i = 0; i < 2; i++) {
-            tiempo = (int) (500 + 500 * Math.random());
-            try {
+        while (continuar) {
+            for (i = 0; i < 2; i++) {
+                tiempo = (int) (500 + 500 * Math.random());
+                try {
 
-                mostrador.insert(new Pedidos("cliente" + id_Cliente + 1));
-                Thread.sleep(tiempo);
-                
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
+                    mostrador.insert(new Pedidos("cliente" + id_Cliente + 1));
+                    Thread.sleep(tiempo);
+
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
             }
 
         }
-
     }
 
     public boolean esperar_pedido() {
