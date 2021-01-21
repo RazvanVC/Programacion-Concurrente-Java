@@ -50,10 +50,10 @@ public class Empleados extends Thread {
 
     @Override
     public void run() {
-        while (continuar == true) {
+        while (true) {
             //Tardan entre 300 y 700
             Pedidos p;
-
+            if (continuar == true){
             try {
                 int tiempo = (int) (300 + 400 * Math.random());
                 Thread.sleep(tiempo);
@@ -65,8 +65,14 @@ public class Empleados extends Thread {
             } catch (InterruptedException ex) {
                 Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
             }
-
-        }
+        } else {
+                try{
+                Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                }
 
     }
+}
 }

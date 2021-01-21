@@ -4,51 +4,51 @@
  * and open the template in the editor.
  */
 package RestauranteJyC;
-import  RestauranteJyC.Empleados;
+
+import RestauranteJyC.Empleados;
+
 /**
  *
  * @author necok
  */
 public class InterfazRestaurante extends javax.swing.JFrame {
-         Empleados empleado1;
-         Empleados empleado2;
-         Clientes serie[]=new Clientes[200];
-         Cocineros cocinero1;
-         Cocineros cocinero2;
-         Cocineros cocinero3;
+
+    Empleados empleado1;
+    Empleados empleado2;
+    Clientes serie[] = new Clientes[200];
+    Cocineros cocinero1;
+    Cocineros cocinero2;
+    Cocineros cocinero3;
+
     /**
      * Creates new form InterfazRestaurante
-     * 
+     *
      */
     @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
     public InterfazRestaurante() {
-        
+
         initComponents();
-        
+
         //Y a partir de aquí, lo que se ejecuta
-        Mostrador_pedidos mp = new Mostrador_pedidos(10,false,TextoPedidos);
-        Mesa_platos mep = new Mesa_platos(20,false,TextoPlatos);
-            
-        
-        
-       
-        
-        for (int i=0;i<200;i++){
-            String id=String.valueOf(i);
-            Clientes cliente=new Clientes(id,mp);
-            serie[i]=cliente;
-            Thread ci= new Thread(serie[i]); 
+        Mostrador_pedidos mp = new Mostrador_pedidos(10, false, TextoPedidos);
+        Mesa_platos mep = new Mesa_platos(20, false, TextoPlatos);
+
+        for (int i = 0; i < 200; i++) {
+            String id = String.valueOf(i);
+            Clientes cliente = new Clientes(id, mp);
+            serie[i] = cliente;
+            Thread ci = new Thread(serie[i]);
             ci.start();
             //System.out.println("se crean clientessss yujuuu");
         }
-        
+
         //declaracion empleado
-        empleado1 = new Empleados("empleado_1",mp,mep,TextoEmpleado1);
-        empleado2 = new Empleados("empleado_2",mp,mep,TextoEmpleado2);
+        empleado1 = new Empleados("empleado_1", mp, mep, TextoEmpleado1);
+        empleado2 = new Empleados("empleado_2", mp, mep, TextoEmpleado2);
         //declaración cocineros
-        cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
-        cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
-        cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
+        cocinero1 = new Cocineros("cocinero_1", mep, TextoCocinero1);
+        cocinero2 = new Cocineros("cocinero_2", mep, TextoCocinero2);
+        cocinero3 = new Cocineros("cocinero_3", mep, TextoCocinero3);
         //      Iniciadores
         //empleados
         empleado1.start();
@@ -57,9 +57,7 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         cocinero1.start();
         cocinero2.start();
         cocinero3.start();
-        
-        
-        
+
     }
 
     /**
@@ -268,20 +266,19 @@ public class InterfazRestaurante extends javax.swing.JFrame {
 
     private void BotonPausaEmpleado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado1ActionPerformed
         // TODO add your handling code here:
-        if(empleado1.getContinuar() == true){
+        if (empleado1.getContinuar() == true) {
             BotonPausaEmpleado1.setText("Reanudar Empleado 1");
             empleado1.setContinuar(false);
-        }
-        else if (empleado1.getContinuar() == false){
-        BotonPausaEmpleado1.setText("Pausar Empleado 1");
-        empleado1.setContinuar(true);
+        } else if (empleado1.getContinuar() == false) {
+            BotonPausaEmpleado1.setText("Pausar Empleado 1");
+            empleado1.setContinuar(true);
     }//GEN-LAST:event_BotonPausaEmpleado1ActionPerformed
     }
     private void BotonPausaEmpleado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado2ActionPerformed
         // TODO add your handling code here:
-        
+
         BotonPausaEmpleado2.setText("Reanudar Empleado 2");
-        
+
         BotonPausaEmpleado2.setText("Pausar Empleado 2");
     }//GEN-LAST:event_BotonPausaEmpleado2ActionPerformed
 
