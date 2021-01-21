@@ -109,12 +109,12 @@ public class Mesa_platos {
     }
 
     public  Pedidos coger() {
-        System.out.println(contador_p.size());
-        try {
+        System.out.println(contador_p.size()+"Mesa");
+        /*try {
             sleep(1000);
         } catch (InterruptedException ex) {
             Logger.getLogger(Mesa_platos.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
         Pedidos p;
         p = this.contador_p.get(0);
         
