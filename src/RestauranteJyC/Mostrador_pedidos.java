@@ -67,7 +67,6 @@ public class Mostrador_pedidos {
 
             }
             Texto.setText(text);
-
         } catch (InterruptedException ex) {
             Logger.getLogger(Mostrador_pedidos.class.getName()).log(Level.SEVERE, null, ex);
         }

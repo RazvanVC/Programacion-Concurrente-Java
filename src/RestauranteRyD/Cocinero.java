@@ -17,22 +17,22 @@ public class Cocinero extends Thread {
     private String idCocinero;
     private Mesa mesaPlatos;
     private JTextField mesaCocina;
+    private boolean estado;
 
     //Constructor
     public Cocinero(String id_cocinero, Mesa mesaPlatos, JTextField mesaCocina) {
         this.idCocinero = id_cocinero;
         this.mesaCocina = mesaCocina;
         this.mesaPlatos = mesaPlatos;
+        this.estado = true;
     }
 
-    //Getters
-    public String getId_cocinero() {
-        return idCocinero;
+    public boolean isEstado() {
+        return estado;
     }
 
-    //Setters
-    public void setId_cocinero(String id_cocinero) {
-        this.idCocinero = id_cocinero;
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 
     //Métodos
@@ -45,20 +45,21 @@ public class Cocinero extends Thread {
     @SuppressWarnings("SleepWhileInLoop")
     public void run() {
         while (true) {
-            Pedido pedidoRecibido;
-            try {
-                pedidoRecibido = mesaPlatos.recogerPedido();
-                if (pedidoRecibido == null) {
-                    mesaCocina.setText("");
-                    continue;
-                }
-                mesaCocina.setText(this.idCocinero + " cocinando " + pedidoRecibido.getId_pedido() + "...");
-                sleep(1500 + (int) (500 * Math.random()));
-                //String plato = mesaPlatos.getPedido();
-                //mesaCocina.setText(idCocinero + "esta cocinando" + plato);
+            System.out.print("");
+            if (isEstado()) {
+                Pedido pedidoRecibido;
+                try {
+                    pedidoRecibido = mesaPlatos.recogerPedido();
+                    if (pedidoRecibido == null) {
+                        mesaCocina.setText("");
+                        continue;
+                    }
+                    mesaCocina.setText(this.idCocinero + " cocinando " + pedidoRecibido.getId_pedido() + "...");
+                    sleep(1500 + (int) (500 * Math.random()));
+                    //String plato = mesaPlatos.getPedido();
+                    //mesaCocina.setText(idCocinero + "esta cocinando" + plato);
 
-            } catch (InterruptedException e) {
-
+                } catch (InterruptedException e) { }
             }
         }
 
