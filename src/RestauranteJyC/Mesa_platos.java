@@ -8,6 +8,10 @@ import javax.swing.JTextField;
  * @author josep
  */
 public class Mesa_platos {
+
+    static void dejar(Pedidos p) {
+        
+    }
     private int capacidad;
     private ArrayList<Pedidos> contador_p;
     private boolean lleno;
