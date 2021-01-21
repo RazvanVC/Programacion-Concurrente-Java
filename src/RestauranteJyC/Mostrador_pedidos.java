@@ -14,8 +14,8 @@ public class Mostrador_pedidos {
 
     private int capacidad;
     private boolean lleno;
-    private  ArrayList<Pedidos> contador_p;
-    private  Semaphore poli;
+    private ArrayList<Pedidos> contador_p;
+    private Semaphore poli;
     private JTextField Texto;
 
     public Mostrador_pedidos(int capacidad, boolean lleno, JTextField Text) {
@@ -40,6 +40,7 @@ public class Mostrador_pedidos {
         Pedidos pedido;
         pedido = contador_p.get(0);
         poli.release();
+        contador_p.remove(pedido);
         return pedido;
     }
 

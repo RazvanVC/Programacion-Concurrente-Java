@@ -12,7 +12,6 @@ import javax.swing.JTextField;
  */
 public class Mesa_platos {
 
-    
     private int capacidad;
     private ArrayList<Pedidos> contador_p;
     private boolean lleno;
@@ -33,7 +32,7 @@ public class Mesa_platos {
     public int getCapacidad() {
         return capacidad;
     }
-    
+
     void dejar(Pedidos p) {
         try {
             poli.acquire();
@@ -112,6 +111,7 @@ public class Mesa_platos {
         Pedidos p;
         p = contador_p.get(0);
         poli.release();
+        contador_p.remove(p);
         return p;
     }
 
