@@ -7,6 +7,7 @@ package RestauranteJyC;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JTextField;
 
 
 public class Cocineros extends Thread {
@@ -14,10 +15,12 @@ public class Cocineros extends Thread {
     //acceso al mostrador de pedidos
     
     private final Mesa_platos mesa;
+    private final JTextField texto;
     
-    public Cocineros(String id, Mesa_platos mesa){
+    public Cocineros(String id, Mesa_platos mesa, JTextField text){
     this.id_Cocinero=id;
-    this.mesa=mesa;}
+    this.mesa=mesa;
+    this.texto=text;}
 
     public String getIdCocinero() {
         return id_Cocinero;
@@ -56,6 +59,7 @@ public class Cocineros extends Thread {
         Pedidos[] comanda=mesa.getContador_p();
         
         Thread.sleep(tiempo);
+        texto.setText(comanda[a].getId());
         comanda[a]=null;
         mesa.setCapacidad(capacidad-1);  
     }

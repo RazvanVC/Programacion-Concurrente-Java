@@ -7,6 +7,7 @@ package RestauranteJyC;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JTextField;
 
 /**
  *
@@ -17,11 +18,13 @@ public class Empleados extends Thread{
     
     private Mostrador_pedidos mostrador;
     private Mesa_platos mesa;
+    private JTextField texto;
     
-    public Empleados(String id, Mostrador_pedidos mostrador, Mesa_platos mesa){
+    public Empleados(String id, Mostrador_pedidos mostrador, Mesa_platos mesa,JTextField texto){
     this.id_Empleado=id;
     this.mostrador=mostrador;
-    this.mesa=mesa;}
+    this.mesa=mesa;
+    this.texto=texto;}
 
 
     
@@ -55,6 +58,7 @@ public class Empleados extends Thread{
         int tiempo=(int)(300+400*Math.random());
         Thread.sleep(tiempo);//esto hace que se tarde el tiempo de cada empleado
         Pedidos[] comanda= mesa.getContador_p();
+        texto.setText(comanda[b].getId());
         comanda[b]= seleccion(a);
         vaciar(a);
     }

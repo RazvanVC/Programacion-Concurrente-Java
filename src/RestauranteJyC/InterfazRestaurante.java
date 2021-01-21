@@ -36,12 +36,12 @@ public class InterfazRestaurante extends javax.swing.JFrame {
         //capacidad mesa platos es de 20
         mep.setCapacidad(20);
         //declaracion empleado
-        Empleados empleado1 = new Empleados("empleado_1",mp,mep);
-        Empleados empleado2 = new Empleados("empleado_2",mp,mep);
+        Empleados empleado1 = new Empleados("empleado_1",mp,mep,TextoEmpleado1);
+        Empleados empleado2 = new Empleados("empleado_2",mp,mep,TextoEmpleado2);
         //declaración cocineros
-        Cocineros cocinero1= new Cocineros("cocinero_1",mep);
-        Cocineros cocinero2= new Cocineros("cocinero_2",mep);
-        Cocineros cocinero3= new Cocineros("cocinero_3",mep);
+        Cocineros cocinero1= new Cocineros("cocinero_1",mep,TextoCocinero1);
+        Cocineros cocinero2= new Cocineros("cocinero_2",mep,TextoCocinero2);
+        Cocineros cocinero3= new Cocineros("cocinero_3",mep,TextoCocinero3);
         //      Iniciadores
         //empleados
         empleado1.start();
