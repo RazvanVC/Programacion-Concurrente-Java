@@ -32,12 +32,12 @@ public class Cocineros extends Thread {
         this.id_Cocinero = id;
     }
 
-    public void vaciar(int a) {
+  /*  public void vaciar(int a) {
         ArrayList<Pedidos> pedido = mesa.getContador_p();
         pedido.set(a, (new Pedidos("vacio")));
-    }
+    }*/
 
-    public boolean esperarPedidoMesa() {//comprueba que la mesa esté vacía
+    /*public boolean esperarPedidoMesa() {//comprueba que la mesa esté vacía
         int i;
         int c = 0; //contador para saber los null
 
@@ -51,23 +51,22 @@ public class Cocineros extends Thread {
         } else {
             return false;
         }
-    }
-
-    
+    }*/
 
     public void run() {
-        boolean continuar = true;
+        
         int tiempo = (int) (1500 + 500 * Math.random());
-        while (continuar) {
+        while (true) {
+            Pedidos p;
             try {
-                Pedidos p;
-                
-                p=mesa.coger();
-                if (p==null){
+
+                p = mesa.coger();
+                if (p == null) {
                     texto.setText("vacio");
+                    System.out.print("el null lo comprueba bien");
                     continue;
                 }
-                texto.setText(this.id_Cocinero+" en la plancha "+p.getId()+" || ");
+                texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || ");
                 Thread.sleep(tiempo);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);

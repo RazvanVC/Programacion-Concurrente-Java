@@ -109,7 +109,7 @@ public class Mesa_platos {
 
     public synchronized Pedidos coger() {
         Pedidos p;
-        p = contador_p.get(0);
+        p = this.contador_p.get(0);
         poli.release();
         contador_p.remove(p);
         return p;
