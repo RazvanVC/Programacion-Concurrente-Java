@@ -41,8 +41,6 @@ public class ControlRestaurante {
                 condicionParada.await();
             }
         } catch (InterruptedException e){ /* Se puede incluir en las entradas del sistema los errores */ 
-        } finally { lock.unlock(); }
-        
-            
+        } finally { lock.unlock(); } 
     }
 }
