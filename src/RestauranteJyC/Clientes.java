@@ -46,7 +46,6 @@ public class Clientes extends Thread {
 
         int tiempo;
         int i;
-        while (continuar) {
             for (i = 0; i < 2; i++) {
                 tiempo = (int) (500 + 500 * Math.random());
                 try {
@@ -63,9 +62,5 @@ public class Clientes extends Thread {
         }
     }
 
-    public boolean esperar_pedido() {
 
-        return false;
-    }
 
-}
