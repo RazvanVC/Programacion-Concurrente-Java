@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package RestauranteJyC;
+
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -12,14 +13,15 @@ import java.util.logging.Logger;
  *
  * @author josep
  */
-public class Clientes extends Thread{
+public class Clientes extends Thread {
+
     private String id_Cliente;
     private final Mostrador_pedidos mostrador;
-    
-    public Clientes(String id, Mostrador_pedidos mostrador){
-    this.id_Cliente=id;
-    this.mostrador=mostrador;}
-    
+
+    public Clientes(String id, Mostrador_pedidos mostrador) {
+        this.id_Cliente = id;
+        this.mostrador = mostrador;
+    }
 
     public String getIdCliente() {
         return id_Cliente;
@@ -28,40 +30,31 @@ public class Clientes extends Thread{
     public void setId(String id) {
         this.id_Cliente = id;
     }
-    
-    public void run(){
+
+    public void run() {
         //tarda entre 500 y 1000
         //dejan 2 pedidos
-        
+
         int tiempo;
         int i;
-        for(i=0;i<2;i++){
-        tiempo=(int)(500+500*Math.random());
-        int capacidad=mostrador.getCapacidad();
-        boolean sigue=esperar_pedido();
-        
-        if (sigue){
+        for (i = 0; i < 2; i++) {
+            tiempo = (int) (500 + 500 * Math.random());
             try {
+
+                mostrador.insert(new Pedidos("cliente" + id_Cliente + 1));
                 Thread.sleep(tiempo);
-                mostrador.setCapacidad(capacidad+1);
-                mostrador.insert(new Pedidos("cliente"+id_Cliente+1));
+                
             } catch (InterruptedException ex) {
                 Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
-        }
-        else{
-            Thread.holdsLock(sigue);
-            }
-        
-        }
-    }
-    
-    public boolean esperar_pedido(){
-        
-        return false;}
 
-    
-       
+        }
+
+    }
+
+    public boolean esperar_pedido() {
+
+        return false;
+    }
+
 }
- 

@@ -43,7 +43,7 @@ public class Cocineros extends Thread {
         int c=0; //contador para saber los null
         
         for (i=0; i<mesa.getCapacidad();i++){
-            if (mesa.getPedidoMesa(i)== (new Pedidos ("vacio")) ){
+            if (mesa.getPedidoMesa(i)== (new Pedidos ("vacio")) ){ //null
                 c=c+1;    
             }
         }    
