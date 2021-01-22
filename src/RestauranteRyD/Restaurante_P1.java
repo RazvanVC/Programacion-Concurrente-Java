@@ -89,6 +89,10 @@ public class Restaurante_P1 extends javax.swing.JFrame {
 
         jLabel1.setText("Empleado 1:");
 
+        tf_Empleado1.setEditable(false);
+
+        tf_Empleado2.setEditable(false);
+
         jLabel2.setText("Empleado 2:");
 
         jLabel3.setText("Contenido de la mesa de platos:");
@@ -99,6 +103,13 @@ public class Restaurante_P1 extends javax.swing.JFrame {
 
         jLabel6.setText("Cocinero 3:");
 
+        tf_Cocinero1.setEditable(false);
+
+        tf_Cocinero3.setEditable(false);
+
+        tf_Cocinero2.setEditable(false);
+
+        ta_MostradorPedidos.setEditable(false);
         ta_MostradorPedidos.setColumns(20);
         ta_MostradorPedidos.setRows(5);
         jScrollPane1.setViewportView(ta_MostradorPedidos);

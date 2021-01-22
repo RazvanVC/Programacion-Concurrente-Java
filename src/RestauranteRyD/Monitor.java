@@ -66,10 +66,12 @@ public class Monitor extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(580, 470));
         setPreferredSize(new java.awt.Dimension(460, 500));
 
+        ta_MostradorPedidos.setEditable(false);
         ta_MostradorPedidos.setColumns(20);
         ta_MostradorPedidos.setRows(5);
         jScrollPane1.setViewportView(ta_MostradorPedidos);
 
+        ta_MesaPlatos.setEditable(false);
         ta_MesaPlatos.setColumns(20);
         ta_MesaPlatos.setRows(5);
         jScrollPane2.setViewportView(ta_MesaPlatos);
