@@ -45,7 +45,14 @@ public class Empleados extends Thread {
                     
 
                     p = mostrador.coger(); //Cuando coge un null, se bloquea, y no inicia
+                    if (p == null) {
+                        if (texto!=null) texto.setText("");{
+                        System.out.print("");
+                        continue;
+                        } //comprueba si la mesa está vacia
 
+                        
+                    }
                     texto.setText(id_Empleado + " llevando " + p.getId());
                     try {
                         Log_Restaurante logTxt = new Log_Restaurante("log.txt");
