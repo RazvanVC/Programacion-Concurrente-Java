@@ -18,13 +18,15 @@ public class Cocinero extends Thread {
     private Mesa mesaPlatos;
     private JTextField mesaCocina;
     private boolean estado;
+    private final LogRestaurante log;
 
     //Constructor
-    public Cocinero(String id_cocinero, Mesa mesaPlatos, JTextField mesaCocina) {
+    public Cocinero(String id_cocinero, Mesa mesaPlatos, JTextField mesaCocina, LogRestaurante log) {
         this.idCocinero = id_cocinero;
         this.mesaCocina = mesaCocina;
         this.mesaPlatos = mesaPlatos;
         this.estado = true;
+        this.log = log;
     }
 
     public boolean isEstado() {
@@ -48,17 +50,18 @@ public class Cocinero extends Thread {
             System.out.print("");
             if (isEstado()) {
                 Pedido pedidoRecibido;
+                
                 try {
                     pedidoRecibido = mesaPlatos.recogerPedido();
+                    
                     if (pedidoRecibido == null) {
                         mesaCocina.setText("");
                         continue;
                     }
+                    log.escribirLog(idCocinero + " ha recogido de la mesa de platos el pedido: " + pedidoRecibido.getId_pedido());
                     mesaCocina.setText(this.idCocinero + " cocinando " + pedidoRecibido.getId_pedido() + "...");
                     sleep(1500 + (int) (500 * Math.random()));
-                    //String plato = mesaPlatos.getPedido();
-                    //mesaCocina.setText(idCocinero + "esta cocinando" + plato);
-
+                    log.escribirLog(idCocinero + " ha acabado de cocinar el pedido: " + pedidoRecibido.getId_pedido());
                 } catch (InterruptedException e) { }
             }
         }

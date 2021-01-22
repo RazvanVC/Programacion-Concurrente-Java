@@ -15,7 +15,7 @@ public class Restaurante_P1 extends javax.swing.JFrame {
 
     //Variables para modificar las sistemas
     private final int numeroPedidos = 2;
-    private final int tamannoMostrador = 10;
+    private final int TAMANNO_MOSTRADOR = 10;
     private final int MAX_TAMANNO_MESA = 20;
     private final String RUTA_ESCRITURA = "./evolucionRestaurante.txt";
     private final Empleado e1;
@@ -23,31 +23,31 @@ public class Restaurante_P1 extends javax.swing.JFrame {
     private final Cocinero c1;
     private final Cocinero c2;
     private final Cocinero c3;
+    private final LogRestaurante lr;
     /**
      * Creates new form Restaurante_P1
      */
     @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
     public Restaurante_P1() {
         initComponents();
-        LogRestaurante lr = new LogRestaurante(RUTA_ESCRITURA);
-        lr.escribirLog("Hola");
-        Mostrador mp = new Mostrador(tamannoMostrador, ta_MostradorPedidos);
+        lr = new LogRestaurante(RUTA_ESCRITURA);
+        Mostrador mp = new Mostrador(TAMANNO_MOSTRADOR, ta_MostradorPedidos);
         Mesa mesaPlatos = new Mesa(MAX_TAMANNO_MESA, ta_MesaPlatos);
         //Creamos e iniciamos los 200 clientes
         //SUGERENCIA: Exportar todo esto a un metodo mas abajo
-        for (int i = 1; i<202; i++){
-            Cliente cv = new Cliente("Cliente"+i, mp, numeroPedidos);
+        for (int i = 1; i<201; i++){
+            Cliente cv = new Cliente("Cliente"+i, mp, numeroPedidos, lr);
             cv.start();
         }
         
-        e1 = new Empleado("Empleado 1", mesaPlatos, mp, tf_Empleado1);
+        e1 = new Empleado("Empleado 1", mesaPlatos, mp, tf_Empleado1, lr);
         e1.start();
-        e2 = new Empleado("Empleado 2", mesaPlatos, mp, tf_Empleado2);
+        e2 = new Empleado("Empleado 2", mesaPlatos, mp, tf_Empleado2, lr);
         e2.start();
         
-        c1 = new Cocinero("Cocinero 1", mesaPlatos, tf_Cocinero1);
-        c2 = new Cocinero("Cocinero 2", mesaPlatos, tf_Cocinero2);
-        c3 = new Cocinero("Cocinero 3", mesaPlatos, tf_Cocinero3);
+        c1 = new Cocinero("Cocinero 1", mesaPlatos, tf_Cocinero1, lr);
+        c2 = new Cocinero("Cocinero 2", mesaPlatos, tf_Cocinero2, lr);
+        c3 = new Cocinero("Cocinero 3", mesaPlatos, tf_Cocinero3, lr);
         
         c1.start();
         c2.start();
@@ -215,11 +215,15 @@ public class Restaurante_P1 extends javax.swing.JFrame {
     private void tb_EstadoEmpleado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tb_EstadoEmpleado1ActionPerformed
         // TODO add your handling code here:
         e1.setActivo(!tb_EstadoEmpleado1.isSelected());
+        if (!tb_EstadoEmpleado1.isSelected()) lr.escribirLog("Se ha reanudado el empleado 1");
+        else lr.escribirLog("Se ha pausado el empleado 1");
     }//GEN-LAST:event_tb_EstadoEmpleado1ActionPerformed
 
     private void tb_EstadoEmpleado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tb_EstadoEmpleado2ActionPerformed
         // TODO add your handling code here:
         e2.setActivo(!tb_EstadoEmpleado2.isSelected());
+        if (!tb_EstadoEmpleado2.isSelected()) lr.escribirLog("Se ha reanudado el empleado 2");
+        else lr.escribirLog("Se ha pausado el empleado 2");
     }//GEN-LAST:event_tb_EstadoEmpleado2ActionPerformed
 
     private void tb_EstadoSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tb_EstadoSistemaActionPerformed
@@ -231,6 +235,8 @@ public class Restaurante_P1 extends javax.swing.JFrame {
         c3.setEstado(!tb_EstadoSistema.isSelected());
         tb_EstadoEmpleado1.setSelected(tb_EstadoSistema.isSelected());
         tb_EstadoEmpleado2.setSelected(tb_EstadoSistema.isSelected());
+        if (!tb_EstadoSistema.isSelected()) lr.escribirLog("Se ha reanudado el sistema");
+        else lr.escribirLog("Se ha pausado el sistema");
     }//GEN-LAST:event_tb_EstadoSistemaActionPerformed
 
     /**

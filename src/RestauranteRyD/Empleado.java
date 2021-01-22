@@ -19,14 +19,16 @@ public class Empleado extends Thread {
     private Mostrador mostrador;
     private final JTextField estado;
     private boolean activo;
+    private final LogRestaurante log;
 
     //Constructor
-    public Empleado(String id, Mesa mesa, Mostrador mostrador, JTextField estado) {
+    public Empleado(String id, Mesa mesa, Mostrador mostrador, JTextField estado, LogRestaurante log) {
         this.id_empleado = id;
         this.mesa = mesa;
         this.mostrador = mostrador;
         this.estado = estado;
         this.activo = true;
+        this.log = log;
     }
 
     //Getters
@@ -57,13 +59,16 @@ public class Empleado extends Thread {
                 Pedido pedidoLlevado;
                 try {
                     pedidoLlevado = mostrador.recogerPedido();
+                    
                     if (pedidoLlevado == null) {
                         estado.setText("");
                         continue;
                     }
+                    log.escribirLog(id_empleado + " ha recogido del mostrador el pedido: "+pedidoLlevado.getId_pedido());
                     estado.setText(id_empleado + " llevando " + pedidoLlevado.getId_pedido() + " a la mesa de platos");
                     sleep((int) (300 + 400 * Math.random()));
                     mesa.dejarPedido(pedidoLlevado);
+                    log.escribirLog(id_empleado + " ha dejado en la mesa de platos el pedido: "+pedidoLlevado.getId_pedido());
                 } catch (InterruptedException e) {
                 }
             }
