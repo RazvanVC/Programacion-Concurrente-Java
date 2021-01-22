@@ -15,8 +15,7 @@ import java.rmi.registry.Registry;
 
 /**
  *
- * @author necok
- * esto es el servidor correspondiente
+ * @author necok esto es el servidor correspondiente
  */
 public class Interfaz_Restaurante extends javax.swing.JFrame {
 
@@ -66,9 +65,14 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
         cocinero3.start();
 
     }
-    
-    
 
+    public String getTextoPedidos() {
+        return TextoPedidos.getText();
+    }
+
+    public String getTextoPlatos() {
+        return TextoPlatos.getText();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -337,7 +341,7 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        
+
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {

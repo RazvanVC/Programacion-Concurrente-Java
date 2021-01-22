@@ -15,7 +15,8 @@ import javax.swing.JTextField;
  */
 public interface texto_mostrador extends Remote{
     //public texto_mostrador() throws RemoteException{}
-    public void iniciar() throws RemoteException;    
+       public String getTextoPedidos() throws RemoteException;
+       public String getTextoPlatos() throws RemoteException;
 }
 
 
