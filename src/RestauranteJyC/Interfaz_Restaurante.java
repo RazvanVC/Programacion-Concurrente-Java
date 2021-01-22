@@ -18,7 +18,7 @@ import java.rmi.registry.Registry;
  * @author necok esto es el servidor correspondiente
  */
 public class Interfaz_Restaurante extends javax.swing.JFrame {
-
+    //inicializa los atributos externos
     Empleados empleado1;
     Empleados empleado2;
     Clientes serie[] = new Clientes[200];
@@ -33,6 +33,7 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
     @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
     public Interfaz_Restaurante() {
 
+
         initComponents();
 
         //Y a partir de aquí, lo que se ejecuta
@@ -45,7 +46,7 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
             serie[i] = cliente;
             Thread ci = new Thread(serie[i]);
             ci.start();
-            //System.out.println("se crean clientessss yujuuu");
+            
         }
 
         //declaracion empleado
@@ -275,42 +276,45 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
 
     private void BotonPausaTodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaTodoActionPerformed
         // TODO add your handling code here:
-        if (cocinero1.getContinuar() == true) {
+
+        if (cocinero1.getContinuar() == true) { //Si el cocinero 1 está activo,para a cocineros y empleados
             empleado1.setContinuar(false);
             empleado2.setContinuar(false);
             cocinero1.setContinuar(false);
             cocinero2.setContinuar(false);
             cocinero3.setContinuar(false);
-            BotonPausaTodo.setText("Reanudar Todo");
-        } else if (empleado1.getContinuar() == false) {
+            BotonPausaTodo.setText("Reanudar Todo"); //cambia el texto
+        } else if (empleado1.getContinuar() == false) { //Si el cocinero 1 está parado,reanuda a cocineros y empleados
             empleado1.setContinuar(true);
             empleado2.setContinuar(true);
             cocinero1.setContinuar(true);
             cocinero2.setContinuar(true);
             cocinero3.setContinuar(true);
-            BotonPausaTodo.setText("Pausar Todo");
+            BotonPausaTodo.setText("Pausar Todo"); //cambia el texto
         }
     }//GEN-LAST:event_BotonPausaTodoActionPerformed
 
     private void BotonPausaEmpleado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado1ActionPerformed
         // TODO add your handling code here:
-        if (empleado1.getContinuar() == true) {
-            BotonPausaEmpleado1.setText("Reanudar Empleado 1");
-            empleado1.setContinuar(false);
-        } else if (empleado1.getContinuar() == false) {
+        // TODO add your handling code here:
+        if (empleado1.getContinuar() == true) {  //Si el empleado está activo
+            BotonPausaEmpleado1.setText("Reanudar Empleado 1"); //Cambia el texto
+            empleado1.setContinuar(false); //Lo para
+        } else if (empleado1.getContinuar() == false) { //Si el empleado está parado
             BotonPausaEmpleado1.setText("Pausar Empleado 1");
-            empleado1.setContinuar(true);
+            empleado1.setContinuar(true);//Reanuda
     }//GEN-LAST:event_BotonPausaEmpleado1ActionPerformed
     }
     private void BotonPausaEmpleado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPausaEmpleado2ActionPerformed
         // TODO add your handling code here:
 
-        if (empleado2.getContinuar() == true) {
+        // TODO add your handling code here:
+        if (empleado2.getContinuar() == true) { //Si el empleado está activo
             BotonPausaEmpleado2.setText("Reanudar Empleado 2");
-            empleado2.setContinuar(false);
-        } else if (empleado2.getContinuar() == false) {
+            empleado2.setContinuar(false); //Lo para
+        } else if (empleado2.getContinuar() == false) { //Si el empleado está parado
             BotonPausaEmpleado2.setText("Pausar Empleado 2");
-            empleado2.setContinuar(true);
+            empleado2.setContinuar(true); //Reanuda
         }
     }//GEN-LAST:event_BotonPausaEmpleado2ActionPerformed
 

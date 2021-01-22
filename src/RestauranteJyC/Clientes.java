@@ -17,12 +17,12 @@ public class Clientes extends Thread { //Creación de la clase con los atributos
 
     private String id_Cliente;
     private final Mostrador_pedidos mostrador;
-    private boolean continuar;
+   
 
     public Clientes(String id, Mostrador_pedidos mostrador) { // setea los atributos
         this.id_Cliente = id;
         this.mostrador = mostrador;
-        this.continuar = true;
+
     }
 
     public void run() {
