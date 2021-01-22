@@ -35,8 +35,16 @@ public class Clientes extends Thread {
             tiempo = (int) (500 + 500 * Math.random());
             try {
                 Thread.sleep(tiempo);
-                
-                mostrador.insert(new Pedidos("cliente" + id_Cliente+"-P" + i+". "));
+
+                mostrador.insert(new Pedidos("cliente" + id_Cliente + "-P" + i + ". "));
+                try {
+                    Log_Restaurante logTxt = new Log_Restaurante("logTxt.txt");
+
+                    logTxt.log.setLevel(Level.INFO);
+                    logTxt.log.info(id_Cliente + "deja el pedido en el mostrador");
+                } catch (Exception e) {
+
+                }
 
             } catch (InterruptedException ex) {
                 Logger.getLogger(Clientes.class.getName()).log(Level.SEVERE, null, ex);
@@ -45,7 +53,7 @@ public class Clientes extends Thread {
         }
 
     }
-    
+
     public String getIdCliente() {
         return id_Cliente;
     }
@@ -62,5 +70,4 @@ public class Clientes extends Thread {
         this.continuar = y;
     }
 
-    
 }

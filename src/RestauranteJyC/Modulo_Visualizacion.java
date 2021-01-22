@@ -9,12 +9,12 @@ package RestauranteJyC;
  *
  * @author necok
  */
-public class ModuloVisualizacion extends javax.swing.JFrame {
+public class Modulo_Visualizacion extends javax.swing.JFrame {
 
     /**
      * Creates new form ModuloVisualizacion
      */
-    public ModuloVisualizacion() {
+    public Modulo_Visualizacion() {
         initComponents();
     }
 
@@ -86,20 +86,21 @@ public class ModuloVisualizacion extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ModuloVisualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_Visualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ModuloVisualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_Visualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ModuloVisualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_Visualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ModuloVisualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modulo_Visualizacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ModuloVisualizacion().setVisible(true);
+                new Modulo_Visualizacion().setVisible(true);
             }
         });
     }

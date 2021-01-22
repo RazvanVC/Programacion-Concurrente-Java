@@ -1,5 +1,6 @@
 package RestauranteJyC;
 
+import java.io.IOException;
 import static java.lang.Thread.sleep;
 import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
@@ -54,7 +55,7 @@ public class Mesa_platos {
         }
     }
 
-    public Pedidos coger() throws InterruptedException {
+    public Pedidos coger() throws InterruptedException, SecurityException, IOException {
 
         uno.acquire();
         critico.acquire();

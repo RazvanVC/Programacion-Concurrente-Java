@@ -5,6 +5,7 @@
  */
 package RestauranteJyC;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -35,6 +36,14 @@ public class Cocineros extends Thread {
                 try {
                     Thread.sleep(tiempo);
                     p = mesa.coger();
+                    try {
+                        Log_Restaurante logTxt = new Log_Restaurante("logTxt.txt");
+
+                        logTxt.log.setLevel(Level.INFO);
+                        logTxt.log.info(id_Cocinero+ "coje el plato de la mesa de platos del "+ p.getId() +"y lo cocina");
+                    } catch (Exception e) {
+
+                    }
                     if (p == null) {
                         texto.setText("vacio");
 
@@ -43,6 +52,10 @@ public class Cocineros extends Thread {
                     texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || ");
 
                 } catch (InterruptedException ex) {
+                    Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SecurityException ex) {
+                    Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
                     Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
                 }
             } else {
