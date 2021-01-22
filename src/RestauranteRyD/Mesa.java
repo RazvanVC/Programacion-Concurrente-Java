@@ -23,9 +23,7 @@ public class Mesa {
         this.pedidosMesa = new ListaHilos(mesaCocina, capacidad);
         semaforo = new Semaphore(capacidad, true);
     }
-    
 
-    
     //Métodos
     void dejarPedido(Pedido pedidoLlevado) {
         try {

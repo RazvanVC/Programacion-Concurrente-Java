@@ -1,4 +1,0 @@
-ene 22, 2021 3:38:15 AM RestauranteJyC.Clientes run
-INFORMACIÓN: 58deja el pedido en el mostrador
-ene 22, 2021 3:38:15 AM RestauranteJyC.Clientes run
-INFORMACIÓN: 50deja el pedido en el mostrador

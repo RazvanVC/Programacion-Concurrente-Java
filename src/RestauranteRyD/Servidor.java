@@ -23,9 +23,9 @@ public class Servidor {
     public static void main(String[] args) {
         // TODO code application logic here
         try {
-            ImplementacionInterfaz obj = new ImplementacionInterfaz();
+            Controlador obj = new Controlador();
             Registry registry = LocateRegistry.createRegistry(1099);
-            Naming.rebind("//127.0.0.1/Servidor", obj);
+            Naming.rebind("//127.0.0.1/Controlador", obj);
             System.out.println("El servidor ha quedado registrado");
         } catch (MalformedURLException | RemoteException e){
             System.out.println("ERROR");
