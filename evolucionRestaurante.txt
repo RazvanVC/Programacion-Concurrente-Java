@@ -1,66 +1,27 @@
-Fichero abierto : Fri Jan 22 06:10:06 CET 2021
-Fri Jan 22 06:10:06 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente1-P1
-Fri Jan 22 06:10:06 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente4-P1
-Fri Jan 22 06:10:06 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente4-P1
-Fri Jan 22 06:10:06 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente3-P1
-Fri Jan 22 06:10:06 CET 2021 ------- Cocinero 3 ha recogido de la mesa de platos el pedido: Cliente4-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente1 ha depositado el pedido: Cliente1-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente5 ha depositado el pedido: Cliente5-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente1-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cocinero 2 ha recogido de la mesa de platos el pedido: Cliente1-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente2-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente9 ha depositado el pedido: Cliente9-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cocinero 1 ha recogido de la mesa de platos el pedido: Cliente3-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente4 ha depositado el pedido: Cliente4-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente10 ha depositado el pedido: Cliente10-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente3 ha depositado el pedido: Cliente3-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente2 ha depositado el pedido: Cliente2-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente7 ha depositado el pedido: Cliente7-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente6 ha depositado el pedido: Cliente6-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente12 ha depositado el pedido: Cliente12-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente2-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente5-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente14 ha depositado el pedido: Cliente14-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente6-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente9-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente13 ha depositado el pedido: Cliente13-P1
-Fri Jan 22 06:10:07 CET 2021 ------- Cliente15 ha depositado el pedido: Cliente15-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente5-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente8-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Cliente16 ha depositado el pedido: Cliente16-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente9-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente7-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Cliente17 ha depositado el pedido: Cliente17-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente8-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente10-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Cocinero 2 ha acabado de cocinar el pedido: Cliente1-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Cocinero 2 ha recogido de la mesa de platos el pedido: Cliente2-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente7-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente11-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Cocinero 3 ha acabado de cocinar el pedido: Cliente4-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Cocinero 3 ha recogido de la mesa de platos el pedido: Cliente6-P1
-Fri Jan 22 06:10:08 CET 2021 ------- Cliente18 ha depositado el pedido: Cliente18-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente10-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente12-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Cocinero 1 ha acabado de cocinar el pedido: Cliente3-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Cocinero 1 ha recogido de la mesa de platos el pedido: Cliente5-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente11-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente13-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Cliente19 ha depositado el pedido: Cliente19-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente12-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente14-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Cliente21 ha depositado el pedido: Cliente21-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente13-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente15-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Cliente20 ha depositado el pedido: Cliente20-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Cliente22 ha depositado el pedido: Cliente22-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente14-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente16-P1
-Fri Jan 22 06:10:09 CET 2021 ------- Cliente23 ha depositado el pedido: Cliente23-P1
-Fri Jan 22 06:10:10 CET 2021 ------- Cliente24 ha depositado el pedido: Cliente24-P1
-Fri Jan 22 06:10:10 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente15-P1
-Fri Jan 22 06:10:10 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente17-P1
-Fri Jan 22 06:10:10 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente16-P1
-Fri Jan 22 06:10:10 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente18-P1
-Fri Jan 22 06:10:10 CET 2021 ------- Cocinero 2 ha acabado de cocinar el pedido: Cliente2-P1
-Fri Jan 22 06:10:10 CET 2021 ------- Cocinero 2 ha recogido de la mesa de platos el pedido: Cliente9-P1
+Fichero abierto : Fri Jan 22 11:45:41 CET 2021
+Fri Jan 22 11:45:41 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente2-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente9-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Cliente6 ha depositado el pedido: Cliente6-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente2-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Cocinero 3 ha recogido de la mesa de platos el pedido: Cliente2-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente8-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Cliente1 ha depositado el pedido: Cliente1-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente9-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Cocinero 1 ha recogido de la mesa de platos el pedido: Cliente9-P1
+Fri Jan 22 11:45:41 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente7-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente2 ha depositado el pedido: Cliente2-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente9 ha depositado el pedido: Cliente9-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente11 ha depositado el pedido: Cliente11-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente8 ha depositado el pedido: Cliente8-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente7 ha depositado el pedido: Cliente7-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente3 ha depositado el pedido: Cliente3-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente4 ha depositado el pedido: Cliente4-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente10 ha depositado el pedido: Cliente10-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente5 ha depositado el pedido: Cliente5-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente200 ha depositado el pedido: Cliente200-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente13 ha depositado el pedido: Cliente13-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cocinero 2 ha recogido de la mesa de platos el pedido: Cliente7-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente6-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente8-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente5-P1
+Fri Jan 22 11:45:42 CET 2021 ------- Cliente12 ha depositado el pedido: Cliente12-P1
