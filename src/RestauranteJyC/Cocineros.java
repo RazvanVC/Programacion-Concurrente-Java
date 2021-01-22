@@ -41,9 +41,12 @@ public class Cocineros extends Thread { // creación del hilo
                     p = mesa.coger(); 
 
                     if (p == null) {
-                        texto.setText("vacio"); //comprueba si la mesa está vacia
-
+                        if (texto!=null) texto.setText("");{
+                        System.out.print("");
                         continue;
+                        } //comprueba si la mesa está vacia
+
+                        
                     }
                     texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || "); // setea su texto
                     try { //escribe el log
