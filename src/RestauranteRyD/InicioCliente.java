@@ -5,7 +5,10 @@
  */
 package RestauranteRyD;
 
+import java.net.MalformedURLException;
 import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
 
 /**
  *
@@ -22,7 +25,7 @@ public class InicioCliente {
             InterfazComun obj = (InterfazComun) Naming.lookup("//127.0.0.1/Controlador");
             obj.empezarPrograma();
             System.out.println("Iniciando Monitor..");
-        } catch (Exception e) {
+        } catch (MalformedURLException | NotBoundException | RemoteException e) {
         }
 
     }

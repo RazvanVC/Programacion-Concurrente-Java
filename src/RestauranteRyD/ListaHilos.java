@@ -20,7 +20,6 @@ public class ListaHilos {
     public ListaHilos (JTextArea tf, int capacidad){
         lista = new ArrayList<>(capacidad);
         this.tf = tf;
-        System.out.print("Text Field "+tf);
     }
     
     public synchronized void insertarPedido(Pedido p){
