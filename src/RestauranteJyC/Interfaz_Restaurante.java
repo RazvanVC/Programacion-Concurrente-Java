@@ -67,11 +67,13 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
     }
 
     public String getTextoPedidos() {
-        return TextoPedidos.getText();
+        System.out.print("esto muestra el get-"+TextoPedidos.getSelectedText());
+        return TextoPedidos.getSelectedText();
     }
 
     public String getTextoPlatos() {
-        return TextoPlatos.getText();
+        System.out.print("esto muestra el otro get-"+TextoPlatos.getSelectedText());
+        return TextoPlatos.getSelectedText();
     }
 
     /**

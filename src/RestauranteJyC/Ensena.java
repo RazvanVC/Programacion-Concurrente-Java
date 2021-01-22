@@ -13,18 +13,20 @@ import javax.swing.JTextField;
  *
  * @author josep
  */
-public class Enseña extends UnicastRemoteObject implements texto_mostrador {
+public class Ensena extends UnicastRemoteObject implements texto_mostrador {
     private final Interfaz_Restaurante interfaz;
     
 
-    public Enseña() throws RemoteException {
+    public Ensena() throws RemoteException {
         interfaz=new Interfaz_Restaurante();
+        interfaz.setVisible(true);
     }
-
+@Override
     public String getTextoPedidos() throws RemoteException {
         return interfaz.getTextoPedidos();
         
     }
+@Override   
     public String getTextoPlatos() throws RemoteException {
         return interfaz.getTextoPlatos();
         

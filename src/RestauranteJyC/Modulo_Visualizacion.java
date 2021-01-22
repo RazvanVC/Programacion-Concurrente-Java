@@ -14,11 +14,13 @@ import java.rmi.*;
  * @author necok esto es el cliente
  */
 public class Modulo_Visualizacion extends javax.swing.JFrame {
-
+texto_mostrador obj;
     /**
      * Creates new form ModuloVisualizacion
      */
-    
+public Modulo_Visualizacion() throws NotBoundException, MalformedURLException, RemoteException{
+obj = (texto_mostrador) Naming.lookup("//127.0.0.1/texto_mostrador");
+}   
 
 
     /**
@@ -75,24 +77,26 @@ public class Modulo_Visualizacion extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-   static texto_mostrador obj;
+    
+    public void mostrar() throws RemoteException{
+        while (true){
+            System.out.println("mostrador "+obj.getTextoPedidos());
+            System.out.println("mesa "+obj.getTextoPlatos());
+            TextoPedidos.setText(obj.getTextoPedidos());
+            TextoPlatos.setText(obj.getTextoPlatos());
+        }
+    }
     
     public static void main(String args[]) throws MalformedURLException, NotBoundException, RemoteException {
         Modulo_Visualizacion interfaz=new Modulo_Visualizacion();
         
         interfaz.setVisible(true);
-        obj = (texto_mostrador) Naming.lookup("//127.0.0.1/texto_mostrador");
         interfaz.mostrar();
         
         
     }
     
-    public void mostrar() throws RemoteException{
-        while (true){
-            TextoPedidos.setText(obj.getTextoPedidos());
-            TextoPlatos.setText(obj.getTextoPlatos());
-        }
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField TextoPedidos;

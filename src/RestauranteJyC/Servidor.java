@@ -20,10 +20,10 @@ public class Servidor{
 
     public static void main(String[] args)    {
         try{
-            Enseña obj = new Enseña();
+            Ensena obj = new Ensena();
             
             Registry registry = LocateRegistry.createRegistry(1099); 
-            Naming.rebind("//localhost/texto_mostrador", (Remote) obj);   
+            Naming.rebind("//127.0.0.1/texto_mostrador", (Remote) obj);   
             System.out.println("El servidor ha quedado registrado");
         }
 

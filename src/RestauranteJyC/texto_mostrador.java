@@ -9,13 +9,16 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import javax.swing.JTextField;
 
+
 /**
  *
  * @author josep
  */
 public interface texto_mostrador extends Remote{
     //public texto_mostrador() throws RemoteException{}
+    
        public String getTextoPedidos() throws RemoteException;
+       
        public String getTextoPlatos() throws RemoteException;
 }
 
