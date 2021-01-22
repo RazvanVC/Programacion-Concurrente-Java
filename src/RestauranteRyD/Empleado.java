@@ -31,6 +31,15 @@ public class Empleado extends Thread {
         this.log = log;
     }
 
+    public Empleado(String empleado_2, Mesa mesaPlatos, Mostrador mp, LogRestaurante lr) {
+        this.id_empleado = empleado_2;
+        this.mesa = mesaPlatos;
+        this.mostrador = mp;
+        this.activo = true;
+        this.log = lr;
+        this.estado = null;
+    }
+
     //Getters
     public String getId_empleado() {
         return id_empleado;
@@ -61,11 +70,12 @@ public class Empleado extends Thread {
                     pedidoLlevado = mostrador.recogerPedido();
                     
                     if (pedidoLlevado == null) {
-                        estado.setText("");
+                        if (estado!=null) estado.setText("");
+                        System.out.print("");
                         continue;
                     }
                     log.escribirLog(id_empleado + " ha recogido del mostrador el pedido: "+pedidoLlevado.getId_pedido());
-                    estado.setText(id_empleado + " llevando " + pedidoLlevado.getId_pedido() + " a la mesa de platos");
+                    if (estado != null) estado.setText(id_empleado + " llevando " + pedidoLlevado.getId_pedido() + " a la mesa de platos");
                     sleep((int) (300 + 400 * Math.random()));
                     mesa.dejarPedido(pedidoLlevado);
                     log.escribirLog(id_empleado + " ha dejado en la mesa de platos el pedido: "+pedidoLlevado.getId_pedido());
