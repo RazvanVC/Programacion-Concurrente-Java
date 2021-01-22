@@ -20,10 +20,11 @@ public class Log_Restaurante {
 
     public Logger log;
     FileHandler archivoLog;
-
+    File txt;
+    
     public Log_Restaurante(String logTxt) throws SecurityException, IOException {
-
-        File txt = new File(logTxt);
+        
+        txt = new File(logTxt);
         if (!txt.exists()) {
             try {
                 txt.createNewFile();
@@ -33,6 +34,7 @@ public class Log_Restaurante {
             archivoLog = new FileHandler(logTxt, false);
             log = Logger.getLogger("evolucionRestaurante.txt");
             log.addHandler(archivoLog);
+            
             SimpleFormatter formatoEstandar = new SimpleFormatter();
             archivoLog.setFormatter(formatoEstandar);
 
@@ -40,6 +42,7 @@ public class Log_Restaurante {
             archivoLog = new FileHandler(logTxt, false);
             log = Logger.getLogger("evolucionRestaurante.txt");
             log.addHandler(archivoLog);
+            
             SimpleFormatter formatoEstandar = new SimpleFormatter();
             archivoLog.setFormatter(formatoEstandar);
         }

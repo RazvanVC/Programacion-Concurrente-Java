@@ -6,12 +6,14 @@
 package RestauranteJyC;
 
 import RestauranteJyC.Empleados;
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import java.util.logging.Level;
 import java.rmi.*;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.util.logging.Logger;
 
 /**
  *
@@ -25,24 +27,25 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
     Cocineros cocinero1;
     Cocineros cocinero2;
     Cocineros cocinero3;
+    Log_Restaurante logTxt;
 
     /**
      * Creates new form InterfazRestaurante
      *
      */
     @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
-    public Interfaz_Restaurante() {
+    public Interfaz_Restaurante() throws SecurityException, IOException {
 
 
         initComponents();
-
+        logTxt = new Log_Restaurante("evolucionRestaurante.txt");
         //Y a partir de aquí, lo que se ejecuta
         Mostrador_pedidos mp = new Mostrador_pedidos(10, false, TextoPedidos);
         Mesa_platos mep = new Mesa_platos(20, false, TextoPlatos);
 
         for (int i = 0; i < 200; i++) {
             String id = String.valueOf(i);
-            Clientes cliente = new Clientes(id, mp);
+            Clientes cliente = new Clientes(id, mp,logTxt);
             serie[i] = cliente;
             Thread ci = new Thread(serie[i]);
             ci.start();
@@ -50,12 +53,12 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
         }
 
         //declaracion empleado
-        empleado1 = new Empleados("empleado_1", mp, mep, TextoEmpleado1);
-        empleado2 = new Empleados("empleado_2", mp, mep, TextoEmpleado2);
+        empleado1 = new Empleados("empleado_1", mp, mep, TextoEmpleado1,logTxt);
+        empleado2 = new Empleados("empleado_2", mp, mep, TextoEmpleado2,logTxt);
         //declaración cocineros
-        cocinero1 = new Cocineros("cocinero_1", mep, TextoCocinero1);
-        cocinero2 = new Cocineros("cocinero_2", mep, TextoCocinero2);
-        cocinero3 = new Cocineros("cocinero_3", mep, TextoCocinero3);
+        cocinero1 = new Cocineros("cocinero_1", mep, TextoCocinero1,logTxt);
+        cocinero2 = new Cocineros("cocinero_2", mep, TextoCocinero2,logTxt);
+        cocinero3 = new Cocineros("cocinero_3", mep, TextoCocinero3,logTxt);
         //      Iniciadores
         //empleados
         empleado1.start();
@@ -352,7 +355,13 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Interfaz_Restaurante().setVisible(true);
+                try {
+                    new Interfaz_Restaurante().setVisible(true);
+                } catch (SecurityException ex) {
+                    Logger.getLogger(Interfaz_Restaurante.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Interfaz_Restaurante.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }

@@ -12,8 +12,8 @@ import javax.swing.JTextField;
  *
  * @author josep
  */
-public class Mesa_platos {
-
+public class Mesa_platos { 
+    //Creacion de atributos
     private int capacidad;
     private ArrayList<Pedidos> contador_p;
     private boolean lleno;
@@ -23,7 +23,7 @@ public class Mesa_platos {
     private Semaphore critico;
     private JTextField Texto;
 
-    public Mesa_platos(int capacidad, boolean lleno, JTextField Text) {
+    public Mesa_platos(int capacidad, boolean lleno, JTextField Text) { //Setea los atributos
         this.capacidad = capacidad;
         this.lleno = lleno;
         poli = new Semaphore(capacidad, true);
@@ -35,17 +35,17 @@ public class Mesa_platos {
 
     }
 
-    public void dejar(Pedidos p) {
+    public void dejar(Pedidos p) { //Metodo para dejar los platos
         try {
-            poli.acquire();
+            poli.acquire(); //inicio de semaforos y contadores
             critico.acquire();
             contador_p.add(p);
             String text = "";
-
+            // aumenta el número las veces que sea necesario
             for (int i = 0; i < contador_p.size(); i++) {
                 text = text +" | " + contador_p.get(i).getId();
             }
-
+            //escribe el texto y libera los semáforos
             Texto.setText(text);
             critico.release();
             uno.release();
@@ -56,21 +56,21 @@ public class Mesa_platos {
     }
 
     public Pedidos coger() throws InterruptedException, SecurityException, IOException {
-
+        //inicia semáforos
         uno.acquire();
         critico.acquire();
 
-        System.out.println("Mesa--" + contador_p.size());
+        System.out.println("Mesa--" + contador_p.size()); //imprime el nivel de la mesa
         Pedidos p;
         p = this.contador_p.get(0);
-        contador_p.remove(p);
-
-        poli.release();
+        contador_p.remove(p); //quita uno del contador
+        //libera los semáforos
+        poli.release(); 
         critico.release();
 
         return p;
     }
-
+    //metodos get y set
     public int getCapacidad() {
         return capacidad;
     }
@@ -94,7 +94,7 @@ public class Mesa_platos {
     public void setVacio(boolean vacio) {
         this.vacio = vacio;
     }
-
+    //metodo get del contador
     public ArrayList<Pedidos> getContador_p() {
         return contador_p;
     }

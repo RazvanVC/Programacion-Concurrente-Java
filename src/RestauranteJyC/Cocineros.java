@@ -18,12 +18,14 @@ public class Cocineros extends Thread { // creación del hilo
     private final Mesa_platos mesa;
     private final JTextField texto;
     private boolean continuar;
+    private Log_Restaurante logTxt;
 
-    public Cocineros(String id, Mesa_platos mesa, JTextField texto) { //setea atributos
+    public Cocineros(String id, Mesa_platos mesa, JTextField texto,Log_Restaurante logTxt) { //setea atributos
         this.id_Cocinero = id;
         this.mesa = mesa;
         this.texto = texto;
         this.continuar = true;
+        this.logTxt = logTxt;
     }
     
     
@@ -50,10 +52,9 @@ public class Cocineros extends Thread { // creación del hilo
                     }
                     texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || "); // setea su texto
                     try { //escribe el log
-                        Log_Restaurante logTxt = new Log_Restaurante("evolucionRestaurante.txt");
-
-                       
+                    
                         logTxt.log.info("El cocinero "+id_Cocinero + "coje el plato de la mesa de platos del " + p.getId() + "y lo cocina");
+                        
                     } catch (Exception e) {
 
                     }

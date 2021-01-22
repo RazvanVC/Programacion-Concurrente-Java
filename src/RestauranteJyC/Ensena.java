@@ -5,6 +5,7 @@
  */
 package RestauranteJyC;
 
+import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import javax.swing.JTextField;
@@ -17,7 +18,7 @@ public class Ensena extends UnicastRemoteObject implements texto_mostrador {
     private final Interfaz_Restaurante interfaz;
     
 
-    public Ensena() throws RemoteException {
+    public Ensena() throws RemoteException, SecurityException, IOException {
         interfaz=new Interfaz_Restaurante();
         interfaz.setVisible(true);
     }

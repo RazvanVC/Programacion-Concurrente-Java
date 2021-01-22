@@ -1,27 +1,70 @@
-Fichero abierto : Fri Jan 22 11:45:41 CET 2021
-Fri Jan 22 11:45:41 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente2-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente9-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Cliente6 ha depositado el pedido: Cliente6-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente2-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Cocinero 3 ha recogido de la mesa de platos el pedido: Cliente2-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente8-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Cliente1 ha depositado el pedido: Cliente1-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Empleado 1 ha dejado en la mesa de platos el pedido: Cliente9-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Cocinero 1 ha recogido de la mesa de platos el pedido: Cliente9-P1
-Fri Jan 22 11:45:41 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente7-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente2 ha depositado el pedido: Cliente2-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente9 ha depositado el pedido: Cliente9-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente11 ha depositado el pedido: Cliente11-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente8 ha depositado el pedido: Cliente8-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente7 ha depositado el pedido: Cliente7-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente3 ha depositado el pedido: Cliente3-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente4 ha depositado el pedido: Cliente4-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente10 ha depositado el pedido: Cliente10-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente5 ha depositado el pedido: Cliente5-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente200 ha depositado el pedido: Cliente200-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente13 ha depositado el pedido: Cliente13-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cocinero 2 ha recogido de la mesa de platos el pedido: Cliente7-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Empleado 1 ha recogido del mostrador el pedido: Cliente6-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Empleado 2 ha dejado en la mesa de platos el pedido: Cliente8-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Empleado 2 ha recogido del mostrador el pedido: Cliente5-P1
-Fri Jan 22 11:45:42 CET 2021 ------- Cliente12 ha depositado el pedido: Cliente12-P1
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 59deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 142deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 125deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 94deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 53deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 192deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 154deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 130deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 28deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente26-P0.  en la mesa del platos
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 43deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente59-P0.  en la mesa del platos
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 1deja el pedido en el mostrador
+ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 26deja el pedido en el mostrador
+ene 22, 2021 1:48:36 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente1-P0.  en la mesa del platos
+ene 22, 2021 1:48:36 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 13deja el pedido en el mostrador
+ene 22, 2021 1:48:36 PM RestauranteJyC.Cocineros run
+INFORMACIÓN: El cocinero cocinero_1coje el plato de la mesa de platos del cliente59-P0. y lo cocina
+ene 22, 2021 1:48:36 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente43-P0.  en la mesa del platos
+ene 22, 2021 1:48:36 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 110deja el pedido en el mostrador
+ene 22, 2021 1:48:36 PM RestauranteJyC.Cocineros run
+INFORMACIÓN: El cocinero cocinero_2coje el plato de la mesa de platos del cliente26-P0. y lo cocina
+ene 22, 2021 1:48:36 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente28-P0.  en la mesa del platos
+ene 22, 2021 1:48:36 PM RestauranteJyC.Cocineros run
+INFORMACIÓN: El cocinero cocinero_3coje el plato de la mesa de platos del cliente43-P0. y lo cocina
+ene 22, 2021 1:48:36 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 188deja el pedido en el mostrador
+ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente130-P0.  en la mesa del platos
+ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 65deja el pedido en el mostrador
+ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente154-P0.  en la mesa del platos
+ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 124deja el pedido en el mostrador
+ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente192-P0.  en la mesa del platos
+ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 51deja el pedido en el mostrador
+ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente53-P0.  en la mesa del platos
+ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 174deja el pedido en el mostrador
+ene 22, 2021 1:48:38 PM RestauranteJyC.Empleados run
+INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente94-P0.  en la mesa del platos
+ene 22, 2021 1:48:38 PM RestauranteJyC.Clientes run
+INFORMACIÓN: 166deja el pedido en el mostrador
+ene 22, 2021 1:48:38 PM RestauranteJyC.Cocineros run
+INFORMACIÓN: El cocinero cocinero_2coje el plato de la mesa de platos del cliente1-P0. y lo cocina
+ene 22, 2021 1:48:38 PM RestauranteJyC.Cocineros run
+INFORMACIÓN: El cocinero cocinero_1coje el plato de la mesa de platos del cliente130-P0. y lo cocina

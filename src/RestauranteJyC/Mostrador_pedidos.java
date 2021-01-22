@@ -10,7 +10,7 @@ import javax.swing.JTextField;
  *
  * @author josep
  */
-public class Mostrador_pedidos {
+public class Mostrador_pedidos { //Setea los atributos
 
     private int capacidad;
     private boolean lleno;

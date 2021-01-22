@@ -22,13 +22,15 @@ public class Empleados extends Thread {
     private Mesa_platos mesa;
     private JTextField texto;
     private boolean continuar;
+    private Log_Restaurante logTxt;
 
-    public Empleados(String id, Mostrador_pedidos mostrador, Mesa_platos mesa, JTextField texto) {
+    public Empleados(String id, Mostrador_pedidos mostrador, Mesa_platos mesa, JTextField texto, Log_Restaurante logTxt) {
         this.id_Empleado = id;
         this.mostrador = mostrador;
         this.mesa = mesa;
         this.texto = texto;
         this.continuar = true;
+        this.logTxt = logTxt;
     }
     
     
@@ -55,8 +57,9 @@ public class Empleados extends Thread {
                     }
                     texto.setText(id_Empleado + " llevando " + p.getId());
                     try {
-                        Log_Restaurante logTxt = new Log_Restaurante("evolucionRestaurante.txt");
+
                         logTxt.log.info(id_Empleado + "coje el pedido del mostrador del cliente"+ p.getId()+" en la mesa del platos" );
+                        
                     } catch (Exception e) {
 
                     }
