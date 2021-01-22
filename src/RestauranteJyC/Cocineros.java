@@ -11,16 +11,15 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
 
-public class Cocineros extends Thread {
+public class Cocineros extends Thread { // creación del hilo
+    //atributos
 
     private String id_Cocinero;
-    //acceso al mostrador de pedidos
-
     private final Mesa_platos mesa;
     private final JTextField texto;
     private boolean continuar;
 
-    public Cocineros(String id, Mesa_platos mesa, JTextField texto) {
+    public Cocineros(String id, Mesa_platos mesa, JTextField texto) { //setea atributos
         this.id_Cocinero = id;
         this.mesa = mesa;
         this.texto = texto;
@@ -30,27 +29,28 @@ public class Cocineros extends Thread {
     public void run() {
 
         while (true) {
-            if (continuar == true) {
-                int tiempo = (int) (1500 + 500 * Math.random());
+            if (continuar == true) { //comprueba si el atributo continuar está activo
+                int tiempo = (int) (1500 + 500 * Math.random()); //generador del tiempo aleatorio
                 Pedidos p;
                 try {
-                    Thread.sleep(tiempo);
-                    p = mesa.coger();
-                    try {
-                        Log_Restaurante logTxt = new Log_Restaurante("logTxt.txt");
+                    
+                    p = mesa.coger(); 
 
-                        logTxt.log.setLevel(Level.INFO);
-                        logTxt.log.info(id_Cocinero+ "coje el plato de la mesa de platos del "+ p.getId() +"y lo cocina");
-                    } catch (Exception e) {
-
-                    }
                     if (p == null) {
-                        texto.setText("vacio");
+                        texto.setText("vacio"); //comprueba si la mesa está vacia
 
                         continue;
                     }
-                    texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || ");
+                    texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || "); // setea su texto
+                    try { //escribe el log
+                        Log_Restaurante logTxt = new Log_Restaurante("log.txt");
 
+                        logTxt.log.setLevel(Level.INFO);
+                        logTxt.log.info(id_Cocinero + "coje el plato de la mesa de platos del " + p.getId() + "y lo cocina");
+                    } catch (Exception e) {
+
+                    }
+                    Thread.sleep(tiempo); //se duerme el tiempo determinado mientras cocina
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (SecurityException ex) {
@@ -60,7 +60,7 @@ public class Cocineros extends Thread {
                 }
             } else {
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(100); //si el atributo continuar no está activo se duerme antes de volver a comprobarlo
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
                 }

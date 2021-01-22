@@ -13,13 +13,13 @@ import java.util.logging.Logger;
  *
  * @author josep
  */
-public class Clientes extends Thread {
+public class Clientes extends Thread { //Creación de la clase con los atributos
 
     private String id_Cliente;
     private final Mostrador_pedidos mostrador;
     private boolean continuar;
 
-    public Clientes(String id, Mostrador_pedidos mostrador) {
+    public Clientes(String id, Mostrador_pedidos mostrador) { // setea los atributos
         this.id_Cliente = id;
         this.mostrador = mostrador;
         this.continuar = true;
@@ -31,17 +31,17 @@ public class Clientes extends Thread {
 
         int tiempo;
         int i;
-        for (i = 0; i < 2; i++) {
-            tiempo = (int) (500 + 500 * Math.random());
+        for (i = 0; i < 2; i++) { //bucle para dejar pedidos
+            tiempo = (int) (500 + 500 * Math.random()); //genera el tiempo aleatorio
             try {
-                Thread.sleep(tiempo);
+                Thread.sleep(tiempo); //duerme el tiempo aleatorio
 
-                mostrador.insert(new Pedidos("cliente" + id_Cliente + "-P" + i + ". "));
-                try {
-                    Log_Restaurante logTxt = new Log_Restaurante("logTxt.txt");
+                mostrador.insert(new Pedidos("cliente" + id_Cliente + "-P" + i + ". ")); //añade al mostrador el pedido 
+                try { //inserta en el log
+                    Log_Restaurante logTxt = new Log_Restaurante("log.txt");
 
                     logTxt.log.setLevel(Level.INFO);
-                    logTxt.log.info(id_Cliente + "deja el pedido en el mostrador");
+                    logTxt.log.info(id_Cliente + "deja el pedido en el mostrador"); //mensaje en el log
                 } catch (Exception e) {
 
                 }
@@ -53,7 +53,7 @@ public class Clientes extends Thread {
         }
 
     }
-
+    //metodos get y set del id
     public String getIdCliente() {
         return id_Cliente;
     }
@@ -62,12 +62,5 @@ public class Clientes extends Thread {
         this.id_Cliente = id;
     }
 
-    public boolean Continuar() {
-        return continuar;
-    }
-
-    public void Continuar(boolean y) {
-        this.continuar = y;
-    }
 
 }
