@@ -7,6 +7,7 @@ package RestauranteJyC;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
+import javax.swing.JTextField;
 
 /**
  *
@@ -14,15 +15,7 @@ import java.rmi.server.UnicastRemoteObject;
  */
 public interface texto_mostrador extends Remote{
     //public texto_mostrador() throws RemoteException{}
-    public void mostrador() throws RemoteException;    
+    public void iniciar(JTextField mostrador, JTextField mesa) throws RemoteException;    
 }
 
-public class texto_mostrador extends UnicastRemoteObject implements texto_mostrador {
-        
-    public texto_mostrador() throws RemoteException {
-        }                 //Constructor
 
-        /*public String saludar(String nombre) throws RemoteException { // Implementación del método remoto
-            return "Buenos días " + nombre;
-        }*/
-    }

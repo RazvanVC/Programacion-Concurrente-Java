@@ -6,6 +6,7 @@
 package RestauranteJyC;
 
 import static java.lang.Thread.sleep;
+import java.net.MalformedURLException;
 import java.rmi.*;
 
 /**
@@ -17,29 +18,16 @@ public class Modulo_Visualizacion extends javax.swing.JFrame {
     /**
      * Creates new form ModuloVisualizacion
      */
-    public Modulo_Visualizacion() {
+    public Modulo_Visualizacion() { //cliente
         initComponents();
-    }
-
-    
-
-    public class Cliente {
-        public void main(String args[]) {
-            
-            try {
-                              
-                Modulo_Visualizacion texto_mostrador = (Modulo_Visualizacion) Naming.lookup("//127.0.0.1/texto_mostrador"); //Localiza el objeto distribuido
-                              
-                sleep(1000); //Para que dé tiempo a leer la respuesta antes de que se cierre la ventana
-
-            } catch (Exception e) {
-                System.out.println("Excepción : " + e.getMessage());
-                e.printStackTrace();
-            }
-
+        try {
+            texto_mostrador obj = (texto_mostrador) Naming.lookup("//127.0.0.1/texto_mostrador");
+            obj.iniciar(TextoPedidos, TextoPlatos);
+        } catch (MalformedURLException | NotBoundException | RemoteException e){
+            e.printStackTrace();
         }
-
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
