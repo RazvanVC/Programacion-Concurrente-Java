@@ -17,6 +17,7 @@ public class Restaurante_P1 extends javax.swing.JFrame {
     private final int numeroPedidos = 2;
     private final int tamannoMostrador = 10;
     private final int MAX_TAMANNO_MESA = 20;
+    private final String RUTA_ESCRITURA = "./evolucionRestaurante.txt";
     private final Empleado e1;
     private final Empleado e2;
     private final Cocinero c1;
@@ -28,7 +29,8 @@ public class Restaurante_P1 extends javax.swing.JFrame {
     @SuppressWarnings("CallToThreadStartDuringObjectConstruction")
     public Restaurante_P1() {
         initComponents();
-        
+        LogRestaurante lr = new LogRestaurante(RUTA_ESCRITURA);
+        lr.escribirLog("Hola");
         Mostrador mp = new Mostrador(tamannoMostrador, ta_MostradorPedidos);
         Mesa mesaPlatos = new Mesa(MAX_TAMANNO_MESA, ta_MesaPlatos);
         //Creamos e iniciamos los 200 clientes
