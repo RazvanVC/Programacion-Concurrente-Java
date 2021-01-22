@@ -13,6 +13,8 @@ import javax.swing.JTextArea;
  *
  * @author razvanvc
  */
-public interface InterfazRemota extends Remote{
-    void empezarPrograma(JTextArea ta_Mostrador, JTextArea ta_Mesa) throws RemoteException;
+public interface InterfazComun extends Remote{
+    
+    public void empezarPrograma(JTextArea a, JTextArea b) throws RemoteException;
+    
 }

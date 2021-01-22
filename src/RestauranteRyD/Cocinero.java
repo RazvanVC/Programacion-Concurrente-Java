@@ -27,15 +27,7 @@ public class Cocinero extends Thread {
         this.estado = true;
         this.log = log;
     }
-
-    Cocinero(String cocinero_1, Mesa mesaPlatos, LogRestaurante lr) {
-        this.idCocinero = cocinero_1;
-        this.mesaCocina = null;
-        this.mesaPlatos = mesaPlatos;
-        this.estado = true;
-        this.log = lr;
-    }
-
+    
     public boolean isEstado() {
         return estado;
     }
@@ -62,12 +54,12 @@ public class Cocinero extends Thread {
                     pedidoRecibido = mesaPlatos.recogerPedido();
                     
                     if (pedidoRecibido == null) {
-                        if(mesaCocina != null) mesaCocina.setText("");
-                        System.out.println("");
+                        if (mesaCocina!=null) mesaCocina.setText("");
+                        System.out.print("");
                         continue;
                     }
                     log.escribirLog(idCocinero + " ha recogido de la mesa de platos el pedido: " + pedidoRecibido.getId_pedido());
-                    if (mesaCocina != null) mesaCocina.setText(this.idCocinero + " cocinando " + pedidoRecibido.getId_pedido() + "...");
+                    if (mesaCocina!=null) mesaCocina.setText(this.idCocinero + " cocinando " + pedidoRecibido.getId_pedido() + "...");
                     sleep(1500 + (int) (500 * Math.random()));
                     log.escribirLog(idCocinero + " ha acabado de cocinar el pedido: " + pedidoRecibido.getId_pedido());
                 } catch (InterruptedException e) { }
