@@ -55,9 +55,7 @@ public class Empleados extends Thread {
                     }
                     texto.setText(id_Empleado + " llevando " + p.getId());
                     try {
-                        Log_Restaurante logTxt = new Log_Restaurante("log.txt");
-
-                        logTxt.log.setLevel(Level.INFO);
+                        Log_Restaurante logTxt = new Log_Restaurante("evolucionRestaurante.txt");
                         logTxt.log.info(id_Empleado + "coje el pedido del mostrador del cliente"+ p.getId()+" en la mesa del platos" );
                     } catch (Exception e) {
 

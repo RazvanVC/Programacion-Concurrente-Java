@@ -50,10 +50,10 @@ public class Cocineros extends Thread { // creación del hilo
                     }
                     texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || "); // setea su texto
                     try { //escribe el log
-                        Log_Restaurante logTxt = new Log_Restaurante("log.txt");
+                        Log_Restaurante logTxt = new Log_Restaurante("evolucionRestaurante.txt");
 
-                        logTxt.log.setLevel(Level.INFO);
-                        logTxt.log.info(id_Cocinero + "coje el plato de la mesa de platos del " + p.getId() + "y lo cocina");
+                       
+                        logTxt.log.info("El cocinero "+id_Cocinero + "coje el plato de la mesa de platos del " + p.getId() + "y lo cocina");
                     } catch (Exception e) {
 
                     }
