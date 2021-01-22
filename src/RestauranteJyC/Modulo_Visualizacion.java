@@ -5,9 +5,12 @@
  */
 package RestauranteJyC;
 
+import static java.lang.Thread.sleep;
+import java.rmi.*;
+
 /**
  *
- * @author necok
+ * @author necok esto es el cliente
  */
 public class Modulo_Visualizacion extends javax.swing.JFrame {
 
@@ -16,6 +19,26 @@ public class Modulo_Visualizacion extends javax.swing.JFrame {
      */
     public Modulo_Visualizacion() {
         initComponents();
+    }
+
+    
+
+    public class Cliente {
+        public void main(String args[]) {
+            
+            try {
+                              
+                Modulo_Visualizacion texto_mostrador = (Modulo_Visualizacion) Naming.lookup("//127.0.0.1/texto_mostrador"); //Localiza el objeto distribuido
+                              
+                sleep(1000); //Para que dé tiempo a leer la respuesta antes de que se cierre la ventana
+
+            } catch (Exception e) {
+                System.out.println("Excepción : " + e.getMessage());
+                e.printStackTrace();
+            }
+
+        }
+
     }
 
     /**
@@ -96,13 +119,7 @@ public class Modulo_Visualizacion extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Modulo_Visualizacion().setVisible(true);
-            }
-        });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
