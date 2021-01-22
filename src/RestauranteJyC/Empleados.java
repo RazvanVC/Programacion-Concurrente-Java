@@ -30,6 +30,8 @@ public class Empleados extends Thread {
         this.texto = texto;
         this.continuar = true;
     }
+    
+    
 
     @Override
     public void run() {

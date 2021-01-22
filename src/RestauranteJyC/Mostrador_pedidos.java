@@ -22,7 +22,7 @@ public class Mostrador_pedidos {
 
     public Mostrador_pedidos(int capacidad, boolean lleno, JTextField Text) {
         this.capacidad = capacidad;
-        //System.out.println(this.capacidad+"--capacidad");
+        System.out.println(this.capacidad+"--capacidad");
         this.lleno = lleno;
         poli = new Semaphore(capacidad, true);
         critico = new Semaphore(1);

@@ -25,6 +25,10 @@ public class Cocineros extends Thread { // creación del hilo
         this.texto = texto;
         this.continuar = true;
     }
+    
+    
+    
+    
 
     public void run() {
 

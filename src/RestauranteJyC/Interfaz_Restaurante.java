@@ -6,6 +6,7 @@
 package RestauranteJyC;
 
 import RestauranteJyC.Empleados;
+import java.net.MalformedURLException;
 
 import java.util.logging.Level;
 import java.rmi.*;
@@ -66,23 +67,8 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
 
     }
     
-    public class Servidor{
+    
 
-    public void main(String args[])    {
-        try{
-            texto_mostrador obj; //Crea una instancia del objeto que implementa la interfaz, como objeto a registrar
-            obj = new texto_mostrador();
-            Registry registry = LocateRegistry.createRegistry(1099); //Arranca rmiregistry local en el puerto 1099
-            Naming.rebind("//localhost/texto_mostrador", (Remote) obj);   //rebind sólo funciona sobre una url del equipo local
-            System.out.println("El texto mostrador ha quedado registrado");
-        }
-
-        catch (Exception e){
-            System.out.println(" Error: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
-}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -350,6 +336,7 @@ public class Interfaz_Restaurante extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
