@@ -40,21 +40,22 @@ public class Empleados extends Thread {
             if (continuar == true) {
                 try {
                     int tiempo = (int) (300 + 400 * Math.random());
-                    Thread.sleep(tiempo);
+                    
 
                     p = mostrador.coger(); //Cuando coge un null, se bloquea, y no inicia
 
                     texto.setText(id_Empleado + " llevando " + p.getId());
                     try {
-                        Log_Restaurante logTxt = new Log_Restaurante("logTxt.txt");
+                        Log_Restaurante logTxt = new Log_Restaurante("log.txt");
 
                         logTxt.log.setLevel(Level.INFO);
                         logTxt.log.info(id_Empleado + "coje el pedido del mostrador del cliente"+ p.getId()+" en la mesa del platos" );
                     } catch (Exception e) {
 
                     }
-
+                    Thread.sleep(tiempo);
                     mesa.dejar(p);
+                    
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Empleados.class.getName()).log(Level.SEVERE, null, ex);
 

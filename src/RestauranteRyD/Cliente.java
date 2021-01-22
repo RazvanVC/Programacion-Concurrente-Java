@@ -15,13 +15,15 @@ public class Cliente extends Thread{
     private String id_cliente;
     private Mostrador mostrador;
     private int numPedidos;
+    private final LogRestaurante log;
     
     //Constructor
-    public Cliente(String id, Mostrador mostrador, int numPedidos){
+    public Cliente(String id, Mostrador mostrador, int numPedidos, LogRestaurante log){
         super(String.valueOf(id));
         this.id_cliente=id;
         this.mostrador = mostrador;
         this.numPedidos = numPedidos;
+        this.log = log;
     }
     
     @Override
@@ -32,12 +34,11 @@ public class Cliente extends Thread{
             try {
                 mostrador.depositarPedido(new Pedido(this.id_cliente+"-P"+(i+1)));
                 sleep(500+((int) (500*Math.random())));
+                log.escribirLog(this.id_cliente + " ha depositado el pedido: " + this.id_cliente+"-P"+(i+1));
                 //Insertar clase log
             } catch (InterruptedException e){}
             i++;
         }
-        
-        //Insertar mensajes en log
     }
     
     //Getters
