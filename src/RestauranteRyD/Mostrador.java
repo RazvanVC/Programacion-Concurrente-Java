@@ -25,7 +25,7 @@ public class Mostrador {
      */
     public Mostrador(int capacidad, JTextArea mostrador) {
         this.pedidosMostrador = new ListaHilos(mostrador, capacidad);
-        semaforo=new Semaphore(capacidad, true);
+        semaforo=new Semaphore(capacidad);
     }
     
     //Métodos

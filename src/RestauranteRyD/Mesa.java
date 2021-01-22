@@ -21,7 +21,7 @@ public class Mesa {
     //Constructor
     public Mesa(int capacidad, JTextArea mesaCocina) {
         this.pedidosMesa = new ListaHilos(mesaCocina, capacidad);
-        semaforo = new Semaphore(capacidad, true);
+        semaforo = new Semaphore(capacidad);
     }
 
     //Métodos
