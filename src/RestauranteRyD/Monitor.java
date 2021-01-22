@@ -17,16 +17,33 @@ public class Monitor extends javax.swing.JFrame {
     /**
      * Creates new form Monitor
      */
-    @SuppressWarnings({"LeakingThisInConstructor", "UseSpecificCatch"})
+    @SuppressWarnings({"LeakingThisInConstructor", "UseSpecificCatch", "CallToThreadStartDuringObjectConstruction"})
     public Monitor() {
         initComponents();
-        try {
-            InterfazComun obj = (InterfazComun) Naming.lookup("//127.0.0.1/Controlador");
-            obj.empezarPrograma(this.jTextArea1, this.jTextArea2);
-            //System.out.println("Paso de esta orden");
-        } catch (Exception e){
-            e.printStackTrace();
+
+        LogRestaurante lr = new LogRestaurante("./evolucionRestauranteRMI.txt");
+        Mostrador mp = new Mostrador(10, jTextArea1);
+        Mesa mesaPlatos = new Mesa(20, jTextArea2);
+        //Creamos e iniciamos los 200 clientes
+        //SUGERENCIA: Exportar todo esto a un metodo mas abajo
+        for (int i = 1; i < 201; i++) {
+            Cliente cv = new Cliente("Cliente" + i, mp, 2, lr);
+            cv.start();
         }
+
+        Empleado e1 = new Empleado("Empleado 1", mesaPlatos, mp, null, lr);
+        e1.start();
+        Empleado e2 = new Empleado("Empleado 2", mesaPlatos, mp, null, lr);
+        e2.start();
+
+        Cocinero c1 = new Cocinero("Cocinero 1", mesaPlatos, null, lr);
+        Cocinero c2 = new Cocinero("Cocinero 2", mesaPlatos, null, lr);
+        Cocinero c3 = new Cocinero("Cocinero 3", mesaPlatos, null, lr);
+
+        c1.start();
+        c2.start();
+        c3.start();
+
     }
 
     /**
@@ -42,6 +59,7 @@ public class Monitor extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,39 +71,36 @@ public class Monitor extends javax.swing.JFrame {
         jTextArea2.setRows(5);
         jScrollPane2.setViewportView(jTextArea2);
 
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(70, 70, 70)
+                .addGap(17, 17, 17)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(157, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 172, Short.MAX_VALUE))
+                    .addComponent(jScrollPane2))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-                /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Monitor().setVisible(true);
-            }
-        });
-    }
 
     public JTextArea getjTextArea1() {
         return jTextArea1;
@@ -96,6 +111,7 @@ public class Monitor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;

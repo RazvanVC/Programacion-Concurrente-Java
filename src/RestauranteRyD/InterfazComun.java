@@ -7,7 +7,6 @@ package RestauranteRyD;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-import javax.swing.JTextArea;
 
 /**
  *
@@ -15,6 +14,6 @@ import javax.swing.JTextArea;
  */
 public interface InterfazComun extends Remote{
     
-    public void empezarPrograma(JTextArea a, JTextArea b) throws RemoteException;
+    public void empezarPrograma() throws RemoteException;
     
 }
