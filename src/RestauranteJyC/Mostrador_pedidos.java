@@ -6,12 +6,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
 
-/**
- *
- * @author josep
- */
-public class Mostrador_pedidos { //Setea los atributos
-
+public class Mostrador_pedidos {
+    //atributos y los semáforos
     private int capacidad;
     private boolean lleno;
     private ArrayList<Pedidos> contador_p;
@@ -20,7 +16,7 @@ public class Mostrador_pedidos { //Setea los atributos
     private Semaphore critico;
     private JTextField Texto;
 
-    public Mostrador_pedidos(int capacidad, boolean lleno, JTextField Text) {
+    public Mostrador_pedidos(int capacidad, boolean lleno, JTextField Text) { //constructor
         this.capacidad = capacidad;
         System.out.println(this.capacidad+"--capacidad");
         this.lleno = lleno;
@@ -34,14 +30,13 @@ public class Mostrador_pedidos { //Setea los atributos
     }
     
     public synchronized Pedidos coger() throws InterruptedException {
-        uno.acquire();
-
-        critico.acquire();
-        System.out.println("Mostrador--" + contador_p.size());
+        uno.acquire(); //activa semaforo
+        critico.acquire(); 
+        System.out.println("Mostrador--" + contador_p.size()); //muestra el número de mostrador
         Pedidos pedido;
 
         pedido = contador_p.get(0);
-        poli.release();
+        poli.release(); //libera los semaforos
         critico.release();
         contador_p.remove(pedido);
         return pedido;
@@ -49,24 +44,24 @@ public class Mostrador_pedidos { //Setea los atributos
 
     void insert(Pedidos pedidos) {
         try {
-            poli.acquire();
+            poli.acquire(); //activa semaforos
             critico.acquire();
-            contador_p.add(pedidos);
+            contador_p.add(pedidos); //añade uno al array de pedidos
             String text = "";
-            for (int i = 0; i < contador_p.size(); i++) {
+            for (int i = 0; i < contador_p.size(); i++) { //sube el contaodr
 
                 text = text +"| " + contador_p.get(i).getId();
 
             }
-            Texto.setText(text);
-            critico.release();
+            Texto.setText(text); //setea el texto 
+            critico.release(); //libera semaforos
             uno.release();
         } catch (InterruptedException ex) {
             Logger.getLogger(Mostrador_pedidos.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
-
+    //metodos get y sets
     public int getCapacidad() {
         return capacidad;
     }

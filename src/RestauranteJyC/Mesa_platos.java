@@ -12,8 +12,8 @@ import javax.swing.JTextField;
  *
  * @author josep
  */
-public class Mesa_platos { 
-    //Creacion de atributos
+public class Mesa_platos {
+     //Creacion de atributos
     private int capacidad;
     private ArrayList<Pedidos> contador_p;
     private boolean lleno;
@@ -23,7 +23,7 @@ public class Mesa_platos {
     private Semaphore critico;
     private JTextField Texto;
 
-    public Mesa_platos(int capacidad, boolean lleno, JTextField Text) { //Setea los atributos
+    public Mesa_platos(int capacidad, boolean lleno, JTextField Text) { //constructor
         this.capacidad = capacidad;
         this.lleno = lleno;
         poli = new Semaphore(capacidad, true);
@@ -37,7 +37,7 @@ public class Mesa_platos {
 
     public void dejar(Pedidos p) { //Metodo para dejar los platos
         try {
-            poli.acquire(); //inicio de semaforos y contadores
+            poli.acquire(); //inicio de semaforos y contadores 
             critico.acquire();
             contador_p.add(p);
             String text = "";
@@ -65,7 +65,7 @@ public class Mesa_platos {
         p = this.contador_p.get(0);
         contador_p.remove(p); //quita uno del contador
         //libera los semáforos
-        poli.release(); 
+        poli.release();
         critico.release();
 
         return p;
@@ -94,7 +94,7 @@ public class Mesa_platos {
     public void setVacio(boolean vacio) {
         this.vacio = vacio;
     }
-    //metodo get del contador
+
     public ArrayList<Pedidos> getContador_p() {
         return contador_p;
     }

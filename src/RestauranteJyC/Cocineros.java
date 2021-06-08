@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package RestauranteJyC;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
@@ -18,19 +12,15 @@ public class Cocineros extends Thread { // creación del hilo
     private final Mesa_platos mesa;
     private final JTextField texto;
     private boolean continuar;
-    private Log_Restaurante logTxt;
+    private final Log_Restaurante logTxt;
 
-    public Cocineros(String id, Mesa_platos mesa, JTextField texto,Log_Restaurante logTxt) { //setea atributos
+    public Cocineros(String id, Mesa_platos mesa, JTextField texto, Log_Restaurante logTxt) { //Constructor
         this.id_Cocinero = id;
         this.mesa = mesa;
         this.texto = texto;
         this.continuar = true;
         this.logTxt = logTxt;
     }
-    
-    
-    
-    
 
     public void run() {
 
@@ -47,23 +37,14 @@ public class Cocineros extends Thread { // creación del hilo
                         System.out.print("");
                         continue;
                         } //comprueba si la mesa está vacia
-
-                        
                     }
                     texto.setText(this.id_Cocinero + " en la plancha " + p.getId() + " || "); // setea su texto
                     try { //escribe el log
-                    
                         logTxt.log.info("El cocinero "+id_Cocinero + "coje el plato de la mesa de platos del " + p.getId() + "y lo cocina");
-                        
-                    } catch (Exception e) {
-
-                    }
+                    } catch (Exception e) {}
+                    
                     Thread.sleep(tiempo); //se duerme el tiempo determinado mientras cocina
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (SecurityException ex) {
-                    Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (IOException ex) {
+                } catch (InterruptedException | SecurityException | IOException ex) {
                     Logger.getLogger(Cocineros.class.getName()).log(Level.SEVERE, null, ex);
                 }
             } else {
@@ -82,7 +63,6 @@ public class Cocineros extends Thread { // creación del hilo
 
     public void setContinuar(boolean a) {
         this.continuar = a;
-
     }
 
     public String getIdCocinero() {
@@ -92,5 +72,4 @@ public class Cocineros extends Thread { // creación del hilo
     public void setId(String id) {
         this.id_Cocinero = id;
     }
-
 }

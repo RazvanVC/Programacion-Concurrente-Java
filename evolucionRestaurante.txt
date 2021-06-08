@@ -1,70 +1,1560 @@
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 59deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 142deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 125deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 94deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 53deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 192deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 154deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 130deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 28deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente26-P0.  en la mesa del platos
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 43deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente59-P0.  en la mesa del platos
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 1deja el pedido en el mostrador
-ene 22, 2021 1:48:35 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 26deja el pedido en el mostrador
-ene 22, 2021 1:48:36 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente1-P0.  en la mesa del platos
-ene 22, 2021 1:48:36 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 13deja el pedido en el mostrador
-ene 22, 2021 1:48:36 PM RestauranteJyC.Cocineros run
-INFORMACIÓN: El cocinero cocinero_1coje el plato de la mesa de platos del cliente59-P0. y lo cocina
-ene 22, 2021 1:48:36 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente43-P0.  en la mesa del platos
-ene 22, 2021 1:48:36 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 110deja el pedido en el mostrador
-ene 22, 2021 1:48:36 PM RestauranteJyC.Cocineros run
-INFORMACIÓN: El cocinero cocinero_2coje el plato de la mesa de platos del cliente26-P0. y lo cocina
-ene 22, 2021 1:48:36 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente28-P0.  en la mesa del platos
-ene 22, 2021 1:48:36 PM RestauranteJyC.Cocineros run
-INFORMACIÓN: El cocinero cocinero_3coje el plato de la mesa de platos del cliente43-P0. y lo cocina
-ene 22, 2021 1:48:36 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 188deja el pedido en el mostrador
-ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente130-P0.  en la mesa del platos
-ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 65deja el pedido en el mostrador
-ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente154-P0.  en la mesa del platos
-ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 124deja el pedido en el mostrador
-ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente192-P0.  en la mesa del platos
-ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 51deja el pedido en el mostrador
-ene 22, 2021 1:48:37 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_1coje el pedido del mostrador del clientecliente53-P0.  en la mesa del platos
-ene 22, 2021 1:48:37 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 174deja el pedido en el mostrador
-ene 22, 2021 1:48:38 PM RestauranteJyC.Empleados run
-INFORMACIÓN: empleado_2coje el pedido del mostrador del clientecliente94-P0.  en la mesa del platos
-ene 22, 2021 1:48:38 PM RestauranteJyC.Clientes run
-INFORMACIÓN: 166deja el pedido en el mostrador
-ene 22, 2021 1:48:38 PM RestauranteJyC.Cocineros run
-INFORMACIÓN: El cocinero cocinero_2coje el plato de la mesa de platos del cliente1-P0. y lo cocina
-ene 22, 2021 1:48:38 PM RestauranteJyC.Cocineros run
-INFORMACIÓN: El cocinero cocinero_1coje el plato de la mesa de platos del cliente130-P0. y lo cocina
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 57deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 187deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 33deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 19deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 21deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 139deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 71deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 154deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 76deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente41-P0.  en la mesa del platos
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente57-P0.  en la mesa del platos
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 37deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 75deja el pedido en el mostrador
+jun. 09, 2021 12:39:40 A. M. RestauranteJyC.Clientes run
+INFO: 41deja el pedido en el mostrador
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente75-P0.  en la mesa del platos
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente41-P0. y lo cocina
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Clientes run
+INFO: 155deja el pedido en el mostrador
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente37-P0.  en la mesa del platos
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Clientes run
+INFO: 114deja el pedido en el mostrador
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente57-P0. y lo cocina
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente76-P0.  en la mesa del platos
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Clientes run
+INFO: 58deja el pedido en el mostrador
+jun. 09, 2021 12:39:41 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente75-P0. y lo cocina
+jun. 09, 2021 12:39:42 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente154-P0.  en la mesa del platos
+jun. 09, 2021 12:39:42 A. M. RestauranteJyC.Clientes run
+INFO: 169deja el pedido en el mostrador
+jun. 09, 2021 12:39:42 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente71-P0.  en la mesa del platos
+jun. 09, 2021 12:39:42 A. M. RestauranteJyC.Clientes run
+INFO: 123deja el pedido en el mostrador
+jun. 09, 2021 12:39:42 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente139-P0.  en la mesa del platos
+jun. 09, 2021 12:39:42 A. M. RestauranteJyC.Clientes run
+INFO: 128deja el pedido en el mostrador
+jun. 09, 2021 12:39:42 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente37-P0. y lo cocina
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente21-P0.  en la mesa del platos
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Clientes run
+INFO: 5deja el pedido en el mostrador
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente154-P0. y lo cocina
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente19-P0.  en la mesa del platos
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Clientes run
+INFO: 109deja el pedido en el mostrador
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente33-P0.  en la mesa del platos
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Clientes run
+INFO: 113deja el pedido en el mostrador
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente187-P0.  en la mesa del platos
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Clientes run
+INFO: 87deja el pedido en el mostrador
+jun. 09, 2021 12:39:43 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente76-P0. y lo cocina
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente155-P0.  en la mesa del platos
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Clientes run
+INFO: 59deja el pedido en el mostrador
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente114-P0.  en la mesa del platos
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Clientes run
+INFO: 189deja el pedido en el mostrador
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente58-P0.  en la mesa del platos
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Clientes run
+INFO: 119deja el pedido en el mostrador
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente139-P0. y lo cocina
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente169-P0.  en la mesa del platos
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Clientes run
+INFO: 101deja el pedido en el mostrador
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente71-P0. y lo cocina
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente123-P0.  en la mesa del platos
+jun. 09, 2021 12:39:44 A. M. RestauranteJyC.Clientes run
+INFO: 49deja el pedido en el mostrador
+jun. 09, 2021 12:39:45 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente128-P0.  en la mesa del platos
+jun. 09, 2021 12:39:45 A. M. RestauranteJyC.Clientes run
+INFO: 199deja el pedido en el mostrador
+jun. 09, 2021 12:39:45 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente5-P0.  en la mesa del platos
+jun. 09, 2021 12:39:45 A. M. RestauranteJyC.Clientes run
+INFO: 166deja el pedido en el mostrador
+jun. 09, 2021 12:39:45 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente21-P0. y lo cocina
+jun. 09, 2021 12:39:45 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente109-P0.  en la mesa del platos
+jun. 09, 2021 12:39:45 A. M. RestauranteJyC.Clientes run
+INFO: 22deja el pedido en el mostrador
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente113-P0.  en la mesa del platos
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Clientes run
+INFO: 48deja el pedido en el mostrador
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente87-P0.  en la mesa del platos
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Clientes run
+INFO: 116deja el pedido en el mostrador
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente19-P0. y lo cocina
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente59-P0.  en la mesa del platos
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Clientes run
+INFO: 150deja el pedido en el mostrador
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente189-P0.  en la mesa del platos
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Clientes run
+INFO: 111deja el pedido en el mostrador
+jun. 09, 2021 12:39:46 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente33-P0. y lo cocina
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente119-P0.  en la mesa del platos
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Clientes run
+INFO: 124deja el pedido en el mostrador
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente101-P0.  en la mesa del platos
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Clientes run
+INFO: 106deja el pedido en el mostrador
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente187-P0. y lo cocina
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente49-P0.  en la mesa del platos
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Clientes run
+INFO: 134deja el pedido en el mostrador
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente199-P0.  en la mesa del platos
+jun. 09, 2021 12:39:47 A. M. RestauranteJyC.Clientes run
+INFO: 188deja el pedido en el mostrador
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente166-P0.  en la mesa del platos
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Clientes run
+INFO: 138deja el pedido en el mostrador
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente155-P0. y lo cocina
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente22-P0.  en la mesa del platos
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Clientes run
+INFO: 178deja el pedido en el mostrador
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente48-P0.  en la mesa del platos
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Clientes run
+INFO: 54deja el pedido en el mostrador
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente114-P0. y lo cocina
+jun. 09, 2021 12:39:48 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente58-P0. y lo cocina
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente116-P0.  en la mesa del platos
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Clientes run
+INFO: 39deja el pedido en el mostrador
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente150-P0.  en la mesa del platos
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Clientes run
+INFO: 12deja el pedido en el mostrador
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente111-P0.  en la mesa del platos
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Clientes run
+INFO: 60deja el pedido en el mostrador
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente124-P0.  en la mesa del platos
+jun. 09, 2021 12:39:49 A. M. RestauranteJyC.Clientes run
+INFO: 171deja el pedido en el mostrador
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente106-P0.  en la mesa del platos
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Clientes run
+INFO: 29deja el pedido en el mostrador
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente134-P0.  en la mesa del platos
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Clientes run
+INFO: 118deja el pedido en el mostrador
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente123-P0. y lo cocina
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente188-P0.  en la mesa del platos
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Clientes run
+INFO: 88deja el pedido en el mostrador
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente169-P0. y lo cocina
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente128-P0. y lo cocina
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente138-P0.  en la mesa del platos
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Clientes run
+INFO: 61deja el pedido en el mostrador
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente178-P0.  en la mesa del platos
+jun. 09, 2021 12:39:50 A. M. RestauranteJyC.Clientes run
+INFO: 16deja el pedido en el mostrador
+jun. 09, 2021 12:39:51 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente5-P0. y lo cocina
+jun. 09, 2021 12:39:51 A. M. RestauranteJyC.Clientes run
+INFO: 142deja el pedido en el mostrador
+jun. 09, 2021 12:39:51 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente54-P0.  en la mesa del platos
+jun. 09, 2021 12:39:52 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente109-P0. y lo cocina
+jun. 09, 2021 12:39:52 A. M. RestauranteJyC.Clientes run
+INFO: 121deja el pedido en el mostrador
+jun. 09, 2021 12:39:52 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente39-P0.  en la mesa del platos
+jun. 09, 2021 12:39:52 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente113-P0. y lo cocina
+jun. 09, 2021 12:39:52 A. M. RestauranteJyC.Clientes run
+INFO: 51deja el pedido en el mostrador
+jun. 09, 2021 12:39:52 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente12-P0.  en la mesa del platos
+jun. 09, 2021 12:39:53 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente87-P0. y lo cocina
+jun. 09, 2021 12:39:53 A. M. RestauranteJyC.Clientes run
+INFO: 79deja el pedido en el mostrador
+jun. 09, 2021 12:39:53 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente60-P0.  en la mesa del platos
+jun. 09, 2021 12:39:53 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente59-P0. y lo cocina
+jun. 09, 2021 12:39:53 A. M. RestauranteJyC.Clientes run
+INFO: 18deja el pedido en el mostrador
+jun. 09, 2021 12:39:53 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente171-P0.  en la mesa del platos
+jun. 09, 2021 12:39:54 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente189-P0. y lo cocina
+jun. 09, 2021 12:39:54 A. M. RestauranteJyC.Clientes run
+INFO: 38deja el pedido en el mostrador
+jun. 09, 2021 12:39:54 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente29-P0.  en la mesa del platos
+jun. 09, 2021 12:39:55 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente119-P0. y lo cocina
+jun. 09, 2021 12:39:55 A. M. RestauranteJyC.Clientes run
+INFO: 45deja el pedido en el mostrador
+jun. 09, 2021 12:39:55 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente118-P0.  en la mesa del platos
+jun. 09, 2021 12:39:55 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente49-P0. y lo cocina
+jun. 09, 2021 12:39:55 A. M. RestauranteJyC.Clientes run
+INFO: 23deja el pedido en el mostrador
+jun. 09, 2021 12:39:55 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente88-P0.  en la mesa del platos
+jun. 09, 2021 12:39:56 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente101-P0. y lo cocina
+jun. 09, 2021 12:39:56 A. M. RestauranteJyC.Clientes run
+INFO: 175deja el pedido en el mostrador
+jun. 09, 2021 12:39:56 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente61-P0.  en la mesa del platos
+jun. 09, 2021 12:39:57 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente199-P0. y lo cocina
+jun. 09, 2021 12:39:57 A. M. RestauranteJyC.Clientes run
+INFO: 8deja el pedido en el mostrador
+jun. 09, 2021 12:39:57 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente16-P0.  en la mesa del platos
+jun. 09, 2021 12:39:57 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente166-P0. y lo cocina
+jun. 09, 2021 12:39:57 A. M. RestauranteJyC.Clientes run
+INFO: 100deja el pedido en el mostrador
+jun. 09, 2021 12:39:57 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente142-P0.  en la mesa del platos
+jun. 09, 2021 12:39:57 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente48-P0. y lo cocina
+jun. 09, 2021 12:39:58 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente121-P0.  en la mesa del platos
+jun. 09, 2021 12:39:58 A. M. RestauranteJyC.Clientes run
+INFO: 136deja el pedido en el mostrador
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente22-P0. y lo cocina
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente51-P0.  en la mesa del platos
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Clientes run
+INFO: 2deja el pedido en el mostrador
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente150-P0. y lo cocina
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Clientes run
+INFO: 94deja el pedido en el mostrador
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente79-P0.  en la mesa del platos
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente116-P0. y lo cocina
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente18-P0.  en la mesa del platos
+jun. 09, 2021 12:39:59 A. M. RestauranteJyC.Clientes run
+INFO: 0deja el pedido en el mostrador
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente111-P0. y lo cocina
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente38-P0.  en la mesa del platos
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Clientes run
+INFO: 81deja el pedido en el mostrador
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente124-P0. y lo cocina
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente45-P0.  en la mesa del platos
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Clientes run
+INFO: 190deja el pedido en el mostrador
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente106-P0. y lo cocina
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Clientes run
+INFO: 9deja el pedido en el mostrador
+jun. 09, 2021 12:40:01 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente23-P0.  en la mesa del platos
+jun. 09, 2021 12:40:02 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente134-P0. y lo cocina
+jun. 09, 2021 12:40:02 A. M. RestauranteJyC.Clientes run
+INFO: 161deja el pedido en el mostrador
+jun. 09, 2021 12:40:02 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente175-P0.  en la mesa del platos
+jun. 09, 2021 12:40:03 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente188-P0. y lo cocina
+jun. 09, 2021 12:40:03 A. M. RestauranteJyC.Clientes run
+INFO: 159deja el pedido en el mostrador
+jun. 09, 2021 12:40:03 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente8-P0.  en la mesa del platos
+jun. 09, 2021 12:40:03 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente138-P0. y lo cocina
+jun. 09, 2021 12:40:03 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente100-P0.  en la mesa del platos
+jun. 09, 2021 12:40:03 A. M. RestauranteJyC.Clientes run
+INFO: 173deja el pedido en el mostrador
+jun. 09, 2021 12:40:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente178-P0. y lo cocina
+jun. 09, 2021 12:40:04 A. M. RestauranteJyC.Clientes run
+INFO: 149deja el pedido en el mostrador
+jun. 09, 2021 12:40:04 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente136-P0.  en la mesa del platos
+jun. 09, 2021 12:40:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente54-P0. y lo cocina
+jun. 09, 2021 12:40:04 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente2-P0.  en la mesa del platos
+jun. 09, 2021 12:40:04 A. M. RestauranteJyC.Clientes run
+INFO: 104deja el pedido en el mostrador
+jun. 09, 2021 12:40:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente39-P0. y lo cocina
+jun. 09, 2021 12:40:05 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente94-P0.  en la mesa del platos
+jun. 09, 2021 12:40:05 A. M. RestauranteJyC.Clientes run
+INFO: 11deja el pedido en el mostrador
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente12-P0. y lo cocina
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Clientes run
+INFO: 69deja el pedido en el mostrador
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente0-P0.  en la mesa del platos
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente60-P0. y lo cocina
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente81-P0.  en la mesa del platos
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Clientes run
+INFO: 66deja el pedido en el mostrador
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente171-P0. y lo cocina
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Clientes run
+INFO: 107deja el pedido en el mostrador
+jun. 09, 2021 12:40:06 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente190-P0.  en la mesa del platos
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente29-P0. y lo cocina
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Clientes run
+INFO: 130deja el pedido en el mostrador
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente9-P0.  en la mesa del platos
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente118-P0. y lo cocina
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Clientes run
+INFO: 127deja el pedido en el mostrador
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente161-P0.  en la mesa del platos
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente88-P0. y lo cocina
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Clientes run
+INFO: 162deja el pedido en el mostrador
+jun. 09, 2021 12:40:08 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente159-P0.  en la mesa del platos
+jun. 09, 2021 12:40:09 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente61-P0. y lo cocina
+jun. 09, 2021 12:40:09 A. M. RestauranteJyC.Clientes run
+INFO: 78deja el pedido en el mostrador
+jun. 09, 2021 12:40:09 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente173-P0.  en la mesa del platos
+jun. 09, 2021 12:40:10 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente16-P0. y lo cocina
+jun. 09, 2021 12:40:10 A. M. RestauranteJyC.Clientes run
+INFO: 55deja el pedido en el mostrador
+jun. 09, 2021 12:40:10 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente149-P0.  en la mesa del platos
+jun. 09, 2021 12:40:10 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente142-P0. y lo cocina
+jun. 09, 2021 12:40:10 A. M. RestauranteJyC.Clientes run
+INFO: 64deja el pedido en el mostrador
+jun. 09, 2021 12:40:10 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente104-P0.  en la mesa del platos
+jun. 09, 2021 12:40:11 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente121-P0. y lo cocina
+jun. 09, 2021 12:40:11 A. M. RestauranteJyC.Clientes run
+INFO: 35deja el pedido en el mostrador
+jun. 09, 2021 12:40:11 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente11-P0.  en la mesa del platos
+jun. 09, 2021 12:40:11 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente51-P0. y lo cocina
+jun. 09, 2021 12:40:11 A. M. RestauranteJyC.Clientes run
+INFO: 194deja el pedido en el mostrador
+jun. 09, 2021 12:40:11 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente69-P0.  en la mesa del platos
+jun. 09, 2021 12:40:12 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente79-P0. y lo cocina
+jun. 09, 2021 12:40:12 A. M. RestauranteJyC.Clientes run
+INFO: 24deja el pedido en el mostrador
+jun. 09, 2021 12:40:12 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente66-P0.  en la mesa del platos
+jun. 09, 2021 12:40:13 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente18-P0. y lo cocina
+jun. 09, 2021 12:40:13 A. M. RestauranteJyC.Clientes run
+INFO: 195deja el pedido en el mostrador
+jun. 09, 2021 12:40:13 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente107-P0.  en la mesa del platos
+jun. 09, 2021 12:40:13 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente38-P0. y lo cocina
+jun. 09, 2021 12:40:13 A. M. RestauranteJyC.Clientes run
+INFO: 163deja el pedido en el mostrador
+jun. 09, 2021 12:40:13 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente130-P0.  en la mesa del platos
+jun. 09, 2021 12:40:14 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente45-P0. y lo cocina
+jun. 09, 2021 12:40:14 A. M. RestauranteJyC.Clientes run
+INFO: 103deja el pedido en el mostrador
+jun. 09, 2021 12:40:14 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente127-P0.  en la mesa del platos
+jun. 09, 2021 12:40:14 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente23-P0. y lo cocina
+jun. 09, 2021 12:40:14 A. M. RestauranteJyC.Clientes run
+INFO: 10deja el pedido en el mostrador
+jun. 09, 2021 12:40:14 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente162-P0.  en la mesa del platos
+jun. 09, 2021 12:40:15 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente175-P0. y lo cocina
+jun. 09, 2021 12:40:15 A. M. RestauranteJyC.Clientes run
+INFO: 67deja el pedido en el mostrador
+jun. 09, 2021 12:40:15 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente78-P0.  en la mesa del platos
+jun. 09, 2021 12:40:15 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente8-P0. y lo cocina
+jun. 09, 2021 12:40:15 A. M. RestauranteJyC.Clientes run
+INFO: 151deja el pedido en el mostrador
+jun. 09, 2021 12:40:15 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente55-P0.  en la mesa del platos
+jun. 09, 2021 12:40:16 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente100-P0. y lo cocina
+jun. 09, 2021 12:40:16 A. M. RestauranteJyC.Clientes run
+INFO: 158deja el pedido en el mostrador
+jun. 09, 2021 12:40:16 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente64-P0.  en la mesa del platos
+jun. 09, 2021 12:40:17 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente2-P0. y lo cocina
+jun. 09, 2021 12:40:17 A. M. RestauranteJyC.Clientes run
+INFO: 50deja el pedido en el mostrador
+jun. 09, 2021 12:40:17 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente35-P0.  en la mesa del platos
+jun. 09, 2021 12:40:17 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente136-P0. y lo cocina
+jun. 09, 2021 12:40:17 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente194-P0.  en la mesa del platos
+jun. 09, 2021 12:40:17 A. M. RestauranteJyC.Clientes run
+INFO: 110deja el pedido en el mostrador
+jun. 09, 2021 12:40:18 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente94-P0. y lo cocina
+jun. 09, 2021 12:40:18 A. M. RestauranteJyC.Clientes run
+INFO: 102deja el pedido en el mostrador
+jun. 09, 2021 12:40:18 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente24-P0.  en la mesa del platos
+jun. 09, 2021 12:40:19 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente0-P0. y lo cocina
+jun. 09, 2021 12:40:19 A. M. RestauranteJyC.Clientes run
+INFO: 133deja el pedido en el mostrador
+jun. 09, 2021 12:40:19 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente195-P0.  en la mesa del platos
+jun. 09, 2021 12:40:19 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente190-P0. y lo cocina
+jun. 09, 2021 12:40:19 A. M. RestauranteJyC.Clientes run
+INFO: 56deja el pedido en el mostrador
+jun. 09, 2021 12:40:19 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente163-P0.  en la mesa del platos
+jun. 09, 2021 12:40:20 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente81-P0. y lo cocina
+jun. 09, 2021 12:40:20 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente103-P0.  en la mesa del platos
+jun. 09, 2021 12:40:20 A. M. RestauranteJyC.Clientes run
+INFO: 26deja el pedido en el mostrador
+jun. 09, 2021 12:40:20 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente9-P0. y lo cocina
+jun. 09, 2021 12:40:20 A. M. RestauranteJyC.Clientes run
+INFO: 52deja el pedido en el mostrador
+jun. 09, 2021 12:40:20 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente10-P0.  en la mesa del platos
+jun. 09, 2021 12:40:21 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente161-P0. y lo cocina
+jun. 09, 2021 12:40:21 A. M. RestauranteJyC.Clientes run
+INFO: 185deja el pedido en el mostrador
+jun. 09, 2021 12:40:21 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente67-P0.  en la mesa del platos
+jun. 09, 2021 12:40:22 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente159-P0. y lo cocina
+jun. 09, 2021 12:40:22 A. M. RestauranteJyC.Clientes run
+INFO: 193deja el pedido en el mostrador
+jun. 09, 2021 12:40:22 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente151-P0.  en la mesa del platos
+jun. 09, 2021 12:40:22 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente173-P0. y lo cocina
+jun. 09, 2021 12:40:22 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente158-P0.  en la mesa del platos
+jun. 09, 2021 12:40:22 A. M. RestauranteJyC.Clientes run
+INFO: 157deja el pedido en el mostrador
+jun. 09, 2021 12:40:23 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente149-P0. y lo cocina
+jun. 09, 2021 12:40:23 A. M. RestauranteJyC.Clientes run
+INFO: 85deja el pedido en el mostrador
+jun. 09, 2021 12:40:23 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente50-P0.  en la mesa del platos
+jun. 09, 2021 12:40:23 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente104-P0. y lo cocina
+jun. 09, 2021 12:40:23 A. M. RestauranteJyC.Clientes run
+INFO: 30deja el pedido en el mostrador
+jun. 09, 2021 12:40:23 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente110-P0.  en la mesa del platos
+jun. 09, 2021 12:40:24 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente11-P0. y lo cocina
+jun. 09, 2021 12:40:24 A. M. RestauranteJyC.Clientes run
+INFO: 83deja el pedido en el mostrador
+jun. 09, 2021 12:40:24 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente102-P0.  en la mesa del platos
+jun. 09, 2021 12:40:24 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente69-P0. y lo cocina
+jun. 09, 2021 12:40:24 A. M. RestauranteJyC.Clientes run
+INFO: 129deja el pedido en el mostrador
+jun. 09, 2021 12:40:24 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente133-P0.  en la mesa del platos
+jun. 09, 2021 12:40:25 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente66-P0. y lo cocina
+jun. 09, 2021 12:40:25 A. M. RestauranteJyC.Clientes run
+INFO: 105deja el pedido en el mostrador
+jun. 09, 2021 12:40:25 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente56-P0.  en la mesa del platos
+jun. 09, 2021 12:40:26 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente107-P0. y lo cocina
+jun. 09, 2021 12:40:26 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente26-P0.  en la mesa del platos
+jun. 09, 2021 12:40:26 A. M. RestauranteJyC.Clientes run
+INFO: 146deja el pedido en el mostrador
+jun. 09, 2021 12:40:26 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente130-P0. y lo cocina
+jun. 09, 2021 12:40:26 A. M. RestauranteJyC.Clientes run
+INFO: 182deja el pedido en el mostrador
+jun. 09, 2021 12:40:26 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente52-P0.  en la mesa del platos
+jun. 09, 2021 12:40:27 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente127-P0. y lo cocina
+jun. 09, 2021 12:40:27 A. M. RestauranteJyC.Clientes run
+INFO: 93deja el pedido en el mostrador
+jun. 09, 2021 12:40:27 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente185-P0.  en la mesa del platos
+jun. 09, 2021 12:40:27 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente162-P0. y lo cocina
+jun. 09, 2021 12:40:27 A. M. RestauranteJyC.Clientes run
+INFO: 40deja el pedido en el mostrador
+jun. 09, 2021 12:40:27 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente193-P0.  en la mesa del platos
+jun. 09, 2021 12:40:28 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente78-P0. y lo cocina
+jun. 09, 2021 12:40:28 A. M. RestauranteJyC.Clientes run
+INFO: 148deja el pedido en el mostrador
+jun. 09, 2021 12:40:28 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente157-P0.  en la mesa del platos
+jun. 09, 2021 12:40:28 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente55-P0. y lo cocina
+jun. 09, 2021 12:40:28 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente85-P0.  en la mesa del platos
+jun. 09, 2021 12:40:28 A. M. RestauranteJyC.Clientes run
+INFO: 172deja el pedido en el mostrador
+jun. 09, 2021 12:40:29 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente64-P0. y lo cocina
+jun. 09, 2021 12:40:29 A. M. RestauranteJyC.Clientes run
+INFO: 141deja el pedido en el mostrador
+jun. 09, 2021 12:40:29 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente30-P0.  en la mesa del platos
+jun. 09, 2021 12:40:29 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente35-P0. y lo cocina
+jun. 09, 2021 12:40:29 A. M. RestauranteJyC.Clientes run
+INFO: 144deja el pedido en el mostrador
+jun. 09, 2021 12:40:29 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente83-P0.  en la mesa del platos
+jun. 09, 2021 12:40:30 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente194-P0. y lo cocina
+jun. 09, 2021 12:40:30 A. M. RestauranteJyC.Clientes run
+INFO: 132deja el pedido en el mostrador
+jun. 09, 2021 12:40:30 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente129-P0.  en la mesa del platos
+jun. 09, 2021 12:40:31 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente24-P0. y lo cocina
+jun. 09, 2021 12:40:31 A. M. RestauranteJyC.Clientes run
+INFO: 63deja el pedido en el mostrador
+jun. 09, 2021 12:40:31 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente105-P0.  en la mesa del platos
+jun. 09, 2021 12:40:31 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente195-P0. y lo cocina
+jun. 09, 2021 12:40:31 A. M. RestauranteJyC.Clientes run
+INFO: 97deja el pedido en el mostrador
+jun. 09, 2021 12:40:31 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente146-P0.  en la mesa del platos
+jun. 09, 2021 12:40:32 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente163-P0. y lo cocina
+jun. 09, 2021 12:40:32 A. M. RestauranteJyC.Clientes run
+INFO: 165deja el pedido en el mostrador
+jun. 09, 2021 12:40:32 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente182-P0.  en la mesa del platos
+jun. 09, 2021 12:40:33 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente103-P0. y lo cocina
+jun. 09, 2021 12:40:33 A. M. RestauranteJyC.Clientes run
+INFO: 89deja el pedido en el mostrador
+jun. 09, 2021 12:40:33 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente93-P0.  en la mesa del platos
+jun. 09, 2021 12:40:33 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente10-P0. y lo cocina
+jun. 09, 2021 12:40:33 A. M. RestauranteJyC.Clientes run
+INFO: 122deja el pedido en el mostrador
+jun. 09, 2021 12:40:33 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente40-P0.  en la mesa del platos
+jun. 09, 2021 12:40:34 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente67-P0. y lo cocina
+jun. 09, 2021 12:40:34 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente148-P0.  en la mesa del platos
+jun. 09, 2021 12:40:34 A. M. RestauranteJyC.Clientes run
+INFO: 14deja el pedido en el mostrador
+jun. 09, 2021 12:40:34 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente151-P0. y lo cocina
+jun. 09, 2021 12:40:34 A. M. RestauranteJyC.Clientes run
+INFO: 90deja el pedido en el mostrador
+jun. 09, 2021 12:40:34 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente172-P0.  en la mesa del platos
+jun. 09, 2021 12:40:35 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente158-P0. y lo cocina
+jun. 09, 2021 12:40:35 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente141-P0.  en la mesa del platos
+jun. 09, 2021 12:40:35 A. M. RestauranteJyC.Clientes run
+INFO: 197deja el pedido en el mostrador
+jun. 09, 2021 12:40:35 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente50-P0. y lo cocina
+jun. 09, 2021 12:40:35 A. M. RestauranteJyC.Clientes run
+INFO: 92deja el pedido en el mostrador
+jun. 09, 2021 12:40:35 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente144-P0.  en la mesa del platos
+jun. 09, 2021 12:40:36 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente110-P0. y lo cocina
+jun. 09, 2021 12:40:36 A. M. RestauranteJyC.Clientes run
+INFO: 115deja el pedido en el mostrador
+jun. 09, 2021 12:40:36 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente132-P0.  en la mesa del platos
+jun. 09, 2021 12:40:36 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente102-P0. y lo cocina
+jun. 09, 2021 12:40:36 A. M. RestauranteJyC.Clientes run
+INFO: 168deja el pedido en el mostrador
+jun. 09, 2021 12:40:36 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente63-P0.  en la mesa del platos
+jun. 09, 2021 12:40:37 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente133-P0. y lo cocina
+jun. 09, 2021 12:40:37 A. M. RestauranteJyC.Clientes run
+INFO: 72deja el pedido en el mostrador
+jun. 09, 2021 12:40:37 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente97-P0.  en la mesa del platos
+jun. 09, 2021 12:40:38 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente56-P0. y lo cocina
+jun. 09, 2021 12:40:38 A. M. RestauranteJyC.Clientes run
+INFO: 47deja el pedido en el mostrador
+jun. 09, 2021 12:40:38 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente165-P0.  en la mesa del platos
+jun. 09, 2021 12:40:38 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente26-P0. y lo cocina
+jun. 09, 2021 12:40:38 A. M. RestauranteJyC.Clientes run
+INFO: 31deja el pedido en el mostrador
+jun. 09, 2021 12:40:38 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente89-P0.  en la mesa del platos
+jun. 09, 2021 12:40:39 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente52-P0. y lo cocina
+jun. 09, 2021 12:40:39 A. M. RestauranteJyC.Clientes run
+INFO: 6deja el pedido en el mostrador
+jun. 09, 2021 12:40:39 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente122-P0.  en la mesa del platos
+jun. 09, 2021 12:40:39 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente185-P0. y lo cocina
+jun. 09, 2021 12:40:39 A. M. RestauranteJyC.Clientes run
+INFO: 160deja el pedido en el mostrador
+jun. 09, 2021 12:40:39 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente14-P0.  en la mesa del platos
+jun. 09, 2021 12:40:40 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente193-P0. y lo cocina
+jun. 09, 2021 12:40:40 A. M. RestauranteJyC.Clientes run
+INFO: 36deja el pedido en el mostrador
+jun. 09, 2021 12:40:40 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente90-P0.  en la mesa del platos
+jun. 09, 2021 12:40:41 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente157-P0. y lo cocina
+jun. 09, 2021 12:40:41 A. M. RestauranteJyC.Clientes run
+INFO: 82deja el pedido en el mostrador
+jun. 09, 2021 12:40:41 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente197-P0.  en la mesa del platos
+jun. 09, 2021 12:40:41 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente85-P0. y lo cocina
+jun. 09, 2021 12:40:41 A. M. RestauranteJyC.Clientes run
+INFO: 3deja el pedido en el mostrador
+jun. 09, 2021 12:40:41 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente92-P0.  en la mesa del platos
+jun. 09, 2021 12:40:42 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente83-P0. y lo cocina
+jun. 09, 2021 12:40:42 A. M. RestauranteJyC.Clientes run
+INFO: 120deja el pedido en el mostrador
+jun. 09, 2021 12:40:42 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente115-P0.  en la mesa del platos
+jun. 09, 2021 12:40:43 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente30-P0. y lo cocina
+jun. 09, 2021 12:40:43 A. M. RestauranteJyC.Clientes run
+INFO: 46deja el pedido en el mostrador
+jun. 09, 2021 12:40:43 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente168-P0.  en la mesa del platos
+jun. 09, 2021 12:40:43 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente129-P0. y lo cocina
+jun. 09, 2021 12:40:43 A. M. RestauranteJyC.Clientes run
+INFO: 174deja el pedido en el mostrador
+jun. 09, 2021 12:40:43 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente72-P0.  en la mesa del platos
+jun. 09, 2021 12:40:44 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente146-P0. y lo cocina
+jun. 09, 2021 12:40:44 A. M. RestauranteJyC.Clientes run
+INFO: 145deja el pedido en el mostrador
+jun. 09, 2021 12:40:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente47-P0.  en la mesa del platos
+jun. 09, 2021 12:40:44 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente105-P0. y lo cocina
+jun. 09, 2021 12:40:44 A. M. RestauranteJyC.Clientes run
+INFO: 156deja el pedido en el mostrador
+jun. 09, 2021 12:40:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente31-P0.  en la mesa del platos
+jun. 09, 2021 12:40:45 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente182-P0. y lo cocina
+jun. 09, 2021 12:40:45 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente6-P0.  en la mesa del platos
+jun. 09, 2021 12:40:45 A. M. RestauranteJyC.Clientes run
+INFO: 181deja el pedido en el mostrador
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente93-P0. y lo cocina
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Clientes run
+INFO: 147deja el pedido en el mostrador
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente160-P0.  en la mesa del platos
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente40-P0. y lo cocina
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Clientes run
+INFO: 125deja el pedido en el mostrador
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente36-P0.  en la mesa del platos
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente148-P0. y lo cocina
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Clientes run
+INFO: 70deja el pedido en el mostrador
+jun. 09, 2021 12:40:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente82-P0.  en la mesa del platos
+jun. 09, 2021 12:40:47 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente172-P0. y lo cocina
+jun. 09, 2021 12:40:47 A. M. RestauranteJyC.Clientes run
+INFO: 108deja el pedido en el mostrador
+jun. 09, 2021 12:40:47 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente3-P0.  en la mesa del platos
+jun. 09, 2021 12:40:48 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente141-P0. y lo cocina
+jun. 09, 2021 12:40:48 A. M. RestauranteJyC.Clientes run
+INFO: 20deja el pedido en el mostrador
+jun. 09, 2021 12:40:48 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente120-P0.  en la mesa del platos
+jun. 09, 2021 12:40:48 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente144-P0. y lo cocina
+jun. 09, 2021 12:40:48 A. M. RestauranteJyC.Clientes run
+INFO: 1deja el pedido en el mostrador
+jun. 09, 2021 12:40:48 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente46-P0.  en la mesa del platos
+jun. 09, 2021 12:40:49 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente132-P0. y lo cocina
+jun. 09, 2021 12:40:49 A. M. RestauranteJyC.Clientes run
+INFO: 170deja el pedido en el mostrador
+jun. 09, 2021 12:40:49 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente174-P0.  en la mesa del platos
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente63-P0. y lo cocina
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Clientes run
+INFO: 62deja el pedido en el mostrador
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente145-P0.  en la mesa del platos
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente97-P0. y lo cocina
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Clientes run
+INFO: 34deja el pedido en el mostrador
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente156-P0.  en la mesa del platos
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente165-P0. y lo cocina
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Clientes run
+INFO: 176deja el pedido en el mostrador
+jun. 09, 2021 12:40:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente181-P0.  en la mesa del platos
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente89-P0. y lo cocina
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Clientes run
+INFO: 143deja el pedido en el mostrador
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente147-P0.  en la mesa del platos
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente122-P0. y lo cocina
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Clientes run
+INFO: 77deja el pedido en el mostrador
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente125-P0.  en la mesa del platos
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente14-P0. y lo cocina
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Clientes run
+INFO: 4deja el pedido en el mostrador
+jun. 09, 2021 12:40:52 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente70-P0.  en la mesa del platos
+jun. 09, 2021 12:40:53 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente90-P0. y lo cocina
+jun. 09, 2021 12:40:53 A. M. RestauranteJyC.Clientes run
+INFO: 17deja el pedido en el mostrador
+jun. 09, 2021 12:40:53 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente108-P0.  en la mesa del platos
+jun. 09, 2021 12:40:54 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente197-P0. y lo cocina
+jun. 09, 2021 12:40:54 A. M. RestauranteJyC.Clientes run
+INFO: 131deja el pedido en el mostrador
+jun. 09, 2021 12:40:54 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente20-P0.  en la mesa del platos
+jun. 09, 2021 12:40:54 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente92-P0. y lo cocina
+jun. 09, 2021 12:40:54 A. M. RestauranteJyC.Clientes run
+INFO: 13deja el pedido en el mostrador
+jun. 09, 2021 12:40:54 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente1-P0.  en la mesa del platos
+jun. 09, 2021 12:40:55 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente115-P0. y lo cocina
+jun. 09, 2021 12:40:55 A. M. RestauranteJyC.Clientes run
+INFO: 32deja el pedido en el mostrador
+jun. 09, 2021 12:40:55 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente170-P0.  en la mesa del platos
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente168-P0. y lo cocina
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Clientes run
+INFO: 167deja el pedido en el mostrador
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente62-P0.  en la mesa del platos
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente72-P0. y lo cocina
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Clientes run
+INFO: 186deja el pedido en el mostrador
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente34-P0.  en la mesa del platos
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente47-P0. y lo cocina
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Clientes run
+INFO: 73deja el pedido en el mostrador
+jun. 09, 2021 12:40:56 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente176-P0.  en la mesa del platos
+jun. 09, 2021 12:40:57 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente31-P0. y lo cocina
+jun. 09, 2021 12:40:57 A. M. RestauranteJyC.Clientes run
+INFO: 86deja el pedido en el mostrador
+jun. 09, 2021 12:40:57 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente143-P0.  en la mesa del platos
+jun. 09, 2021 12:40:58 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente6-P0. y lo cocina
+jun. 09, 2021 12:40:58 A. M. RestauranteJyC.Clientes run
+INFO: 96deja el pedido en el mostrador
+jun. 09, 2021 12:40:58 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente77-P0.  en la mesa del platos
+jun. 09, 2021 12:40:58 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente160-P0. y lo cocina
+jun. 09, 2021 12:40:58 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente4-P0.  en la mesa del platos
+jun. 09, 2021 12:40:58 A. M. RestauranteJyC.Clientes run
+INFO: 53deja el pedido en el mostrador
+jun. 09, 2021 12:40:59 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente36-P0. y lo cocina
+jun. 09, 2021 12:40:59 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente17-P0.  en la mesa del platos
+jun. 09, 2021 12:40:59 A. M. RestauranteJyC.Clientes run
+INFO: 91deja el pedido en el mostrador
+jun. 09, 2021 12:41:00 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente82-P0. y lo cocina
+jun. 09, 2021 12:41:00 A. M. RestauranteJyC.Clientes run
+INFO: 25deja el pedido en el mostrador
+jun. 09, 2021 12:41:00 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente131-P0.  en la mesa del platos
+jun. 09, 2021 12:41:00 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente3-P0. y lo cocina
+jun. 09, 2021 12:41:00 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente13-P0.  en la mesa del platos
+jun. 09, 2021 12:41:00 A. M. RestauranteJyC.Clientes run
+INFO: 198deja el pedido en el mostrador
+jun. 09, 2021 12:41:01 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente120-P0. y lo cocina
+jun. 09, 2021 12:41:01 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente32-P0.  en la mesa del platos
+jun. 09, 2021 12:41:01 A. M. RestauranteJyC.Clientes run
+INFO: 27deja el pedido en el mostrador
+jun. 09, 2021 12:41:01 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente46-P0. y lo cocina
+jun. 09, 2021 12:41:01 A. M. RestauranteJyC.Clientes run
+INFO: 177deja el pedido en el mostrador
+jun. 09, 2021 12:41:01 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente167-P0.  en la mesa del platos
+jun. 09, 2021 12:41:02 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente174-P0. y lo cocina
+jun. 09, 2021 12:41:02 A. M. RestauranteJyC.Clientes run
+INFO: 179deja el pedido en el mostrador
+jun. 09, 2021 12:41:02 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente186-P0.  en la mesa del platos
+jun. 09, 2021 12:41:02 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente145-P0. y lo cocina
+jun. 09, 2021 12:41:02 A. M. RestauranteJyC.Clientes run
+INFO: 184deja el pedido en el mostrador
+jun. 09, 2021 12:41:02 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente73-P0.  en la mesa del platos
+jun. 09, 2021 12:41:03 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente156-P0. y lo cocina
+jun. 09, 2021 12:41:03 A. M. RestauranteJyC.Clientes run
+INFO: 95deja el pedido en el mostrador
+jun. 09, 2021 12:41:03 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente86-P0.  en la mesa del platos
+jun. 09, 2021 12:41:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente181-P0. y lo cocina
+jun. 09, 2021 12:41:04 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente96-P0.  en la mesa del platos
+jun. 09, 2021 12:41:04 A. M. RestauranteJyC.Clientes run
+INFO: 68deja el pedido en el mostrador
+jun. 09, 2021 12:41:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente147-P0. y lo cocina
+jun. 09, 2021 12:41:04 A. M. RestauranteJyC.Clientes run
+INFO: 192deja el pedido en el mostrador
+jun. 09, 2021 12:41:04 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente53-P0.  en la mesa del platos
+jun. 09, 2021 12:41:05 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente125-P0. y lo cocina
+jun. 09, 2021 12:41:05 A. M. RestauranteJyC.Clientes run
+INFO: 152deja el pedido en el mostrador
+jun. 09, 2021 12:41:05 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente91-P0.  en la mesa del platos
+jun. 09, 2021 12:41:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente70-P0. y lo cocina
+jun. 09, 2021 12:41:06 A. M. RestauranteJyC.Clientes run
+INFO: 117deja el pedido en el mostrador
+jun. 09, 2021 12:41:06 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente25-P0.  en la mesa del platos
+jun. 09, 2021 12:41:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente108-P0. y lo cocina
+jun. 09, 2021 12:41:06 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente198-P0.  en la mesa del platos
+jun. 09, 2021 12:41:06 A. M. RestauranteJyC.Clientes run
+INFO: 28deja el pedido en el mostrador
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente1-P0. y lo cocina
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Clientes run
+INFO: 80deja el pedido en el mostrador
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente27-P0.  en la mesa del platos
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente20-P0. y lo cocina
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Clientes run
+INFO: 164deja el pedido en el mostrador
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente177-P0.  en la mesa del platos
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente170-P0. y lo cocina
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente179-P0.  en la mesa del platos
+jun. 09, 2021 12:41:07 A. M. RestauranteJyC.Clientes run
+INFO: 44deja el pedido en el mostrador
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente62-P0. y lo cocina
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Clientes run
+INFO: 43deja el pedido en el mostrador
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente184-P0.  en la mesa del platos
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente34-P0. y lo cocina
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente95-P0.  en la mesa del platos
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Clientes run
+INFO: 126deja el pedido en el mostrador
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente176-P0. y lo cocina
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente68-P0.  en la mesa del platos
+jun. 09, 2021 12:41:09 A. M. RestauranteJyC.Clientes run
+INFO: 7deja el pedido en el mostrador
+jun. 09, 2021 12:41:10 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente143-P0. y lo cocina
+jun. 09, 2021 12:41:10 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente192-P0.  en la mesa del platos
+jun. 09, 2021 12:41:10 A. M. RestauranteJyC.Clientes run
+INFO: 99deja el pedido en el mostrador
+jun. 09, 2021 12:41:11 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente152-P0.  en la mesa del platos
+jun. 09, 2021 12:41:11 A. M. RestauranteJyC.Clientes run
+INFO: 15deja el pedido en el mostrador
+jun. 09, 2021 12:41:11 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente77-P0. y lo cocina
+jun. 09, 2021 12:41:11 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente4-P0. y lo cocina
+jun. 09, 2021 12:41:11 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente117-P0.  en la mesa del platos
+jun. 09, 2021 12:41:11 A. M. RestauranteJyC.Clientes run
+INFO: 140deja el pedido en el mostrador
+jun. 09, 2021 12:41:12 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente17-P0. y lo cocina
+jun. 09, 2021 12:41:12 A. M. RestauranteJyC.Clientes run
+INFO: 98deja el pedido en el mostrador
+jun. 09, 2021 12:41:12 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente28-P0.  en la mesa del platos
+jun. 09, 2021 12:41:12 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente131-P0. y lo cocina
+jun. 09, 2021 12:41:12 A. M. RestauranteJyC.Clientes run
+INFO: 84deja el pedido en el mostrador
+jun. 09, 2021 12:41:12 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente80-P0.  en la mesa del platos
+jun. 09, 2021 12:41:13 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente13-P0. y lo cocina
+jun. 09, 2021 12:41:13 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente164-P0.  en la mesa del platos
+jun. 09, 2021 12:41:13 A. M. RestauranteJyC.Clientes run
+INFO: 135deja el pedido en el mostrador
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente32-P0. y lo cocina
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Clientes run
+INFO: 112deja el pedido en el mostrador
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente44-P0.  en la mesa del platos
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente167-P0. y lo cocina
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente43-P0.  en la mesa del platos
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Clientes run
+INFO: 65deja el pedido en el mostrador
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente186-P0. y lo cocina
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente126-P0.  en la mesa del platos
+jun. 09, 2021 12:41:14 A. M. RestauranteJyC.Clientes run
+INFO: 153deja el pedido en el mostrador
+jun. 09, 2021 12:41:15 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente73-P0. y lo cocina
+jun. 09, 2021 12:41:15 A. M. RestauranteJyC.Clientes run
+INFO: 74deja el pedido en el mostrador
+jun. 09, 2021 12:41:15 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente7-P0.  en la mesa del platos
+jun. 09, 2021 12:41:16 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente86-P0. y lo cocina
+jun. 09, 2021 12:41:16 A. M. RestauranteJyC.Clientes run
+INFO: 196deja el pedido en el mostrador
+jun. 09, 2021 12:41:16 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente99-P0.  en la mesa del platos
+jun. 09, 2021 12:41:16 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente96-P0. y lo cocina
+jun. 09, 2021 12:41:16 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente15-P0.  en la mesa del platos
+jun. 09, 2021 12:41:16 A. M. RestauranteJyC.Clientes run
+INFO: 42deja el pedido en el mostrador
+jun. 09, 2021 12:41:17 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente53-P0. y lo cocina
+jun. 09, 2021 12:41:17 A. M. RestauranteJyC.Clientes run
+INFO: 137deja el pedido en el mostrador
+jun. 09, 2021 12:41:17 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente140-P0.  en la mesa del platos
+jun. 09, 2021 12:41:18 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente91-P0. y lo cocina
+jun. 09, 2021 12:41:18 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente98-P0.  en la mesa del platos
+jun. 09, 2021 12:41:18 A. M. RestauranteJyC.Clientes run
+INFO: 180deja el pedido en el mostrador
+jun. 09, 2021 12:41:18 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente198-P0. y lo cocina
+jun. 09, 2021 12:41:18 A. M. RestauranteJyC.Clientes run
+INFO: 183deja el pedido en el mostrador
+jun. 09, 2021 12:41:18 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente84-P0.  en la mesa del platos
+jun. 09, 2021 12:41:19 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente25-P0. y lo cocina
+jun. 09, 2021 12:41:19 A. M. RestauranteJyC.Clientes run
+INFO: 191deja el pedido en el mostrador
+jun. 09, 2021 12:41:19 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente135-P0.  en la mesa del platos
+jun. 09, 2021 12:41:19 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente27-P0. y lo cocina
+jun. 09, 2021 12:41:19 A. M. RestauranteJyC.Clientes run
+INFO: 139deja el pedido en el mostrador
+jun. 09, 2021 12:41:19 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente112-P0.  en la mesa del platos
+jun. 09, 2021 12:41:20 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente177-P0. y lo cocina
+jun. 09, 2021 12:41:20 A. M. RestauranteJyC.Clientes run
+INFO: 187deja el pedido en el mostrador
+jun. 09, 2021 12:41:20 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente65-P0.  en la mesa del platos
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente179-P0. y lo cocina
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Clientes run
+INFO: 21deja el pedido en el mostrador
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente153-P0.  en la mesa del platos
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente184-P0. y lo cocina
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Clientes run
+INFO: 76deja el pedido en el mostrador
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente74-P0.  en la mesa del platos
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente95-P0. y lo cocina
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente196-P0.  en la mesa del platos
+jun. 09, 2021 12:41:21 A. M. RestauranteJyC.Clientes run
+INFO: 41deja el pedido en el mostrador
+jun. 09, 2021 12:41:22 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente68-P0. y lo cocina
+jun. 09, 2021 12:41:22 A. M. RestauranteJyC.Clientes run
+INFO: 75deja el pedido en el mostrador
+jun. 09, 2021 12:41:22 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente42-P0.  en la mesa del platos
+jun. 09, 2021 12:41:23 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente152-P0. y lo cocina
+jun. 09, 2021 12:41:23 A. M. RestauranteJyC.Clientes run
+INFO: 33deja el pedido en el mostrador
+jun. 09, 2021 12:41:23 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente137-P0.  en la mesa del platos
+jun. 09, 2021 12:41:23 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente192-P0. y lo cocina
+jun. 09, 2021 12:41:23 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente180-P0.  en la mesa del platos
+jun. 09, 2021 12:41:23 A. M. RestauranteJyC.Clientes run
+INFO: 57deja el pedido en el mostrador
+jun. 09, 2021 12:41:24 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente117-P0. y lo cocina
+jun. 09, 2021 12:41:24 A. M. RestauranteJyC.Clientes run
+INFO: 19deja el pedido en el mostrador
+jun. 09, 2021 12:41:24 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente183-P0.  en la mesa del platos
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente28-P0. y lo cocina
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Clientes run
+INFO: 71deja el pedido en el mostrador
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente191-P0.  en la mesa del platos
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente80-P0. y lo cocina
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente139-P1.  en la mesa del platos
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Clientes run
+INFO: 154deja el pedido en el mostrador
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente164-P0. y lo cocina
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Clientes run
+INFO: 37deja el pedido en el mostrador
+jun. 09, 2021 12:41:25 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente187-P1.  en la mesa del platos
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente44-P0. y lo cocina
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente21-P1.  en la mesa del platos
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Clientes run
+INFO: 114deja el pedido en el mostrador
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente126-P0. y lo cocina
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Clientes run
+INFO: 155deja el pedido en el mostrador
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente76-P1.  en la mesa del platos
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente43-P0. y lo cocina
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente41-P1.  en la mesa del platos
+jun. 09, 2021 12:41:27 A. M. RestauranteJyC.Clientes run
+INFO: 169deja el pedido en el mostrador
+jun. 09, 2021 12:41:28 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente7-P0. y lo cocina
+jun. 09, 2021 12:41:28 A. M. RestauranteJyC.Clientes run
+INFO: 58deja el pedido en el mostrador
+jun. 09, 2021 12:41:28 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente75-P1.  en la mesa del platos
+jun. 09, 2021 12:41:29 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente99-P0. y lo cocina
+jun. 09, 2021 12:41:29 A. M. RestauranteJyC.Clientes run
+INFO: 123deja el pedido en el mostrador
+jun. 09, 2021 12:41:29 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente33-P1.  en la mesa del platos
+jun. 09, 2021 12:41:29 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente15-P0. y lo cocina
+jun. 09, 2021 12:41:29 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente57-P1.  en la mesa del platos
+jun. 09, 2021 12:41:29 A. M. RestauranteJyC.Clientes run
+INFO: 128deja el pedido en el mostrador
+jun. 09, 2021 12:41:30 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente140-P0. y lo cocina
+jun. 09, 2021 12:41:30 A. M. RestauranteJyC.Clientes run
+INFO: 109deja el pedido en el mostrador
+jun. 09, 2021 12:41:30 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente19-P1.  en la mesa del platos
+jun. 09, 2021 12:41:30 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente98-P0. y lo cocina
+jun. 09, 2021 12:41:30 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente71-P1.  en la mesa del platos
+jun. 09, 2021 12:41:30 A. M. RestauranteJyC.Clientes run
+INFO: 5deja el pedido en el mostrador
+jun. 09, 2021 12:41:31 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente84-P0. y lo cocina
+jun. 09, 2021 12:41:31 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente154-P1.  en la mesa del platos
+jun. 09, 2021 12:41:31 A. M. RestauranteJyC.Clientes run
+INFO: 113deja el pedido en el mostrador
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente135-P0. y lo cocina
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente37-P1.  en la mesa del platos
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Clientes run
+INFO: 87deja el pedido en el mostrador
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente112-P0. y lo cocina
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente114-P1.  en la mesa del platos
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Clientes run
+INFO: 59deja el pedido en el mostrador
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente65-P0. y lo cocina
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Clientes run
+INFO: 189deja el pedido en el mostrador
+jun. 09, 2021 12:41:32 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente155-P1.  en la mesa del platos
+jun. 09, 2021 12:41:33 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente153-P0. y lo cocina
+jun. 09, 2021 12:41:33 A. M. RestauranteJyC.Clientes run
+INFO: 119deja el pedido en el mostrador
+jun. 09, 2021 12:41:33 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente169-P1.  en la mesa del platos
+jun. 09, 2021 12:41:34 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente74-P0. y lo cocina
+jun. 09, 2021 12:41:34 A. M. RestauranteJyC.Clientes run
+INFO: 101deja el pedido en el mostrador
+jun. 09, 2021 12:41:34 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente58-P1.  en la mesa del platos
+jun. 09, 2021 12:41:34 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente196-P0. y lo cocina
+jun. 09, 2021 12:41:34 A. M. RestauranteJyC.Clientes run
+INFO: 49deja el pedido en el mostrador
+jun. 09, 2021 12:41:34 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente123-P1.  en la mesa del platos
+jun. 09, 2021 12:41:35 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente42-P0. y lo cocina
+jun. 09, 2021 12:41:35 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente128-P1.  en la mesa del platos
+jun. 09, 2021 12:41:35 A. M. RestauranteJyC.Clientes run
+INFO: 199deja el pedido en el mostrador
+jun. 09, 2021 12:41:36 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente137-P0. y lo cocina
+jun. 09, 2021 12:41:36 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente109-P1.  en la mesa del platos
+jun. 09, 2021 12:41:36 A. M. RestauranteJyC.Clientes run
+INFO: 166deja el pedido en el mostrador
+jun. 09, 2021 12:41:36 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente180-P0. y lo cocina
+jun. 09, 2021 12:41:36 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente5-P1.  en la mesa del platos
+jun. 09, 2021 12:41:36 A. M. RestauranteJyC.Clientes run
+INFO: 22deja el pedido en el mostrador
+jun. 09, 2021 12:41:37 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente183-P0. y lo cocina
+jun. 09, 2021 12:41:37 A. M. RestauranteJyC.Clientes run
+INFO: 116deja el pedido en el mostrador
+jun. 09, 2021 12:41:37 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente113-P1.  en la mesa del platos
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente191-P0. y lo cocina
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente87-P1.  en la mesa del platos
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Clientes run
+INFO: 48deja el pedido en el mostrador
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente139-P1. y lo cocina
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Clientes run
+INFO: 150deja el pedido en el mostrador
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente59-P1.  en la mesa del platos
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente187-P1. y lo cocina
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Clientes run
+INFO: 124deja el pedido en el mostrador
+jun. 09, 2021 12:41:38 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente189-P1.  en la mesa del platos
+jun. 09, 2021 12:41:39 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente21-P1. y lo cocina
+jun. 09, 2021 12:41:39 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente119-P1.  en la mesa del platos
+jun. 09, 2021 12:41:39 A. M. RestauranteJyC.Clientes run
+INFO: 111deja el pedido en el mostrador
+jun. 09, 2021 12:41:40 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente76-P1. y lo cocina
+jun. 09, 2021 12:41:40 A. M. RestauranteJyC.Clientes run
+INFO: 106deja el pedido en el mostrador
+jun. 09, 2021 12:41:40 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente101-P1.  en la mesa del platos
+jun. 09, 2021 12:41:40 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente41-P1. y lo cocina
+jun. 09, 2021 12:41:40 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente49-P1.  en la mesa del platos
+jun. 09, 2021 12:41:40 A. M. RestauranteJyC.Clientes run
+INFO: 134deja el pedido en el mostrador
+jun. 09, 2021 12:41:41 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente75-P1. y lo cocina
+jun. 09, 2021 12:41:41 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente199-P1.  en la mesa del platos
+jun. 09, 2021 12:41:41 A. M. RestauranteJyC.Clientes run
+INFO: 138deja el pedido en el mostrador
+jun. 09, 2021 12:41:41 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente57-P1. y lo cocina
+jun. 09, 2021 12:41:41 A. M. RestauranteJyC.Clientes run
+INFO: 188deja el pedido en el mostrador
+jun. 09, 2021 12:41:41 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente166-P1.  en la mesa del platos
+jun. 09, 2021 12:41:42 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente33-P1. y lo cocina
+jun. 09, 2021 12:41:42 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente22-P1.  en la mesa del platos
+jun. 09, 2021 12:41:42 A. M. RestauranteJyC.Clientes run
+INFO: 178deja el pedido en el mostrador
+jun. 09, 2021 12:41:42 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente19-P1. y lo cocina
+jun. 09, 2021 12:41:42 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente116-P1.  en la mesa del platos
+jun. 09, 2021 12:41:42 A. M. RestauranteJyC.Clientes run
+INFO: 54deja el pedido en el mostrador
+jun. 09, 2021 12:41:43 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente71-P1. y lo cocina
+jun. 09, 2021 12:41:43 A. M. RestauranteJyC.Clientes run
+INFO: 12deja el pedido en el mostrador
+jun. 09, 2021 12:41:43 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente48-P1.  en la mesa del platos
+jun. 09, 2021 12:41:44 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente154-P1. y lo cocina
+jun. 09, 2021 12:41:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente150-P1.  en la mesa del platos
+jun. 09, 2021 12:41:44 A. M. RestauranteJyC.Clientes run
+INFO: 39deja el pedido en el mostrador
+jun. 09, 2021 12:41:44 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente37-P1. y lo cocina
+jun. 09, 2021 12:41:44 A. M. RestauranteJyC.Clientes run
+INFO: 171deja el pedido en el mostrador
+jun. 09, 2021 12:41:44 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente124-P1.  en la mesa del platos
+jun. 09, 2021 12:41:45 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente114-P1. y lo cocina
+jun. 09, 2021 12:41:45 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente111-P1.  en la mesa del platos
+jun. 09, 2021 12:41:45 A. M. RestauranteJyC.Clientes run
+INFO: 60deja el pedido en el mostrador
+jun. 09, 2021 12:41:46 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente155-P1. y lo cocina
+jun. 09, 2021 12:41:46 A. M. RestauranteJyC.Clientes run
+INFO: 29deja el pedido en el mostrador
+jun. 09, 2021 12:41:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente106-P1.  en la mesa del platos
+jun. 09, 2021 12:41:46 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente169-P1. y lo cocina
+jun. 09, 2021 12:41:46 A. M. RestauranteJyC.Clientes run
+INFO: 118deja el pedido en el mostrador
+jun. 09, 2021 12:41:46 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente134-P1.  en la mesa del platos
+jun. 09, 2021 12:41:47 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente123-P1. y lo cocina
+jun. 09, 2021 12:41:47 A. M. RestauranteJyC.Clientes run
+INFO: 61deja el pedido en el mostrador
+jun. 09, 2021 12:41:47 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente138-P1.  en la mesa del platos
+jun. 09, 2021 12:41:47 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente58-P1. y lo cocina
+jun. 09, 2021 12:41:47 A. M. RestauranteJyC.Clientes run
+INFO: 88deja el pedido en el mostrador
+jun. 09, 2021 12:41:47 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente188-P1.  en la mesa del platos
+jun. 09, 2021 12:41:48 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente128-P1. y lo cocina
+jun. 09, 2021 12:41:48 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente178-P1.  en la mesa del platos
+jun. 09, 2021 12:41:48 A. M. RestauranteJyC.Clientes run
+INFO: 16deja el pedido en el mostrador
+jun. 09, 2021 12:41:48 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente109-P1. y lo cocina
+jun. 09, 2021 12:41:48 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente54-P1.  en la mesa del platos
+jun. 09, 2021 12:41:48 A. M. RestauranteJyC.Clientes run
+INFO: 142deja el pedido en el mostrador
+jun. 09, 2021 12:41:49 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente5-P1. y lo cocina
+jun. 09, 2021 12:41:49 A. M. RestauranteJyC.Clientes run
+INFO: 121deja el pedido en el mostrador
+jun. 09, 2021 12:41:49 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente12-P1.  en la mesa del platos
+jun. 09, 2021 12:41:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente113-P1. y lo cocina
+jun. 09, 2021 12:41:50 A. M. RestauranteJyC.Clientes run
+INFO: 51deja el pedido en el mostrador
+jun. 09, 2021 12:41:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente39-P1.  en la mesa del platos
+jun. 09, 2021 12:41:50 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente87-P1. y lo cocina
+jun. 09, 2021 12:41:50 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente171-P1.  en la mesa del platos
+jun. 09, 2021 12:41:50 A. M. RestauranteJyC.Clientes run
+INFO: 79deja el pedido en el mostrador
+jun. 09, 2021 12:41:51 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente59-P1. y lo cocina
+jun. 09, 2021 12:41:51 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente60-P1.  en la mesa del platos
+jun. 09, 2021 12:41:51 A. M. RestauranteJyC.Clientes run
+INFO: 18deja el pedido en el mostrador
+jun. 09, 2021 12:41:51 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente189-P1. y lo cocina
+jun. 09, 2021 12:41:51 A. M. RestauranteJyC.Clientes run
+INFO: 38deja el pedido en el mostrador
+jun. 09, 2021 12:41:51 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente29-P1.  en la mesa del platos
+jun. 09, 2021 12:41:51 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente119-P1. y lo cocina
+jun. 09, 2021 12:41:52 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente118-P1.  en la mesa del platos
+jun. 09, 2021 12:41:52 A. M. RestauranteJyC.Clientes run
+INFO: 45deja el pedido en el mostrador
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente101-P1. y lo cocina
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente61-P1.  en la mesa del platos
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Clientes run
+INFO: 23deja el pedido en el mostrador
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente49-P1. y lo cocina
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente88-P1.  en la mesa del platos
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Clientes run
+INFO: 175deja el pedido en el mostrador
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente199-P1. y lo cocina
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Clientes run
+INFO: 8deja el pedido en el mostrador
+jun. 09, 2021 12:41:53 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente16-P1.  en la mesa del platos
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente142-P1.  en la mesa del platos
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Clientes run
+INFO: 100deja el pedido en el mostrador
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente166-P1. y lo cocina
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente22-P1. y lo cocina
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Clientes run
+INFO: 136deja el pedido en el mostrador
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente121-P1.  en la mesa del platos
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente116-P1. y lo cocina
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Clientes run
+INFO: 2deja el pedido en el mostrador
+jun. 09, 2021 12:41:55 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente51-P1.  en la mesa del platos
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente48-P1. y lo cocina
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Clientes run
+INFO: 94deja el pedido en el mostrador
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente79-P1.  en la mesa del platos
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente150-P1. y lo cocina
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente18-P1.  en la mesa del platos
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Clientes run
+INFO: 0deja el pedido en el mostrador
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente124-P1. y lo cocina
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Empleados run
+INFO: empleado_1coje el pedido del mostrador del clientecliente38-P1.  en la mesa del platos
+jun. 09, 2021 12:41:57 A. M. RestauranteJyC.Clientes run
+INFO: 81deja el pedido en el mostrador
+jun. 09, 2021 12:41:58 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente111-P1. y lo cocina
+jun. 09, 2021 12:41:58 A. M. RestauranteJyC.Empleados run
+INFO: empleado_2coje el pedido del mostrador del clientecliente45-P1.  en la mesa del platos
+jun. 09, 2021 12:41:59 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente106-P1. y lo cocina
+jun. 09, 2021 12:41:59 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente134-P1. y lo cocina
+jun. 09, 2021 12:42:00 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente138-P1. y lo cocina
+jun. 09, 2021 12:42:00 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente188-P1. y lo cocina
+jun. 09, 2021 12:42:01 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente178-P1. y lo cocina
+jun. 09, 2021 12:42:02 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente54-P1. y lo cocina
+jun. 09, 2021 12:42:02 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente12-P1. y lo cocina
+jun. 09, 2021 12:42:03 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente39-P1. y lo cocina
+jun. 09, 2021 12:42:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente171-P1. y lo cocina
+jun. 09, 2021 12:42:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente60-P1. y lo cocina
+jun. 09, 2021 12:42:04 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente29-P1. y lo cocina
+jun. 09, 2021 12:42:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente118-P1. y lo cocina
+jun. 09, 2021 12:42:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente61-P1. y lo cocina
+jun. 09, 2021 12:42:06 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente88-P1. y lo cocina
+jun. 09, 2021 12:42:07 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente16-P1. y lo cocina
+jun. 09, 2021 12:42:07 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente142-P1. y lo cocina
+jun. 09, 2021 12:42:08 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente121-P1. y lo cocina
+jun. 09, 2021 12:42:09 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente51-P1. y lo cocina
+jun. 09, 2021 12:42:09 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente79-P1. y lo cocina
+jun. 09, 2021 12:42:10 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_1coje el plato de la mesa de platos del cliente18-P1. y lo cocina
+jun. 09, 2021 12:42:10 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_2coje el plato de la mesa de platos del cliente38-P1. y lo cocina
+jun. 09, 2021 12:42:11 A. M. RestauranteJyC.Cocineros run
+INFO: El cocinero cocinero_3coje el plato de la mesa de platos del cliente45-P1. y lo cocina

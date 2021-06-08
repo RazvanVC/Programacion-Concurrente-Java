@@ -1,11 +1,7 @@
 package RestauranteJyC;
 
-/**
- *
- * @author josep
- */
-public class Pedidos {
-
+public class Pedidos { //clase pedidos solo sirve para el getId y setId
+    
     private String id;
 
     Pedidos(String string) {

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package RestauranteJyC;
 
 import java.util.Random;
@@ -10,22 +6,17 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-/**
- *
- * @author josep
- */
 public class Clientes extends Thread { //Creación de la clase con los atributos
 
     private String id_Cliente;
-    Log_Restaurante logTxt;
     private final Mostrador_pedidos mostrador;
+    private Log_Restaurante logTxt;
    
 
-    public Clientes(String id, Mostrador_pedidos mostrador,Log_Restaurante logTxt) { // setea los atributos
+    public Clientes(String id, Mostrador_pedidos mostrador, Log_Restaurante logTxt) { // contructor
         this.id_Cliente = id;
         this.mostrador = mostrador;
         this.logTxt = logTxt;
-
     }
 
     public void run() {
@@ -41,9 +32,7 @@ public class Clientes extends Thread { //Creación de la clase con los atributos
 
                 mostrador.insert(new Pedidos("cliente" + id_Cliente + "-P" + i + ". ")); //añade al mostrador el pedido 
                 try { //inserta en el log
-
                     logTxt.log.info(id_Cliente + "deja el pedido en el mostrador"); //mensaje en el log
-                    
                 } catch (Exception e) {
 
                 }
